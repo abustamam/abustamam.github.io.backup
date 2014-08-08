@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Angular Js | My Octopress Blog]]></title>
+  <link href="http://abustamam.github.io/blog/categories/angular-js/atom.xml" rel="self"/>
+  <link href="http://abustamam.github.io/"/>
+  <updated>2014-08-07T23:23:55-07:00</updated>
+  <id>http://abustamam.github.io/</id>
+  <author>
+    <name><![CDATA[Rasheed Bustamam]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Code School Angular JS: Part 1]]></title>
+    <link href="http://abustamam.github.io/blog/2014/08/06/angular-code-school/"/>
+    <updated>2014-08-06T20:36:54-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/08/06/angular-code-school</id>
+    <content type="html"><![CDATA[<p>I’ve been going through the <a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/">Shaping Up with AngularJS</a> 
+course and decided to share a bit about what I’ve been learning. </p>
+
+<p>I feel the best way to learn is to teach. So I’m doing a write-up of the course, adding in some explanations for the
+challenges, and adding some mini-assignments to keep you on your toes, and for you to check your own understanding. </p>
+
+<p>This write-up is not meant to be a replacement for the Code School course; but merely a companion. That being said, 
+it’s also written textbook-style–if you have this document with you, you can read through it and test yourself 
+pretty easily. If you have pen and paper, you can also do all of the challenges. No need for an interpreter or 
+anything. The challenges and mini-assignments are small enough for you to be able to write everything down, simply to
+test your understanding. </p>
+
+<p>This is part 1 of the series, which will go over installing Angular (and Bootstrap) and setting up our first controller.</p>
+
+<p>If you want to be able to share your project, go ahead and do Lesson 0; if you just want to run the app locally on your
+machine, skip to Lesson 1. Code School does not go over deploying git, so it might be helpful to follow along. </p>
+
+<h2 id="lesson--1-what-is-angular">Lesson -1: What is Angular?</h2>
+
+<p>Angular is…</p>
+
+<blockquote>
+  <p>A client-side Javascript framework for adding interactivity to HTML.</p>
+</blockquote>
+
+<p>Angular uses a couple of things in order to achieve this–Directives, and Modules.</p>
+
+<blockquote>
+  <p>A Directive is a marker on a HTML tag that tells Angular to run or reference some JavaScript code.</p>
+</blockquote>
+
+<p>Basically, it’s an HTML property. It looks something similar to this:</p>
+
+<p><code>html Directive example
+&lt;body ng-controller = "StoreController"&gt;&lt;/body&gt;
+</code></p>
+
+<p>The <code>ng-controller</code> bit is the <code>directive</code>.</p>
+
+<p>A <code>module</code> is where we write pieces of our application. Then we join them together like Lego.</p>
+
+<p>Using modules allows us to write testable, readable code. It also defines dependencies, as modules can use other
+modules! </p>
+
+<p>Now that you know what Angular is in a nutshell, continue on to set it up!</p>
+
+<h2 id="lesson-0-set-up-angular-and-bootstrap">Lesson 0: Set up Angular and Bootstrap</h2>
+
+<p>This step can be tricky, since there are a few ways to install Angular and Bootstrap. </p>
+
+<h3 id="the-easy-way-using-cdn">The easy way: using CDN</h3>
+
+<p>You can simply add the following code to your <code>head</code>:</p>
+
+<pre><code>&lt;script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt;
+</code></pre>
+
+<p>Keep in mind that the code will not work locally unless you type <code>http:</code> before all of that.</p>
+
+<h3 id="the-hard-way-using-bower">The hard way: using Bower</h3>
+
+<p>Okay, the hard way isn’t really that hard, it just requires you to install Node/npm, then <code>npm install -g bower</code>, then 
+<code>bower install bootstrap</code> and <code>bower install angular</code>. I won’t go into that since it’s not the purpose of this post,
+but feel free to reach out if you get stuck. </p>
+
+<p>Your assets will then be thrown into <code>/bower_components</code> so make sure that your <code>head</code> reflects that.</p>
+
+<h3 id="deploying-live">Deploying live</h3>
+
+<p>In your command line, just type <code>git init</code> and follow GitHub’s instructions to push your code up! </p>
+
+<p>If you want to deploy it live, then create a new branch called <code>gh-pages</code>:</p>
+
+<pre><code>$ git co -b gh-pages
+</code></pre>
+
+<p>And then commit everything, and when you go to <code>[your_username].github.io/[your_project_name]</code> it will be live.</p>
+
+<p>If you need additional info feel free to drop a line! </p>
+
+<p>Mine is currently <a href="http://abustamam.github.io/FlatLanders">here</a>.</p>
+
+<h2 id="lesson-1-setting-up-appjs-indexhtml-and-our-first-controller">Lesson 1: Setting up <code>app.js</code>, <code>index.html</code> and our first controller</h2>
+
+<p>The goal for this course is to make an app so that the Flat Landers can sell some gems! Hey, I don’t make the 
+stories here. So let’s get our storefront set up and ready for money! </p>
+
+<h3 id="your-first-module">Your first module</h3>
+
+<p>Create two new files; <code>app.js</code> and <code>index.html</code>. </p>
+
+<p>The first thing we need to do is create our first module! This is simple. Add the following to <code>app.js</code>:</p>
+
+<pre><code>var app = angular.module('gemStore',[]);
+</code></pre>
+
+<p>Okay, we’ve created our module. Now we need to <em>bind</em> it to our html.</p>
+
+<p>Begin your <code>index.html</code> like so:</p>
+
+<p>``` html index.html
+&lt;!DOCTYPE html&gt;
+&lt;html ng-app='gemStore'&gt;</p>
+<head>
+    <!-- link and script tags may vary depending on how you decided to obtain bootstrap and angular --> 
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+<body>
+    <h1></h1>
+  </body>
+<p>&lt;/html&gt;
+```</p>
+
+<p>Notice the new <code>ng-app</code> property in the <code>html</code> tag. This is a <code>directive</code> in Angular. Get used
+to using them; it’s how we’ll be ‘attaching’ things to HTML. Eventually we’ll be making our own custom directives,
+but for now we’ll use some built-in ones. </p>
+
+<p>You can name your <code>ng-app</code> whatever you want, as long as it matches 
+the <code>app</code> variable in in <code>app.js</code>!</p>
+
+<p>And there you have it! You are now running Angular. You don’t need to use a server in order to view how things look. 
+You can simply preview <code>index.html</code> in your browser. </p>
+
+<p>To test it out, go ahead and write some code between the <code>h1</code>s:
+<code>javascript app.js
+    ...
+    &lt;body&gt;
+        &lt;h1&gt;Hello, Angular!&lt;/h1&gt;
+    &lt;/body&gt;
+    ...
+</code></p>
+
+<p>Now, you can run JavaScript code between double curly-braces! Try different things out! </p>
+
+<h3 id="your-first-controller">Your first controller</h3>
+
+<p>We’re making a Gem store. So, we need some Gems to sell! </p>
+
+<p>We’re going to update our <code>app.js</code> to do a couple of things. First, we’re going to wrap everything into a closure like 
+so:</p>
+
+<p><code>
+(function(){
+    code
+})();
+</code></p>
+
+<p>We can’t have a store without stuff to sell, so now, we’re going to add stuff to sell! Let’s create a gem. Right now, we want to keep things simple, so let’s
+just make it so our gem has a Name and a Price. Bringing the basics back to shopping! </p>
+
+<p>The gem will go within the anonymous function. </p>
+
+<p><code>javascript app.js
+var gem = { 
+    name: 'Azurite', 
+    price: 2.95
+};
+</code></p>
+
+<p><a name="mini1"></a></p>
+
+<h4 id="mini-assignment-1-see-if-you-can-add-a-description-property-to-the-gem-variable">Mini-assignment 1: see if you can add a description property to the <code>gem</code> variable!</h4>
+<p><a href="#minisol1">Click for answer</a></p>
+
+<p>But how do we get data from the gem onto the page?</p>
+
+<p>That’s where controllers come in.</p>
+
+<h4 id="whats-a-controller">What’s a controller?</h4>
+
+<p>Good question. </p>
+
+<p>According to Code School, </p>
+
+<blockquote>
+  <p>Controllers are where we define our app’s behavior by defining functions and values</p>
+</blockquote>
+
+<p>Basically, it’s a way for us to <em>abstract</em> the programming logic from the page into our script.
+Thus, we can grab functions and values from <code>app.js</code> and insert them directly into our <code>index.html</code> page. </p>
+
+<p>First, we gotta make our controller. The code for a controller is simply:</p>
+
+<p><code>javascript Controller Creation
+app.controller('[ControllerName]', function(){
+    this.property = "foo"
+});
+</code></p>
+
+<p>Keep in mind that everything you write in the controller belongs to the <em>scope</em> of the controller. I sometimes forgot
+that, so watch out! </p>
+
+<p>Second, you need to <em>bind</em> the controller to your html. This takes place with a <code>directive</code>!</p>
+
+<p><code>html Controller Binding
+&lt;tag ng-controller = "[ControllerName] as [Alias]"&gt;
+&lt;/tag&gt;
+</code></p>
+
+<p>You need to create an alias for the controller in order to use it. It doesn’t matter what the alias name is, as long
+as you use the alias.</p>
+
+<p>Before we move on, let’s try these mini-assignments first. </p>
+
+<p><a name="mini2"></a></p>
+
+<h4 id="mini-assignment-2-how-would-you-create-a-controller-called-storecontroller">Mini-assignment 2: How would you create a controller called ‘StoreController’?</h4>
+<p><a href="#minisol2">Click for answer</a></p>
+
+<p><a name="mini3"></a></p>
+
+<h4 id="mini-assignment-3-how-would-you-bind-the-controller-to-a-body-tag-with-alias-of-store">Mini-assignment 3: How would you bind the controller to a <code>body</code> tag with alias of ‘Store’?</h4>
+<p><a href="#minisol3">Click for answer</a></p>
+
+<p>Should have been pretty easy for a smart cookie like you!</p>
+
+<p>You can bind the controller to any tag, but you won’t be able to use the controller outside the scope of the tag. So
+consider the following example:</p>
+
+<p>``` html Controller Example
+&lt;section id ="works" ng-controller = "StoreController as store"&gt;
+    &lt;div class="foo"&gt;
+        
+    &lt;/div&gt;
+&lt;/section&gt;</p>
+
+<section id="nowork">
+    <div class="bar">
+        
+    </div>
+</section>
+<p>```</p>
+
+<p>Anything within the <code>works</code> section will parse properly. Anything within the <code>nowork</code> section will not parse. </p>
+
+<h3 id="built-in-directives">Built-in directives</h3>
+
+<p>Remember, we can think of a <code>directive</code> as an html tag property that extracts data from our JavaScript. Luckily, 
+Angular comes with some built-in directives. Eventually, we’ll be making our own directives, but you gotta start
+somewhere!</p>
+
+<p>We’re running a store, and a store has physical quantities. 
+If we run out, customers should not be able to purchase! Let’s take care of this functionality.</p>
+
+<p>First, let’s update our Gem to have a couple more properties:</p>
+
+<p><code>javascript app.js
+...
+var gem = {
+    name: 'Azurite',
+    price: 110.50,
+    canPurchase: false,
+    soldOut: true
+};
+...
+</code></p>
+
+<p>The key names should be self-evident.</p>
+
+<p>I’m going to introduce you to a couple of built-in directives: <code>ng-show</code> and <code>ng-hide</code>. </p>
+
+<p>Let’s go over briefly how to use these two directives. <code>ng-show</code> and <code>ng-hide</code> work similarly; with <code>ng-show</code> the tag
+will never display unless the code in the directive evaluates to true, and with <code>ng-hide</code> the tag will always display
+unless the code in the directive evaluates to true. </p>
+
+<p>That being said, try this mini-assignment to test your wits!</p>
+
+<p><a name="mini4"></a></p>
+
+<h4 id="mini-assignment-4-which-tags-will-display-which-will-be-hidden">Mini-assignment 4: Which tags will display? Which will be hidden?</h4>
+
+<p><code>html mini-assignment 4-1
+&lt;a href="#" ng-show="store.product.canPurchase"&gt; Add to Cart &lt;/a&gt;
+</code>
+<code>html mini-assignment 4-2
+&lt;a href="#" ng-hide="store.product.soldOut"&gt; Add to Cart &lt;/a&gt;
+</code>
+<code>html mini-assignment 4-3
+&lt;a href="#" ng-show="store.product.soldOut"&gt; Add to Cart &lt;/a&gt;
+</code>
+<code>html mini-assignment 4-4
+&lt;a href="#" ng-hide="store.product.canPurchase"&gt; Add to Cart &lt;/a&gt;
+</code></p>
+
+<p>Hint: keep in mind that <code>canPurchase</code> is <code>false</code>, and <code>soldOut</code> is <code>true</code>.</p>
+
+<p><a href="#minisol4">Click for answer</a></p>
+
+<p>Great work! </p>
+
+<p>Now try this challenge! </p>
+
+<p><a name="mini5"></a></p>
+
+<h4 id="mini-assignment-5-use-directives-to-achieve-the-following-goals-for-the-following-code">Mini-assignment 5: Use directives to achieve the following goals for the following code:</h4>
+
+<ul>
+  <li>Button will not show when the product’s <code>canPurchase</code> property is <code>false</code></li>
+  <li>.product div will not show when the product’s <code>soldOut</code> property is <code>true</code></li>
+</ul>
+
+<p>``` html mini-assignment 5
+&lt;div class="product row"&gt;</p>
+<h3>
+    
+    <em class="pull-right">$</em>
+  </h3>
+<p>&lt;button&gt;Add to Cart&lt;/button&gt;
+&lt;/div&gt;
+```</p>
+
+<p><a href="#minisol5">Click for answer</a></p>
+
+<p>Okay, neat! Your final app.js should look something like this:</p>
+
+<p><code>javascript app.js
+(function(){
+  var gem = { name: 'Azurite', price: 2.95 };
+  var app = angular.module('gemStore', []);
+  app.controller('StoreController', function(){
+      this.product = gem;
+  });
+})();
+</code></p>
+
+<h2 id="assignment-solutions">Assignment Solutions</h2>
+
+<p><a name="minisol1"></a></p>
+
+<h3 id="assignment-1">Assignment 1</h3>
+
+<p>Properties in an object literal is just key: val. Don’t forget to put a comma!</p>
+
+<p><code>javascript Mini-Assignment 1 Solution
+var gem = { 
+    name: 'Azurite', 
+    price: 2.95,
+    description: "This is the best gem!"
+};
+</code>
+<a href="#mini1">Back to assignment</a></p>
+
+<p><a name="minisol2"></a></p>
+
+<h3 id="assignment-2">Assignment 2</h3>
+
+<p>Following the controller definition specs, all we do is use <code>app.controller</code>, passing in ‘StoreController’ and an
+anonymous function with the controller properties.</p>
+
+<p><code>javascript Mini-Assignment 2 Solution
+app.controller('StoreController', function(){
+    this.product = gem;
+});
+</code>
+<a href="#mini2">Back to assignment</a></p>
+
+<p><a name="minisol3"></a></p>
+
+<h3 id="assignment-3">Assignment 3</h3>
+
+<p>All we do is add an html property to the <code>body</code> tag, and use the <code>Controller as Alias</code> format to bind it. </p>
+
+<p><code>html Mini-Assignment 3 Solution
+&lt;body ng-controller = "StoreController as store"&gt;
+&lt;/body&gt;
+</code>
+<a href="#mini3">Back to assignment</a></p>
+
+<p><a name="minisol4"></a></p>
+
+<h3 id="assignment-4">Assignment 4</h3>
+
+<p>Only examples <code>3</code> and <code>4</code> will display. Remember that <code>ng-show</code> tags will only show if the statement 
+evaluates to <code>true</code>. <code>ng-hide</code> tags will only hide if the statement evaluates to <code>true</code>. </p>
+
+<p><a href="#mini4">Back to assignment</a></p>
+
+<p><a name="minisol4"></a></p>
+
+<h3 id="assignment-5">Assignment 5</h3>
+
+<div ng-hide="store.product.soldOut" class="product row">
+  <h3>
+    
+    <em class="pull-right">$</em>
+  </h3>
+  <button ng-show="store.product.canPurchase">Add to Cart</button>
+</div>
+
+<p><a href="#mini5">Back to assignment</a></p>
+
+]]></content>
+  </entry>
+  
+</feed>
