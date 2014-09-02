@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Rails | Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2014-09-02T14:16:33-07:00</updated>
+  <updated>2014-09-02T16:22:50-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -30,6 +30,88 @@
 
 <p>First, to start, I learned something the hard way. Make sure that your project path does not contain any spaces. After probably hours of troubleshooting, I finally elected to change my <code>Rails projects</code> directory to <code>Rails_Projects</code> and everything worked fine. So don’t make my mistake!</p>
 
+<p>Second, here are a list of things you should know about the app:</p>
+
+<ul>
+  <li>Ruby version: 2.1.0</li>
+  <li>Rails version: 4.1.1</li>
+  <li>Using sqlite3 for development</li>
+  <li>Using pg for production (in Heroku)</li>
+  <li>Using haml</li>
+</ul>
+
+<p>You’re free to make the app in whichever way you’d like, of course. But this write-up will be following those constraints. Your Gemfile should look something like this:</p>
+
+<p>``` ruby Gemfile
+source ‘https://rubygems.org’
+source ‘http://gems.github.com’</p>
+
+<p>ruby ‘2.1.0’</p>
+
+<h1 id="bundle-edge-rails-instead-gem-rails-github-railsrails">Bundle edge Rails instead: gem ‘rails’, github: ‘rails/rails’</h1>
+<p>gem ‘rails’, ‘4.1.1’
+# Use sqlite3 as the database for Active Record in development and test
+gem ‘sqlite3’, group: [:development, :test]</p>
+
+<h1 id="use-postgres-as-the-database-in-production">Use postgres as the database in production</h1>
+<p>gem ‘pg’, group: :production</p>
+
+<h1 id="add-12-factor-for-heroku">Add 12 factor for Heroku</h1>
+<p>gem ‘rails_12factor’, group: :production</p>
+
+<h1 id="use-bootstrap">Use bootstrap</h1>
+<p>gem ‘bootstrap-sass’</p>
+
+<h1 id="use-scss-for-stylesheets">Use SCSS for stylesheets</h1>
+<p>gem ‘sass-rails’, ‘~&gt; 4.0.3’</p>
+
+<h1 id="use-uglifier-as-compressor-for-javascript-assets">Use Uglifier as compressor for JavaScript assets</h1>
+<p>gem ‘uglifier’, ‘&gt;= 1.3.0’</p>
+
+<h1 id="use-coffeescript-for-jscoffee-assets-and-views">Use CoffeeScript for .js.coffee assets and views</h1>
+<p>gem ‘coffee-rails’, ‘~&gt; 4.0.0’</p>
+
+<h1 id="use-figaro-for-securely-managing-credentials">Use figaro for securely managing credentials</h1>
+<p>gem ‘figaro’</p>
+
+<h1 id="use-jquery-as-the-javascript-library">Use jquery as the JavaScript library</h1>
+<p>gem ‘jquery-rails’</p>
+
+<h1 id="turbolinks-makes-following-links-in-your-web-application-faster-read-more-httpsgithubcomrailsturbolinks">Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks</h1>
+<p>gem ‘turbolinks’</p>
+
+<h1 id="build-json-apis-with-ease-read-more-httpsgithubcomrailsjbuilder">Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder</h1>
+<p>gem ‘jbuilder’, ‘~&gt; 2.0’</p>
+
+<h1 id="bundle-exec-rake-docrails-generates-the-api-under-docapi">bundle exec rake doc:rails generates the API under doc/api.</h1>
+<p>gem ‘sdoc’, ‘~&gt; 0.4.0’,          group: :doc</p>
+
+<h1 id="spring-speeds-up-development-by-keeping-your-application-running-in-the-background-read-more-httpsgithubcomrailsspring">Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring</h1>
+<p>gem ‘spring’,        group: :development</p>
+
+<h1 id="use-haml">Use haml</h1>
+<p>gem ‘haml’</p>
+
+<h1 id="add-stripe-for-payment-processing">Add stripe for payment processing</h1>
+<p>gem ‘stripe’, :git =&gt; ‘https://github.com/stripe/stripe-ruby’</p>
+
+<h1 id="use-letter-opener-in-dev">Use letter opener in dev</h1>
+<p>gem ‘letter_opener’, :group =&gt; :development</p>
+
+<h1 id="use-automated-admin-system">Use Automated Admin System</h1>
+<p>gem ‘activeadmin’, github: ‘gregbell/active_admin’</p>
+
+<h1 id="use-devise">Use devise</h1>
+<p>gem ‘devise’</p>
+
+<h1 id="use-activemodel-hassecurepassword">Use ActiveModel has_secure_password</h1>
+<p>gem ‘bcrypt’, ‘~&gt; 3.1.7’
+```</p>
+
+<p>Since we’re using <code>pg</code> instead of <code>sqlite3</code> as our database, let’s remove it from the production part of the database file.</p>
+
+<p>Run <code>bundle install --without production</code> and you should be ready to run!</p>
+
 <p>Go ahead and make your new rails app:</p>
 
 <p><code>rails new stripe_payments</code></p>
@@ -42,6 +124,48 @@ class PagesController &lt; ApplicationController
    end 
 end
 </code></p>
+
+<p>Quick way to do this is to run <code>rails g controller pages</code> and the <code>pages_controller.rb</code> file will automatically be generated. </p>
+
+<p>Make the routes point to it:</p>
+
+<p><code>ruby config/routes.rb
+Rails.application.routes.draw do
+  root 'pages#home'
+end
+</code></p>
+
+<p>Now, create your home page. Remember I’ll be using HAML. The tutorial uses ERB. Use whichever suits your fancy.</p>
+
+<p><code>html app/views/pages/home.html.haml
+Hello world!
+</code></p>
+
+<p>At this point in the One Month Stripe Payments Tutorial, Chris “steals” (I mean borrows!) his own design from another one of his repositories. Of course there’s nothing wrong with it, since he’s using his own design. The next couple of days are focused on establishing the functionality of the page that it’s supposed to have. That being said, let’s just copy the finalized design and skip the legwork.</p>
+
+<p>Here are the files you’ll want to look out for:</p>
+
+<ul>
+  <li>app/views/layouts/application.html.haml</li>
+  <li>app/views/pages/home.html.haml</li>
+  <li>app/assets/ (everything inside)</li>
+  <li>config/environment/production.rb </li>
+</ul>
+
+<p>In that last file, the following changes were necessary:</p>
+
+<ul>
+  <li>Change <code>config.assets.compile</code> to <code>true</code></li>
+  <li>Uncomment <code>config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'</code></li>
+  <li>Change <code>config.assets.digest</code> to <code>true</code></li>
+</ul>
+
+<p>This was to make the assets work on Heroku.</p>
+
+<p>Again, here is the <a href="https://github.com/abustamam/stuart_welch">Github repo</a>.</p>
+
+<p>All in a day’s work right? Tomorrow we’ll finish adding Stripe functionality and we’ll be done, hopefully!</p>
+
 ]]></content>
   </entry>
   
