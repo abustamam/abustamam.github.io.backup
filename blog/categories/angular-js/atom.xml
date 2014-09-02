@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Angular Js | My Octopress Blog]]></title>
+  <title><![CDATA[Category: Angular Js | Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/blog/categories/angular-js/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2014-08-07T23:23:55-07:00</updated>
+  <updated>2014-09-02T14:13:24-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -21,6 +21,8 @@
     <content type="html"><![CDATA[<p>I’ve been going through the <a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/">Shaping Up with AngularJS</a> 
 course and decided to share a bit about what I’ve been learning. </p>
 
+<!--more-->
+
 <p>I feel the best way to learn is to teach. So I’m doing a write-up of the course, adding in some explanations for the
 challenges, and adding some mini-assignments to keep you on your toes, and for you to check your own understanding. </p>
 
@@ -34,6 +36,8 @@ test your understanding. </p>
 
 <p>If you want to be able to share your project, go ahead and do Lesson 0; if you just want to run the app locally on your
 machine, skip to Lesson 1. Code School does not go over deploying git, so it might be helpful to follow along. </p>
+
+<p><a href="#tldr">TL;DR</a></p>
 
 <h2 id="lesson--1-what-is-angular">Lesson -1: What is Angular?</h2>
 
@@ -334,17 +338,201 @@ unless the code in the directive evaluates to true. </p>
 
 <p><a href="#minisol5">Click for answer</a></p>
 
-<p>Okay, neat! Your final app.js should look something like this:</p>
+<h3 id="do-it-again-and-again-and-again-and">Do it again and again and again and…</h3>
 
-<p><code>javascript app.js
-(function(){
-  var gem = { name: 'Azurite', price: 2.95 };
-  var app = angular.module('gemStore', []);
-  app.controller('StoreController', function(){
-      this.product = gem;
-  });
-})();
+<p>We’re running a store. A store with only one thing to be sold is kind of boring. Let’s add a few more gems, like so:</p>
+
+<p>``` javascript app.js
+…
+app.controller(‘StoreController’, function(){
+   this.products = gems; 
+});</p>
+
+<p>var gems = [
+    { name: ‘Azurite’, price: 2.95 },
+    { name: ‘Bloodstone’, price: 5.95 },
+    { name: ‘Zircon’, price: 3.95 },
+  ];
+…
+```</p>
+
+<p>Now we have an array of <code>gems</code>: so, in order to get, let’s say, Azurite, we’ll reference it by its index number. In 
+<code>index.html</code> we’ll reference it like so:
+    store.products.gems[0]</p>
+
+<p>So in order to format that into a <code>div</code>, with name and price, we’ll do it like this:</p>
+
+<p>``` html
+&lt;div class="product row"&gt;</p>
+<h3>
+    
+    <em class="pull-right">$</em>
+  </h3>
+<p>&lt;/div&gt;
+```</p>
+
+<p>One down, two to go! </p>
+
+<p>Our <code>index.html</code> will end up looking something like this:</p>
+
+<p><code>html index.html
+&lt;body class="container" ng-controller="StoreController as store"&gt;
+    &lt;div class="product row"&gt;
+      &lt;h3&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="product row"&gt;
+      &lt;h3&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="product row"&gt;
+      &lt;h3&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
 </code></p>
+
+<p>Ugh… isn’t that annoying? This is like, anti-DRY. </p>
+
+<p>Luckily, Angular has a built-in directive that allows us to <em>not</em> repeat ourselves. It’s aptly called, <code>ng-repeat</code>,
+and work similarly to how Python loops work (if you’re familiar with that).</p>
+
+<p>All we do is alias each recurring ‘thing’. If <code>foo</code> were an array of objects…</p>
+
+<p>``` javascript foo
+app.controller(‘FooController’, function(){
+   this.baz = foo; 
+});</p>
+
+<p>var foo = [
+    { prop1: “cool”, 
+      prop2: “neat”
+    }, { 
+      prop1: “awesome”, 
+      prop2: “gnarly”
+    }
+];
+```</p>
+
+<p>The following expression will iterate through each value in the <code>foo</code> array:</p>
+
+<p><code>html bar in FooController
+    &lt;a ng-repeat = "bar in FooController.baz"&gt;
+        &lt;h1&gt;bar.prop1&lt;/h1&gt;
+    &lt;/a&gt;
+</code></p>
+
+<p>This will create an <code>&lt;a&gt;</code> tag for each element in <code>FooController.baz</code> (which is the <code>foo</code> array of objects we created).</p>
+
+<p>Makes things a lot simpler, huh? </p>
+
+<p>Let’s take this to our store. Try the Mini-Assignment.</p>
+
+<p><a name="mini6"></a></p>
+
+<h4 id="mini-assignment-6-use-ng-repeat-to-make-the-following-html-code-dry">Mini-assignment 6: Use ng-repeat to make the following html code DRY:</h4>
+
+<p>``` javascript app.js
+…
+app.controller(‘StoreController’, function(){
+   this.products = gems; 
+});</p>
+
+<p>var gems = [
+    { name: ‘Azurite’, price: 2.95 },
+    { name: ‘Bloodstone’, price: 5.95 },
+    { name: ‘Zircon’, price: 3.95 },
+  ];
+…
+```</p>
+
+<p><code>html index.html
+&lt;body class="container" ng-controller="StoreController as store"&gt;
+    &lt;div class="product row"&gt;
+      &lt;h3&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="product row"&gt;
+      &lt;h3&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="product row"&gt;
+      &lt;h3&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></p>
+
+<p><a href="#minisol6">Click for answer</a></p>
+
+<p>Got the assignment? Here’s a recap of what we’ve learned so far…</p>
+
+<p><a name="tldr"></a></p>
+
+<h3 id="tldr">TL;DR</h3>
+
+<ul>
+  <li>A directive is an marker on an HTML tag that tells Angular to run or reference some JavaScript code.</li>
+  <li>A controller is where we define our app’s behavior, and is bound to the HTML by using <code>ng-controller</code>
+    <ul>
+      <li>The expression matched to <code>ng-controller</code> should match the format: <code>"[ControllerName] as [Alias]"</code> and you will
+use the alias to reference the controller throughout.</li>
+    </ul>
+  </li>
+  <li>Some built-in directives are <code>ng-hide</code>, <code>ng-show</code>, and <code>ng-repeat</code>. </li>
+</ul>
+
+<p>Okay, neat! Your final code should look something like this. Make sure your code matches before moving onto part 2!</p>
+
+<p>``` javascript app.js
+(function() {
+  var app = angular.module(‘gemStore’, []);</p>
+
+<p>app.controller(‘StoreController’, function(){
+   this.products = gems; 
+  });</p>
+
+<p>var gems = [
+    { name: ‘Azurite’, price: 2.95 },
+    { name: ‘Bloodstone’, price: 5.95 },
+    { name: ‘Zircon’, price: 3.95 },
+  ];
+})();</p>
+
+<p>```</p>
+
+<p>``` html index.html
+&lt;!DOCTYPE html&gt;
+&lt;html ng-app="gemStore"&gt;</p>
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+<body class="container" ng-controller="StoreController as store">
+    <div ng-repeat="product in store.products" class="product row">
+      <h3>
+        
+        <em class="pull-right">$</em>
+      </h3>
+    </div>
+  </body>
+<p>&lt;/html&gt;
+```</p>
+
+<p>Note: the <code>head</code> in <code>index.html</code> may vary depending on how you set up bootstrap and Angular. </p>
 
 <h2 id="assignment-solutions">Assignment Solutions</h2>
 
@@ -398,19 +586,38 @@ evaluates to <code>true</code>. <code>ng-hide</code> tags will only hide if the 
 
 <p><a href="#mini4">Back to assignment</a></p>
 
-<p><a name="minisol4"></a></p>
+<p><a name="minisol5"></a></p>
 
 <h3 id="assignment-5">Assignment 5</h3>
 
-<div ng-hide="store.product.soldOut" class="product row">
-  <h3>
+<p>``` html Mini-Assignment 5 Solution
+&lt;div ng-hide="store.product.soldOut" class="product row"&gt;</p>
+<h3>
     
     <em class="pull-right">$</em>
   </h3>
-  <button ng-show="store.product.canPurchase">Add to Cart</button>
-</div>
+<p>&lt;button ng-show="store.product.canPurchase"&gt;Add to Cart&lt;/button&gt;
+&lt;/div&gt;
+```</p>
 
 <p><a href="#mini5">Back to assignment</a></p>
+
+<p><a name="minisol6"></a></p>
+
+<h3 id="assignment-6">Assignment 6</h3>
+
+<p>``` html index.html
+&lt;body class="container" ng-controller="StoreController as store"&gt;
+&lt;div ng-repeat = "product in store.products" class="product row"&gt;</p>
+<h3>
+    
+    <em class="pull-right">$</em>
+  </h3>
+<p>&lt;/div&gt;
+&lt;/body&gt;
+```</p>
+
+<p><a href="#mini6">Back to assignment</a></p>
 
 ]]></content>
   </entry>

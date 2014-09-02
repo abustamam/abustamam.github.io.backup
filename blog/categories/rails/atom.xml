@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rails | Rasheed Bustamam Blogfolio]]></title>
+  <link href="http://abustamam.github.io/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://abustamam.github.io/"/>
+  <updated>2014-09-02T14:13:24-07:00</updated>
+  <id>http://abustamam.github.io/</id>
+  <author>
+    <name><![CDATA[Rasheed Bustamam]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[One Month Stripe Payments]]></title>
+    <link href="http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments/"/>
+    <updated>2014-08-17T20:26:36-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments</id>
+    <content type="html"><![CDATA[<p>I first started coding with One Month Rails. It was a very simple tutorial to go through, and it took me a month to go through it.</p>
+
+<p>Now, <a href="http://mbsy.co/onemonth/10032515">One Month Stripe Payments has been released</a>. I finished it in a week. </p>
+
+<!-- more -->
+
+<p>The finished product can be viwed <a href="http://calm-everglades-6719.herokuapp.com">here</a>. I edited a few things of course, I just wanted to get a feel of how things worked.</p>
+
+<p>Now, I’m re-coding the project to make a website for a friend. You can follow along with the <a href="https://github.com/abustamam/stuart_welch">Github repo</a></p>
+
+<p>First, to start, I learned something the hard way. Make sure that your project path does not contain any spaces. After probably hours of troubleshooting, I finally elected to change my <code>Rails projects</code> directory to <code>Rails_Projects</code> and everything worked fine. So don’t make my mistake!</p>
+
+<p>Go ahead and make your new rails app:</p>
+
+<p><code>rails new stripe_payments</code></p>
+
+<p>The first thing you’ll want to do is configure your home page. </p>
+
+<p><code>ruby app/controllers/pages_controllers.rb
+class PagesController &lt; ApplicationController
+   def home 
+   end 
+end
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

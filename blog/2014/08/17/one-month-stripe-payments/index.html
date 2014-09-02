@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Rasheed Bustamam Blogfolio</title>
+  <title>One Month Stripe Payments - Rasheed Bustamam Blogfolio</title>
   <meta name="author" content="Rasheed Bustamam">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://abustamam.github.io">
+  <link rel="canonical" href="http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Rasheed Bustamam Blogfolio" type="application/atom+xml">
@@ -63,15 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/08/17/one-month-stripe-payments/">One Month Stripe Payments</a></h1>
+      <h1 class="entry-title">One Month Stripe Payments</h1>
     
     
       <p class="meta">
@@ -94,73 +91,44 @@
   </header>
 
 
-  <div class="entry-content"><p>I first started coding with One Month Rails. It was a very simple tutorial to go through, and it took me a month to go through it.</p>
+<div class="entry-content"><p>I first started coding with One Month Rails. It was a very simple tutorial to go through, and it took me a month to go through it.</p>
 
 <p>Now, <a href="http://mbsy.co/onemonth/10032515">One Month Stripe Payments has been released</a>. I finished it in a week. </p>
 
+<!-- more -->
+
+<p>The finished product can be viwed <a href="http://calm-everglades-6719.herokuapp.com">here</a>. I edited a few things of course, I just wanted to get a feel of how things worked.</p>
+
+<p>Now, I’m re-coding the project to make a website for a friend. You can follow along with the <a href="https://github.com/abustamam/stuart_welch">Github repo</a></p>
+
+<p>First, to start, I learned something the hard way. Make sure that your project path does not contain any spaces. After probably hours of troubleshooting, I finally elected to change my <code>Rails projects</code> directory to <code>Rails_Projects</code> and everything worked fine. So don’t make my mistake!</p>
+
+<p>Go ahead and make your new rails app:</p>
+
+<p><code>rails new stripe_payments</code></p>
+
+<p>The first thing you’ll want to do is configure your home page. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app/controllers/pages_controllers.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="k">class</span> <span class="nc">PagesController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class="line">   <span class="k">def</span> <span class="nf">home</span>
+</span><span class="line">   <span class="k">end</span>
+</span><span class="line"><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/08/17/one-month-stripe-payments/">Read on &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/08/06/angular-code-school/">Code School Angular JS: Part 1</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Rasheed Bustamam</span></span>
 
-<time datetime="2014-08-06T20:36:54-07:00" pubdate data-updated="true">Aug 6<sup>th</sup>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I’ve been going through the <a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/">Shaping Up with AngularJS</a> 
-course and decided to share a bit about what I’ve been learning. </p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/08/06/angular-code-school/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/31/implementing-theme-with-octopress-and-jekyll-asset-pipeline/">Implementing Theme With Octopress and Jekyll Asset Pipeline</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -172,58 +140,38 @@ course and decided to share a bit about what I’ve been learning. </p>
   
 
 
-<time datetime="2014-07-31T11:32:53-07:00" pubdate data-updated="true">Jul 31<sup>st</sup>, 2014</time>
-        
-      </p>
+<time datetime="2014-08-17T20:26:36-07:00" pubdate data-updated="true">Aug 17<sup>th</sup>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/rails/'>rails</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>The purpose of this post is simple. </p>
-
-<p>Octopress does not have much documentation on installing themes. I know it is not the developer way to install a theme,
-but it is the developer way to create themes. </p>
-
-<p>Here is what I’ve learned while trying to import a Start Bootstrap theme to Octopress. </p>
-
-<p>First, get to know the <code>rake install[optional theme name]</code> command. It’s actually the first task in the Rakefile:</p>
-
-<pre><code>desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
-task :install, :theme do |t, args|
-  if File.directory?(source_dir) || File.directory?("sass")
-    abort("rake aborted!") if ask("A theme is already installed, proceeding will overwrite existing files. Are you sure?", ['y', 'n']) == 'n'
-  end
-  # copy theme into working Jekyll directories
-  theme = args.theme || 'classic'
-  puts "## Copying "+theme+" theme into ./#{source_dir} and ./sass"
-  mkdir_p source_dir
-  cp_r "#{themes_dir}/#{theme}/source/.", source_dir
-  mkdir_p "sass"
-  cp_r "#{themes_dir}/#{theme}/sass/.", "sass"
-  mkdir_p "#{source_dir}/#{posts_dir}"
-  mkdir_p public_dir
-end
-</code></pre>
-
-<p>What it does is scour the ./.themes directory and copies all the files from the <code>/source</code> and the <code>/sass</code> directories
-into the root. </p>
-
-<p>Thus, a complete theme must contain <code>/source</code> and <code>/sass</code> directories. </p>
-
-<p>From there, if you run <code>rake generate</code> it will process the sourcefiles and build the site.</p>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments/" data-via="" data-counturl="http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/08/06/angular-code-school/" title="Previous Post: Code School Angular JS: Part 1">&laquo; Code School Angular JS: Part 1</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -251,6 +199,7 @@ into the root. </p>
 
   
 </aside>
+
 
     </div>
   </div>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2014-08-07T23:23:55-07:00</updated>
+  <updated>2014-09-02T14:13:24-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -14,12 +14,49 @@
 
   
   <entry>
+    <title type="html"><![CDATA[One Month Stripe Payments]]></title>
+    <link href="http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments/"/>
+    <updated>2014-08-17T20:26:36-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments</id>
+    <content type="html"><![CDATA[<p>I first started coding with One Month Rails. It was a very simple tutorial to go through, and it took me a month to go through it.</p>
+
+<p>Now, <a href="http://mbsy.co/onemonth/10032515">One Month Stripe Payments has been released</a>. I finished it in a week. </p>
+
+<!-- more -->
+
+<p>The finished product can be viwed <a href="http://calm-everglades-6719.herokuapp.com">here</a>. I edited a few things of course, I just wanted to get a feel of how things worked.</p>
+
+<p>Now, I’m re-coding the project to make a website for a friend. You can follow along with the <a href="https://github.com/abustamam/stuart_welch">Github repo</a></p>
+
+<p>First, to start, I learned something the hard way. Make sure that your project path does not contain any spaces. After probably hours of troubleshooting, I finally elected to change my <code>Rails projects</code> directory to <code>Rails_Projects</code> and everything worked fine. So don’t make my mistake!</p>
+
+<p>Go ahead and make your new rails app:</p>
+
+<p><code>rails new stripe_payments</code></p>
+
+<p>The first thing you’ll want to do is configure your home page. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app/controllers/pages_controllers.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="k">class</span> <span class="nc">PagesController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class="line">   <span class="k">def</span> <span class="nf">home</span>
+</span><span class="line">   <span class="k">end</span>
+</span><span class="line"><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Code School Angular JS: Part 1]]></title>
     <link href="http://abustamam.github.io/blog/2014/08/06/angular-code-school/"/>
     <updated>2014-08-06T20:36:54-07:00</updated>
     <id>http://abustamam.github.io/blog/2014/08/06/angular-code-school</id>
     <content type="html"><![CDATA[<p>I’ve been going through the <a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/">Shaping Up with AngularJS</a> 
 course and decided to share a bit about what I’ve been learning. </p>
+
+<!--more-->
 
 <p>I feel the best way to learn is to teach. So I’m doing a write-up of the course, adding in some explanations for the
 challenges, and adding some mini-assignments to keep you on your toes, and for you to check your own understanding. </p>
@@ -34,6 +71,8 @@ test your understanding. </p>
 
 <p>If you want to be able to share your project, go ahead and do Lesson 0; if you just want to run the app locally on your
 machine, skip to Lesson 1. Code School does not go over deploying git, so it might be helpful to follow along. </p>
+
+<p><a href="#tldr">TL;DR</a></p>
 
 <h2 id="lesson--1-what-is-angular">Lesson -1: What is Angular?</h2>
 
@@ -380,7 +419,9 @@ unless the code in the directive evaluates to true. </p>
 
 <p><a href="#minisol5">Click for answer</a></p>
 
-<p>Okay, neat! Your final app.js should look something like this:</p>
+<h3 id="do-it-again-and-again-and-again-and">Do it again and again and again and…</h3>
+
+<p>We’re running a store. A store with only one thing to be sold is kind of boring. Let’s add a few more gems, like so:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -389,14 +430,292 @@ unless the code in the directive evaluates to true. </p>
 <span class="line-number">5</span>
 <span class="line-number">6</span>
 <span class="line-number">7</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class="line">  <span class="kd">var</span> <span class="nx">gem</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">2.95</span> <span class="p">};</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="p">...</span>
+</span><span class="line"><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;StoreController&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class="line">   <span class="k">this</span><span class="p">.</span><span class="nx">products</span> <span class="o">=</span> <span class="nx">gems</span><span class="p">;</span>
+</span><span class="line"><span class="p">});</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">gems</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">2.95</span> <span class="p">},</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bloodstone&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">5.95</span> <span class="p">},</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Zircon&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">3.95</span> <span class="p">},</span>
+</span><span class="line">  <span class="p">];</span>
+</span><span class="line"><span class="p">...</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Now we have an array of <code>gems</code>: so, in order to get, let’s say, Azurite, we’ll reference it by its index number. In 
+<code>index.html</code> we’ll reference it like so:
+    store.products.gems[0]</p>
+
+<p>So in order to format that into a <code>div</code>, with name and price, we’ll do it like this:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">  <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">    
+</span><span class="line">    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">  <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line"><span class="nt">&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>One down, two to go! </p>
+
+<p>Our <code>index.html</code> will end up looking something like this:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span> <span class="na">ng-controller=</span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">        
+</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
+</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">        
+</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
+</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">        
+</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
+</span><span class="line"><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Ugh… isn’t that annoying? This is like, anti-DRY. </p>
+
+<p>Luckily, Angular has a built-in directive that allows us to <em>not</em> repeat ourselves. It’s aptly called, <code>ng-repeat</code>,
+and work similarly to how Python loops work (if you’re familiar with that).</p>
+
+<p>All we do is alias each recurring ‘thing’. If <code>foo</code> were an array of objects…</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>foo</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;FooController&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class="line">   <span class="k">this</span><span class="p">.</span><span class="nx">baz</span> <span class="o">=</span> <span class="nx">foo</span><span class="p">;</span>
+</span><span class="line"><span class="p">});</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">prop1</span><span class="o">:</span> <span class="s2">&quot;cool&quot;</span><span class="p">,</span>
+</span><span class="line">      <span class="nx">prop2</span><span class="o">:</span> <span class="s2">&quot;neat&quot;</span>
+</span><span class="line">    <span class="p">},</span> <span class="p">{</span>
+</span><span class="line">      <span class="nx">prop1</span><span class="o">:</span> <span class="s2">&quot;awesome&quot;</span><span class="p">,</span>
+</span><span class="line">      <span class="nx">prop2</span><span class="o">:</span> <span class="s2">&quot;gnarly&quot;</span>
+</span><span class="line">    <span class="p">}</span>
+</span><span class="line"><span class="p">];</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>The following expression will iterate through each value in the <code>foo</code> array:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>bar in FooController</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;a</span> <span class="na">ng-repeat =</span><span class="err"> </span><span class="s">&quot;bar in FooController.baz&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">    <span class="nt">&lt;h1&gt;</span>bar.prop1<span class="nt">&lt;/h1&gt;</span>
+</span><span class="line"><span class="nt">&lt;/a&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>This will create an <code>&lt;a&gt;</code> tag for each element in <code>FooController.baz</code> (which is the <code>foo</code> array of objects we created).</p>
+
+<p>Makes things a lot simpler, huh? </p>
+
+<p>Let’s take this to our store. Try the Mini-Assignment.</p>
+
+<p><a name="mini6"></a></p>
+
+<h4 id="mini-assignment-6-use-ng-repeat-to-make-the-following-html-code-dry">Mini-assignment 6: Use ng-repeat to make the following html code DRY:</h4>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="p">...</span>
+</span><span class="line"><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;StoreController&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class="line">   <span class="k">this</span><span class="p">.</span><span class="nx">products</span> <span class="o">=</span> <span class="nx">gems</span><span class="p">;</span>
+</span><span class="line"><span class="p">});</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">gems</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">2.95</span> <span class="p">},</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bloodstone&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">5.95</span> <span class="p">},</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Zircon&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">3.95</span> <span class="p">},</span>
+</span><span class="line">  <span class="p">];</span>
+</span><span class="line"><span class="p">...</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span> <span class="na">ng-controller=</span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">        
+</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
+</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">        
+</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
+</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">        
+</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
+</span><span class="line"><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><a href="#minisol6">Click for answer</a></p>
+
+<p>Got the assignment? Here’s a recap of what we’ve learned so far…</p>
+
+<p><a name="tldr"></a></p>
+
+<h3 id="tldr">TL;DR</h3>
+
+<ul>
+  <li>A directive is an marker on an HTML tag that tells Angular to run or reference some JavaScript code.</li>
+  <li>A controller is where we define our app’s behavior, and is bound to the HTML by using <code>ng-controller</code>
+    <ul>
+      <li>The expression matched to <code>ng-controller</code> should match the format: <code>"[ControllerName] as [Alias]"</code> and you will
+use the alias to reference the controller throughout.</li>
+    </ul>
+  </li>
+  <li>Some built-in directives are <code>ng-hide</code>, <code>ng-show</code>, and <code>ng-repeat</code>. </li>
+</ul>
+
+<p>Okay, neat! Your final code should look something like this. Make sure your code matches before moving onto part 2!</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 </span><span class="line">  <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;gemStore&#39;</span><span class="p">,</span> <span class="p">[]);</span>
+</span><span class="line">
 </span><span class="line">  <span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;StoreController&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class="line">      <span class="k">this</span><span class="p">.</span><span class="nx">product</span> <span class="o">=</span> <span class="nx">gem</span><span class="p">;</span>
+</span><span class="line">   <span class="k">this</span><span class="p">.</span><span class="nx">products</span> <span class="o">=</span> <span class="nx">gems</span><span class="p">;</span>
 </span><span class="line">  <span class="p">});</span>
+</span><span class="line">
+</span><span class="line">  <span class="kd">var</span> <span class="nx">gems</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">2.95</span> <span class="p">},</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bloodstone&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">5.95</span> <span class="p">},</span>
+</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Zircon&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">3.95</span> <span class="p">},</span>
+</span><span class="line">  <span class="p">];</span>
 </span><span class="line"><span class="p">})();</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class="line"><span class="nt">&lt;html</span> <span class="na">ng-app=</span><span class="s">&quot;gemStore&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">  <span class="nt">&lt;head&gt;</span>
+</span><span class="line">    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href=</span><span class="s">&quot;bootstrap.min.css&quot;</span> <span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;angular.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class="line">    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;app.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class="line">  <span class="nt">&lt;/head&gt;</span>
+</span><span class="line">  <span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span> <span class="na">ng-controller=</span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">ng-repeat =</span><span class="err"> </span><span class="s">&quot;product in store.products&quot;</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">        
+</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
+</span><span class="line">  <span class="nt">&lt;/body&gt;</span>
+</span><span class="line"><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Note: the <code>head</code> in <code>index.html</code> may vary depending on how you set up bootstrap and Angular. </p>
 
 <h2 id="assignment-solutions">Assignment Solutions</h2>
 
@@ -457,19 +776,51 @@ evaluates to <code>true</code>. <code>ng-hide</code> tags will only hide if the 
 
 <p><a href="#mini4">Back to assignment</a></p>
 
-<p><a name="minisol4"></a></p>
+<p><a name="minisol5"></a></p>
 
 <h3 id="assignment-5">Assignment 5</h3>
 
-<div ng-hide="store.product.soldOut" class="product row">
-  <h3>
-    
-    <em class="pull-right">$</em>
-  </h3>
-  <button ng-show="store.product.canPurchase">Add to Cart</button>
-</div>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Mini-Assignment 5 Solution</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;div</span> <span class="na">ng-hide=</span><span class="s">&quot;store.product.soldOut&quot;</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">  <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">    
+</span><span class="line">    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">  <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line">  <span class="nt">&lt;button</span> <span class="na">ng-show=</span><span class="s">&quot;store.product.canPurchase&quot;</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
+</span><span class="line"><span class="nt">&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p><a href="#mini5">Back to assignment</a></p>
+
+<p><a name="minisol6"></a></p>
+
+<h3 id="assignment-6">Assignment 6</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span> <span class="na">ng-controller=</span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
+</span><span class="line"><span class="nt">&lt;div</span> <span class="na">ng-repeat =</span><span class="err"> </span><span class="s">&quot;product in store.products&quot;</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">  <span class="nt">&lt;h3&gt;</span>
+</span><span class="line">    
+</span><span class="line">    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
+</span><span class="line">  <span class="nt">&lt;/h3&gt;</span>
+</span><span class="line"><span class="nt">&lt;/div&gt;</span>
+</span><span class="line"><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><a href="#mini6">Back to assignment</a></p>
 
 ]]></content>
   </entry>
