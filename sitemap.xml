@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://abustamam.github.io/blog/2014/09/25/on-habit-formation/</loc>
+    <lastmod>2014-09-25T08:20:50-07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments/</loc>
     <lastmod>2014-08-17T20:26:36-07:00</lastmod>
     <priority>0.8</priority>
@@ -23,14 +29,14 @@
   
   <url>
     <loc>http://abustamam.github.io/blog/archives/</loc>
-    <lastmod>2014-09-02T16:22:50-07:00</lastmod>
+    <lastmod>2014-09-25T09:42:51-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://abustamam.github.io/</loc>
-    <lastmod>2014-09-02T16:22:50-07:00</lastmod>
+    <lastmod>2014-09-25T09:42:51-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

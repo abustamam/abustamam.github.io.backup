@@ -9,7 +9,7 @@
   <meta name="author" content="Rasheed Bustamam">
 
   
-  <meta name="description" content="I first started coding with One Month Rails. It was a very simple tutorial to go through, and it took me a month to go through it. Now, One Month &hellip;">
+  <meta name="description" content="Ever try to change a habit? Either starting a good habit, or eliminating a bad habit? Of course. We all have tried. And we all know that habit &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,7 +71,50 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/08/17/one-month-stripe-payments/">One Month Stripe Payments</a></h1>
+      <h1 class="entry-title"><a href="/blog/2014/09/25/on-habit-formation/">Habit Formation: A Case Study</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-25T08:20:50-07:00" pubdate data-updated="true">Sep 25<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ever try to change a habit? Either starting a good habit, or eliminating a bad habit?</p>
+
+<p>Of course. We all have tried. And we all know that habit formation/change is incredibly difficult. We’ve all tried different “productivity” systems (that usually don’t work), different affirmations (that usually fall out by the wayside), and other silver bullet methods that seem to work for everybody but us. </p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/09/25/on-habit-formation/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/17/one-month-stripe-payments/">One Month Stripe Payments Part 1</a></h1>
     
     
       <p class="meta">
@@ -186,33 +229,12 @@ but it is the developer way to create themes. </p>
 
 <p>Here is what I’ve learned while trying to import a Start Bootstrap theme to Octopress. </p>
 
-<p>First, get to know the <code>rake install[optional theme name]</code> command. It’s actually the first task in the Rakefile:</p>
-
-<pre><code>desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
-task :install, :theme do |t, args|
-  if File.directory?(source_dir) || File.directory?("sass")
-    abort("rake aborted!") if ask("A theme is already installed, proceeding will overwrite existing files. Are you sure?", ['y', 'n']) == 'n'
-  end
-  # copy theme into working Jekyll directories
-  theme = args.theme || 'classic'
-  puts "## Copying "+theme+" theme into ./#{source_dir} and ./sass"
-  mkdir_p source_dir
-  cp_r "#{themes_dir}/#{theme}/source/.", source_dir
-  mkdir_p "sass"
-  cp_r "#{themes_dir}/#{theme}/sass/.", "sass"
-  mkdir_p "#{source_dir}/#{posts_dir}"
-  mkdir_p public_dir
-end
-</code></pre>
-
-<p>What it does is scour the ./.themes directory and copies all the files from the <code>/source</code> and the <code>/sass</code> directories
-into the root. </p>
-
-<p>Thus, a complete theme must contain <code>/source</code> and <code>/sass</code> directories. </p>
-
-<p>From there, if you run <code>rake generate</code> it will process the sourcefiles and build the site.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/07/31/implementing-theme-with-octopress-and-jekyll-asset-pipeline/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -231,7 +253,11 @@ into the root. </p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/08/17/one-month-stripe-payments/">One Month Stripe Payments</a>
+        <a href="/blog/2014/09/25/on-habit-formation/">Habit Formation: A Case Study</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/17/one-month-stripe-payments/">One Month Stripe Payments Part 1</a>
       </li>
     
       <li class="post">
