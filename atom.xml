@@ -4,7 +4,7 @@
   <title><![CDATA[Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2014-10-04T22:16:12-07:00</updated>
+  <updated>2014-12-17T13:46:20-08:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -14,1286 +14,702 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Important Truth for Creatives]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/04/important-truth-for-creatives/"/>
-    <updated>2014-10-04T21:59:44-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/04/important-truth-for-creatives</id>
-    <content type="html"><![CDATA[<p>There are many important truths for creatives. The three most important truths to me are, “You are what you write,” “There is no such thing as a stupid idea,” and “Experiment with everything.” </p>
-
-<p>Although I’d love to expand on all three truths, allow me to dive into the first one: “You are what you write.” </p>
-
-<!-- more -->
-
-<p>When we read a book by an author we aren’t familiar with, the only thing we know of the author is that he or she wrote the words on the pages. That is the only node of communication between author and reader. </p>
-
-<p>The opinions expressed in the book may not necessarily be of the authors opinion. For example, a fiction book that glorifies the crime life does not necessarily mean that the author glorifies crime. It simply means that the author finds the subject of crime fascinating enough to warrant writing about it. </p>
-
-<p>The interesting thing about writing is that in all cases, the reader gets a tiny glimpse of the inside of the writer’s mind. No matter what the piece is about, the resulting words on the page are manifestations of the ideas that were conjured by the writer. </p>
-
-<p>As the writer, we are allowed the opportunity to choose what part of our minds we would like to expose; we are given the chance to choose which ideas we deem important enough to write about. </p>
-
-<p>If we view our writings as an extension of our consciousness, then we don’t necessarily need to worry about critics. Some people like crime novels; some people hate crime novels. We never need to write for the people we know will hate our work, we simply write for the people we think will like our work. </p>
-
-<p>By viewing our writings as a part of us, we are allowed to express ourselves in our writing in the same way we express ourselves in our speech or in our attire. Some people use slang, some people speak very formally. Some people dress in dark clothing, others dress in bright clothing. We never pay any mind to people who don’t like the way we dress, so we don’t need to pay any mind to people who don’t like the way we write. </p>
-
-<p>But at the same time, it’s important to keep in mind the right message for the right audience. We wouldn’t show up to a wedding wearing the same clothes we’d wear to a birthday party. So it is important to keep in mind who our audience is, what our purpose is, and prepare to face the consequences that may arise for attempting to “break the norm.” </p>
-
-<p>Perhaps the most important reason “You are what you write” is so important is that if we treat our writings as a part of ourselves, then we will respect our writings as much as we respect ourselves. If we expect our readers to respect our writings, we must first respect those same writings, just like we can’t expect people to respect us if we don’t respect ourselves. </p>
-
-<p>If we hold respect for our writings, then we raise the bar for our own quality of writing, and in turn, we become better writers. Just like a pianist must practice a piece many many times before recital, we as writers must write many many times before publications. We see many books that have made authors famous, but what we don’t see is how many times that book has been written and rewritten and thrown in the trash before it was polished in to the gem we see on bookshelves. </p>
-
-<p>By treating our writings with respect, we commit to our craft of writing by continually improving. I hope you respect yourself and your writing enough to commit to constant improvement.</p>
+    <title type="html"><![CDATA[(Re)making the Frogger Game]]></title>
+    <link href="http://abustamam.github.io/blog/2014/12/17/re-making-the-frogger-game/"/>
+    <updated>2014-12-17T13:40:50-08:00</updated>
+    <id>http://abustamam.github.io/blog/2014/12/17/re-making-the-frogger-game</id>
+    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[My Audience]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/03/my-audience/"/>
-    <updated>2014-10-03T22:05:17-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/03/my-audience</id>
-    <content type="html"><![CDATA[<p>It’s strange to think of myself as an authority figure. I view myself as a normal person going about every day life one day at a time.</p>
+    <title type="html"><![CDATA[Reflection on Nanodegree Pt 1]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/31/reflection-on-nanodegree-pt-1/"/>
+    <updated>2014-10-31T23:23:45-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/31/reflection-on-nanodegree-pt-1</id>
+    <content type="html"><![CDATA[<h2 id="udacity-nanodegree-overview">Udacity Nanodegree overview</h2>
 
-<p>However, as I pointed out before, I write to manifest my ideas into the real world. They may be ideas of philosophy or ideas of fictitious worlds. The ideas may mean nothing to the rest of the world, but to me, my ideas ARE my world.</p>
+<p>I’ve been plowing through <a href="https://www.udacity.com/course/nd001">Udacity’s Front-End Nanodegree program</a>. It’s a pilot program, designed to learn front-end web development from the ground up.</p>
 
-<!-- more -->
+<p>I started the day I was allowed to, which was about two weeks ago. </p>
 
-<p>So what am I an authority on? Well, on the non-fiction side, I can tell vivid stories that my words can bring to life. I told my coworkers the (true) story of me letting a spider live in my room. Such a simple story and yet, my coworkers still mention that story every so often.</p>
+<p>So far, I’ve completed the <a href="http://abustamam.github.io/Udacity-Portfolio">Mockup to Website</a>, and <a href="http://abustamam.github.io/frontend-nanodegree-resume">Interactive Resume</a>. </p>
 
-<p>I can uncover wisdom and life lessons from the most mundane concepts. Going back to my spider story, the moral there was that nothing is so insignificant in the world that is not worth mentioning. I learned that there are no boring “things,” just boring ideas.</p>
+<p>The courses are decent; I enjoy the byte-sized lectures interspersed with quizzes. The courses don’t go too deep, but that’s what the projects are for.</p>
 
-<p>And that is what I’m an authority on–creating magnificent ideas from seemingly “boring” things.</p>
+<p>What you really get for the Nanodegree tuition is access to mentors and of course the certification. Since all of the coursework required to complete the projects is technically free on Udacity (which is really awesome of them!), we’re really just paying for the service of mentorship.</p>
 
-<p>On the nonfiction side, my goal is to inspire, to encourage, to motivate, to teach. I believe that writing must make the world a better place, even if it is a world within the confines of one’s intellect. My ideal reader will ask of himself, “How is it that such a simple story can contain such profound meaning?”</p>
+<p>What I’ve come to realize is that many people lack mentors in life. They follow a pre-determined career path that includes university and internship, and they have a college advisor, but many times the advisor has not gone through the same path. Also, the advisor is not heavily emphasized, which I feel is a big mistake. </p>
 
-<p>If my ideal reader is to ask that, then my ideal goal is to keep my stories simple, but to twist them in a way that provides meaning beyond what most people expect from a simple story.</p>
+<p>The best thing a student can have is a mentor, not only for the knowledge, but also the connections.</p>
 
-<p>Fictionally speaking, I take my knack of real-life story telling and create an imaginary world and bring it to life. Even if the story is as far-fetched as wizards battling knights, I want it to be believable within the confines of the story. The world will have its own laws, similar to how our world has the laws of conservation of mass and the law of gravity. The story must adhere to these basic laws, but after the world is established, the characters in the world will shape the story.</p>
+<p>Given all of that, is Udacity worth the $200 a month? Well, I’m scheduled for my first 1-on-1 mentorship session next week, so only time will tell. </p>
 
-<p>I’m a fan of psychological thrillers. I never like cheap scares like pop-ups or screams; I prefer the type of thriller that keeps you on edge because the protagonist(s) and the antagonist(s) are trying to keep one step ahead of one another.</p>
+<p>As I go through the program, I will continue posting updates and reflections about the program. </p>
 
-<p>My ideal audience will be people who enjoy movies such as the Bourne series, and shows like Breaking Bad. Perhaps my writing will never reach the caliber of these wonderful films/shows, but I want to bend the mind of the reader. Just when the reader thinks one thing will happen, another thing happens and turns the story upside down.
-In my fiction, I want to explore themes such as love and betrayal, but not so cliche as the femme fatale who ends up being the arch nemesis of the protagonist. In the real world, things are rarely binary–real people have real emotions that leave them conflicted and confused. What does a character do when faced with a moral dilemma where both options will hurt someone he loves?</p>
+<h2 id="the-actual-coursework">The actual coursework</h2>
 
-<p>I want to be an authority on the human psyche–explore why someone would cheat on their beloved, or murder their best friend. In addition, the writing will reflect the state of mind of the character in the spotlight, so readers can join the character in his metamorphosis.</p>
+<h3 id="project-1-mockup-to-website">Project 1: Mockup to Website</h3>
 
-<p>To summarize, I want to be an authority on two things– manifesting profound lessons from mundane ideas, and creating characters that transform into completely different people. Through writing, I hope to grow into this authority and speak to the hearts of my readers.</p>
+<p>The first course I took in the Nanodegree program was <a href="https://www.udacity.com/course/viewer#!/c-ud304">Intro to HTML and CSS</a>. This was billed to be “Not your average HTML and CSS course,” which I found to be interesting. I’ve taken countless HTML and CSS courses online, and most of them tend to be pretty much the same. They’re all good, but at the end, I couldn’t do much by myself. </p>
+
+<p>By the end of the Udacity course, I was able to go from PDF mockup to website from scratch. It’s all an iterative process, which no other HTML course had ever told me. </p>
+
+<p>Most other courses focused on syntax, which of course is important, but always left out design. Rather than having us create the site, they tell us what the numbers are, and we simply translate that to syntax. </p>
+
+<p>Udacity ensured that we could do everything on our own, which is the definition of mastery. </p>
+
+<p>So was it your average HTML and CSS course? No, definitely not. And since the course is free (remember, you pay for mentorship, not knowledge), I definitely recommend anyone new to web development to take this course.</p>
+
+<p>As an aside, I really love the informal nature of the classes. I hate classes that take themselves too seriously. Learning shouldn’t be boring. Why shouldn’t the instructor throw random round objects at another instructor? </p>
+
+<p>Granted, learning should be taken seriously, but it doesn’t need to be serious to be taken seriously. Having fun is important too, and nothing says we can’t have both!</p>
+
+<h3 id="mini-project-learn-github">Mini-project: Learn Github</h3>
+
+<p>What I like about the Nanodegree program so far is that it focuses on career development. So rather than just learning random skills, the skills you learn are actually organized in a way that increases job-readiness. And it’s no secret that version control is pretty much a requirement for any software-related job. </p>
+
+<p>I’ve taken a couple of Github crash courses, and some other courses I’ve taken included at least one or two lessons on “gitting” started with Git, but I still always found myself completely lost when using version control. Not only that, but I learned syntax and commands, but not why I should do what. I didn’t know the difference between committing and pushing, nor when to commit. </p>
+
+<p><a href="https://www.udacity.com/course/ud775">How to Use Git and Github</a> is a wonderful course that starts from ground up. Rather than immediately pushing students into the Github environment, it introduces Git as a software, and the first part of the course is dedicated to explaining what Git is, and how to use it. </p>
+
+<p>I really liked that part because then I realized how many more applications Git could have other than software developemnt. For example, you could use it to keep track of important files locally, or you could “version control” a novel or something similar. </p>
+
+<p>After that, the course delves into your very first Github repository, and then we get into collaboration with Github.</p>
+
+<p>What made the course especially unique was the fact that we were required to do “reflections.” These were basically little thoughts that made us think about what we were actually learning, and why we were learning it, which I found incredibly effective. </p>
+
+<p>You can read my reflections <a href="https://github.com/abustamam/reflections">here</a>. </p>
+
+<p>All in all, I learned a lot from the course, and I recommend it to anyone who is new to Git(Hub).</p>
+
+<h3 id="project-2-interactive-resume">Project 2: Interactive Resume</h3>
+
+<p>The natural follow-up to learning HTML/CSS is JavaScript. HTML is how things are laid on the page, CSS is how things are shown on the page, and JavaScript makes all of that non-static. </p>
+
+<p>I wouldn’t consider JavaScript a “beginner” language, since most “beginner” languages have the concept of classes, which JavaScript doesn’t technically have. Python seems to be the go-to beginner language, which is probably why it’s recommended to take the Python courses before moving on with the JavaScript course. </p>
+
+<p>Regardless, the next project is the Interactive Resume. When I saw the project title “Interactive Resume,” I read it to be a resume that the user could interact with. Instead, it’s a normal resume whose content comes from JSON, which is fine, it just doesn’t seem very interactive. </p>
+
+<p>All that aside, the course for this is <a href="https://www.udacity.com/course/viewer#!/c-ud804">JavaScript Basics</a>. </p>
+
+<p>Out of the few courses I’ve completed at Udacity, JS Basics is probably the worst (even though it’s pretty good). All of the courses I’ve taken with Udacity have been pretty good thus far, but there has to be one worst, and JS Basics takes the cake. </p>
+
+<p>Why? The course is confusing. We learn the project goal. And we begin constructing it. Then for no well-defined reason, we’re told to erase all the lines of code we wrote and start fresh.</p>
+
+<p>I’m all for starting fresh, but then it goes from a blank slate to a half-full resume from one video to the next, and following along with the video would not result in the “this is how your site should look now” shown. I had to do a lot of things myself to make it look how it was supposed to, but nowhere that was mentioned. </p>
+
+<p>Other than that caveat, the course is pretty good. It teaches the syntax and the basics of JSON, which is something that very few JS courses ever teach.</p>
+
+<p>Though JS Basics is a good course, I would recommend Codecademy over Udacity for learning JavaScript Basics. Only after that would I take this course. </p>
+
+<h2 id="wrap-up">Wrap-up</h2>
+
+<p>That about wraps up my first couple weeks in the Nanodegree program. I’ll be back with another update once I finish my game project!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 22: Topoi Challenge]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/22/day-22-topoi-challenge/"/>
+    <updated>2014-10-22T23:05:47-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/22/day-22-topoi-challenge</id>
+    <content type="html"><![CDATA[<p><strong>Day 22: Reach back into your Topoi from these past few days, pick a topic to address, and write!</strong></p>
 
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Journey of Writing]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/02/journey-of-writing/"/>
-    <updated>2014-10-02T00:23:18-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/02/journey-of-writing</id>
-    <content type="html"><![CDATA[<p>Asking someone like me why I write is akin to asking someone why they drive. </p>
+    <title type="html"><![CDATA[Day 21: Geothe's Walking Stick Pt 5]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/21/day-21-geothes-walking-stick-pt-5/"/>
+    <updated>2014-10-21T23:04:48-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/21/day-21-geothes-walking-stick-pt-5</id>
+    <content type="html"><![CDATA[<p><strong>Day 21: Again today, for the final Topoi day, return to your past writing and Goethe’s Walking Stick…(See description)</strong></p>
 
-<p>Most people drive to go from point A to point B. There is something that is waiting for them at point B that warrants leaving point A. </p>
+<p><em>Again today, for the final Topoi day, return to your past writing and Goethe’s Walking Stick and ideas you’ve developed so far in the Topoi: who you are, what you want our of your writing, whom you hope to speak to, the ideas you’ve written down in your Goethe’s Walking Stick, and the questions you’ve asked. Find more concepts and ideas you’re interested in writing about. Then… - Work those ideas through your own Topoi, asking questions today about Values. - Write down as many questions as you can think of that belong to Values. - Choose one question to address today, one you think is truly, terribly, wonderfully interesting, interesting enough to captivate an audience you hope to speak to. - Finally, address that question.</em></p>
 
-<p>Similarly, writing is my vehicle for reaching a new state of consciousness. Every word that I write is a step to reinvention. Reinvention for what, though? And what exactly is my point B? </p>
-
-<!-- more -->
-
-<p>In a world where change is the only thing that is constant, reinvention is necessary daily. If you aren’t keeping up with the ever-changing world, it will leave you behind. One way to keep up is to read. Another way to keep up is to write. Allow me to explain.</p>
-
-<p>In order to write, we must first observe. Ideas must come from somewhere. It could be something as simple as a sunset, or as glorious as the aurora borealis. </p>
-
-<p>When we really open your eyes to the world around you, and appreciate the beauty and perfection of everything, from the grasshoppers bouncing from one blade of grass to another, to the hundreds of people we don’t know and perhaps may never know, who take the same exact route as us to work, we begin to realize how insignificant we are. That guy who just took that last parking spot before you? He’s just like you. He has errands to run. Mouths to feed. He doesn’t know you, and you don’t know him. And it will likely stay that way because the world is bigger than you think. </p>
-
-<p>By observing the world, and asking ourselves questions about why the world works a certain way, we can begin to form our own conclusions about how the world works. They don’t need to be scientific conclusions. Just theories and curiosity.</p>
-
-<p>The formation of these ideas is incredibly important. Ideas are the key component of any piece worth reading. It’s necessary to become great at creating ideas that are worth writing about. And if you have no ideas worth writing about, then it’s even more crucial to make that idea worth writing about. </p>
-
-<p>In yesterday’s piece, I argued that everything is inherently meaningless because the world is so vast, both in time and space, that nothing we do will ever matter. However, the beauty of life comes from the meanings we attribute to previously meaningless things. </p>
-
-<p>The same goes for ideas–any idea can be worth writing about and expanding upon, only if you give it the meaning to become important. </p>
-
-<p>A spider in my room is hardly an ingenious idea. In fact, there are very few ideas that could be more boring than that. However, through some observation and introspection, I gave that spider meaning to my life. Perhaps I even gave that spider meaning to other people’s lives. </p>
-
-<p>And that is what I strive to do with my writing. I want to inspire readers. I want them to breathe meaning into previously meaningless things. I want to encourage them to slow down in the fast paced life, and sit outside, and observe the beautiful world around them. </p>
-
-<p>That is my point B–inspiration. I write both to inspire myself, and to inspire others. </p>
-
-<p>While I find my voice, I hope to be inspired by others taking the same journey as I am. I hope to forge lasting friendships and learn a lot from other people like me. </p>
-
-<p>Conversely, I would also like to inspire others, and share mistakes I’ve made with other people like me.</p>
-
-<p>I wish to join a community of passionate people full of ideas. We are all in the same journey, heading in the same direction, perhaps with a slightly different point B. But we’re all in the same vehicle, and as such, our combined powers will make us undefeatable.</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[And So I Write]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/01/and-so-i-write/"/>
-    <updated>2014-10-01T00:22:45-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/01/and-so-i-write</id>
-    <content type="html"><![CDATA[<p>Who am I? Well, in the scheme of things, I’m a nobody. Probably not going to go down in history for anything worthwhile.</p>
+    <title type="html"><![CDATA[Day 20: Goethe's Walking Stick Pt 4]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/20/day-20-goethes-walking-stick-pt-4/"/>
+    <updated>2014-10-20T23:03:50-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/20/day-20-goethes-walking-stick-pt-4</id>
+    <content type="html"><![CDATA[<p><strong>Day 20: Again today, return to your first week of writing, to your Goethe’s Walking Stick… (See description.)</strong></p>
 
-<p>And I’m perfectly fine with that.</p>
+<p><em>Again today, return to your first week of writing, to your Goethe’s Walking Stick, and to the ideas you’ve developed so far in the Topoi. Page through the ideas there: who you are, what you want our of your writing, whom you hope to speak to, the ideas you’ve written down in your Goethe’s Walking Stick, the questions you’ve asked. Find more concepts and ideas you’re interested in writing about. Then… - Work those ideas through your own Topoi, asking questions today about Form &amp; Structure. - Write down as many questions as you can think of that belong to Form &amp; Structure. - Choose one question to address today, one you think is truly, terribly, wonderfully interesting, interesting enough to captivate an audience you hope to speak to. - Finally, address that question.</em></p>
 
-<p>99% (that’s a low estimate) of all people in the world are nobodies; people who, a century after their death, will be lost in the myriad of databases. People whose entire life’s work will be meaningless and not have contributed anything to the society of the future. Nobodies who strive daily to accumulate things that won’t even last for fifty years.</p>
-
-<p>Despite that depressing thought, being a “nobody” is beautiful. Being able to attribute meaning to a seemingly meaningless existence is simply incredible. For the billions and billions of nobodies who exist, and have existed, in this world, what makes life worth living? Why do we wake up every day, knowing that it won’t matter in a hundred years? Why do we bother going through the monotony of daily life considering that our days are not even a blip on the radar of the wheel of time?</p>
-
-<!-- more -->
-
-<p>I can tell you only from the perspective of this one “nobody” among billions.</p>
-
-<p>First, I believe nothing is truly meaningless. We’ve given meaning to seemingly random lines and squiggles on paper, that we now call text. Depending on the font, the lines and squiggles may look completely different but they still convey the same meaning.</p>
-
-<p>Going further, though the meaning of those lines and squiggles may be obvious, the way those lines and squiggles are organized and shaped could express even deeper meaning. We have the iconic “f” symbol–a tiny box taking less than a square-inch of space on paper says instantly– “we’re on Facebook!”</p>
-
-<p>And that’s exactly how I view my life. Everything in life has meaning, if I take the time to give it meaning.</p>
-
-<p>Just two weeks ago, I decided to allow a spider to take residence in a corner of my room. It was just a spider, among countless other spiders–spiders that I usually kill. But I decided to try something new, and did not kill the spider.</p>
-
-<p>Every couple days he would disappear, but he would come back, until yesterday I saw his curled up body under his web.</p>
-
-<p>The spider was inherently meaningless. His short life means nothing in the scheme of things. It didn’t matter that I had decided not to kill him that one day–two weeks later, he would already be dead, and nothing would have changed.</p>
-
-<p>Yet that spider meant a lot to me. Its prolonged existence meant that I was letting go of an irrational fear that millions of people around the world have. It made me wonder why we humans feel it is perfectly fine to destroy spiders’ nests–nests that are beautifully constructed and take its artists sometimes its entire life to build?</p>
-
-<p>It made me question what we would do if a higher being viewed human existence as insignificant as humans view arachnid existence. How we would react if the higher being destroyed our technology the same way we destroy spider nests.</p>
-
-<p>The world will continue to turn, with or without humans; with or without spiders. And yet, as long as spiders exist, they will continue to build their nests; as long as humans exist, we will continue to push the envelope of what is possible.</p>
-
-<p>And that’s where I fit in. I may not be inventing a brand new car, or rocket ship, or mobile device. I’m simply inventing new things in my life. Learning languages, learning programming, satiating my curiosity for the world around me, breaking the boundaries of what I thought was possible for myself, and most importantly, using those random lines and squiggles to communicate my findings with the world. The continuous challenge to be challenged drives me to wake up and carpe diem every morning.</p>
-
-<p>Every day, “I love you”s are exchanged between couples, parents and children, siblings, etc. Three seemingly random utterances of the breath that can have such a profound effect on someone’s life. Three words that can mean the difference between life and death for a depressed individual, or the difference between feeling special and feeling neglected for a child. Even though these words have no meaning in most other languages, they are among the most powerful words in the English language. The fact that this small utterance could have such a profound meaning that it could make or break a relationship is possibly the most beautiful thing about human beings.</p>
-
-<p>I’m perfectly fine with my meaningless existence. But the meaning I have given my life is all the meaning that is necessary for me. I hope you join me in my journey to discover and add more meaning to life. And so I write…</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Habit Formation: A Case Study]]></title>
-    <link href="http://abustamam.github.io/blog/2014/09/25/on-habit-formation/"/>
-    <updated>2014-09-25T08:20:50-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/09/25/on-habit-formation</id>
-    <content type="html"><![CDATA[<p>Ever try to change a habit? Either starting a good habit, or eliminating a bad habit?</p>
+    <title type="html"><![CDATA[Day 19: Goethe's Walking Stick Pt 3]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/19/day-19-goethes-walking-stick-pt-3/"/>
+    <updated>2014-10-19T23:02:46-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/19/day-19-goethes-walking-stick-pt-3</id>
+    <content type="html"><![CDATA[<p><strong>Day 20: Again today, return to your first week of writing, to your Goethe’s Walking Stick… (See description.)</strong></p>
 
-<p>Of course. We all have tried. And we all know that habit formation/change is incredibly difficult. We’ve all tried different “productivity” systems (that usually don’t work), different affirmations (that usually fall out by the wayside), and other silver bullet methods that seem to work for everybody but us. </p>
+<p><em>Again today, return to your first week of writing, to your Goethe’s Walking Stick, and to the ideas you’ve developed so far in the Topoi. Page through the ideas there: who you are, what you want our of your writing, whom you hope to speak to, the ideas you’ve written down in your Goethe’s Walking Stick, the questions you’ve asked. Find more concepts and ideas you’re interested in writing about. Then… - Work those ideas through your own Topoi, asking questions today about Form &amp; Structure. - Write down as many questions as you can think of that belong to Form &amp; Structure. - Choose one question to address today, one you think is truly, terribly, wonderfully interesting, interesting enough to captivate an audience you hope to speak to. - Finally, address that question.</em></p>
 
-<!-- more -->
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 18: Goethe's Walking Stick Pt 2]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/18/day-18-goethes-walking-stick-pt-2/"/>
+    <updated>2014-10-18T23:01:19-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/18/day-18-goethes-walking-stick-pt-2</id>
+    <content type="html"><![CDATA[<p><strong>Day 18: Again today, return to your first week of writing and to your Goethe’s Walking Stick. (See description.)</strong></p>
 
-<p>Over the past couple of months, I unconsciously created some great habits, such as coding (almost) every day, drinking more water, drinking less sodas, journaling daily, and waking up earlier. I didn’t “try” to create these habits. These habits kind of just “came” to me, and it was really quite shocking when I realized that I’d become such a changed person over the past few months. </p>
+<p><em>Again today, return to your first week of writing and to your Goethe’s Walking Stick. Page through the ideas there: who you are, what you want our of your writing, whom you hope to speak to, the ideas you’ve written down in your Goethe’s Walking Stick, etc. Find concepts and ideas you’re interested in writing about. Then…   - Work those ideas through your own Topoi, asking questions today about Change.  - Write down as many questions as you can think of that belong to Change.  - Choose one question to address today, one you think is truly, terribly, wonderfully interesting, interesting enough to captivate an audience you hope to speak to.  - Finally, address that question.</em></p>
 
-<p>I’m not writing this to brag about how awesome I am, I’m writing this to dissect the science of habit formation/change so that perhaps you can implement the same methods to change your habits. </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 17: Goethe's Walking Stick]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/17/day-17-goethes-walking-stick/"/>
+    <updated>2014-10-17T22:59:48-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/17/day-17-goethes-walking-stick</id>
+    <content type="html"><![CDATA[<p><strong>Day 17: Go back to your first week of writing and to your Goethe’s Walking Stick. (See description.)</strong></p>
 
-<p>There are three steps to habit change. </p>
+<p><em>Go back to your first week of writing and to your Goethe’s Walking Stick. Page through the ideas there: who you are, what you want our of your writing, whom you hope to speak to, the ideas you’ve written down in your Goethe’s Walking Stick, etc. Find some concepts and ideas you’re interested in writing about. Then… - Work those ideas through your own Topoi (Topics), asking questions today about Causes &amp; Effects.  - Write down as many questions as you can think of that belong to Causes &amp; Effects.  - Choose one question to address today, one you think is truly, terribly, wonderfully interesting, interesting enough to captivate an audience you hope to speak to.  - Finally, address that question.</em></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 16: Story]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/16/story/"/>
+    <updated>2014-10-16T22:57:41-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/16/story</id>
+    <content type="html"><![CDATA[<p><strong>Day 16: Write about anything. Tell the story of a day, or of years…(See description for details.)</strong></p>
+
+<p><em>Write about anything. Tell the story of a day, or of years, or of a failed diet, or of an awesome road trip, or of someone else entirely. Maybe go somewhere you like to go (a coffee shop, a park, the beach, the lot behind 7-11) to describe it. Just use the right verbs while you write: remain mindful of how often you use “to be” verbs (am, is, are, was, were, be, being, been), and instead choose the right metaphor-verbs in every poem-of-a-sentence.</em></p>
+
+<h2 id="important-note">Important note</h2>
+
+<p><em>The following piece is fictional. Please don’t send me condolence letters. Thanks :)</em> </p>
+
+<p>“Sticks and stones may break my bones but words will never hurt me.” Such is the mantra of kids who get bullied and need a way to combat the bullies. But the broken bones I had were much easier to bear than the words I heard on the evening of my 21st birthday.</p>
+
+<p>He was driving me to what I had figured to be my surprise birthday party, having a good laugh. Then when we crossed Main Street, the world turned upside down. </p>
+
+<p>I remember that moment clearly. One moment we’re laughing; the next moment, we’re spinning. Everything happened as if time had slowed down. The airbags popped out and Gerry’s head bounced off the bag before hitting the window, and my own head hit the bag and lurched sideways. The entire world spun around me as the other car pushed ours. </p>
+
+<p>My neck hurt, but I felt fine. I looked at the shattered window, and then at Gerry, whose head was resting against the window. After struggling with my airbag, I managed to shake his shoulder and shout his name. He did not respond. I shook his shoudler again, shouting more loudly. He did not respond. I fumbled with my seatbelt then burst out of the door, stumbling onto the pavement. I looked at one bystander and yelled at him to call 911. He retrieved his phone and dialed immediately. </p>
+
+<p>I limped to the car that hit us. Through the broken window I could see the driver, who did not seem to be awake. I tried to open the door from the outside but it was locked. I reached into the car and shook the man’s shoulder to see if he would wake up. Shouting accomplished nothing. </p>
+
+<p>Another bystander approached me, asking me if I was okay. I told her I felt fine but that my boyfriend was in the car, locked in because the other car had hit his door. She put her arm around me and tried to comfort me. I coudn’t pay attention to what she was saying because I was in such a daze. I couldn’t believe this was happening. </p>
+
+<p>When the ambulance finally arrived, I was in hysterics. I told them that my boyfriend was trapped in the car, unconscious. The medics told me to calm down and that they needed to check me for wounds. It took two men to hoist me onto the stretcher and restrain me. I demanded that they tend to my boyfriend first, but they insisted on taking care of me. </p>
+
+<p>They wheeled me into the ambulance and I can’t remember what happened after they put the respirator on me. </p>
+
+<hr />
+
+<p>After an hour in the hospital, I was told that as a result of the crash, I had broken two ribs and required 9 stitches on my face from the shards of glass slashing me. I didn’t care about any of that. I asked the doctors and nurses what happened to Gerry. They all hesitated and said they didn’t know, but that they would get someone who did know to tell me. </p>
+
+<p>Finally, one doctor sat at the foot of my bed, looked at me, and sighed. Then he uttered three words that made my broken bones seem painless. </p>
+
+<p>“Gerry is dead.”</p>
+
+<p>Sadness overcame me and my eyes welled up with tears. I told myself it wasn’t possible. That Gerry was in the next room, recovering just like I was. I told myself that we would emerge from the hospital together, broken, but together. I told myself that I would be able to come home and see his smiling face, and feel his warm embrace. </p>
+
+<p>But the void in my heart told me that none of that was true. He was not recovering. We would not emerge from the hospital together. And he would never again be able to wrap me in his arms. I knew the truth. Gerry was dead. </p>
+
+<p>I thought it was my fault. If I hadn’t chosen to have my surprise birthday party on that day, none of this would have happened. If I had chosen to drive, perhaps I could have seen the car coming towards us and stop. If I had decided to have a small, intimate celebration with Gerry, then we wouldn’t have to be on the road at all. </p>
+
+<p>Despite all the self-blame, I knew that there’s nothing I could do then to bring him back. Yet I wished I was able to say goodbye properly. I wished I could have savored that last hug for just five more seconds. I wished I didn’t say those mean things to him the previous week. So many regrets, but nothing I could do to come to terms with them. </p>
+
+<p>I always think about what life could be if the crash had never happened. I think about the kids we could have had. The house we could have lived in. The life we would be living together. But then those three words echo in my head, “Gerry is dead.” My broken bones healed eventually, but nothing will ever be able to mend the wound those three words caused.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 15: The World Around Me]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/15/the-world-around-me/"/>
+    <updated>2014-10-15T21:19:44-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/15/the-world-around-me</id>
+    <content type="html"><![CDATA[<p><strong>Day 15: Given your aims for your writing, look at the world around you: What images appear? (See description.)</strong></p>
+
+<p><em>Given your aims for your writing, look at the world around you, at the landscape: What images appear? What likenesses do you see? How, for you, is the world like itself? When you describe it, what comparisons do you make? What verbs do you use? And when you talk about your business, do you talk about the “bottom line”? Are you in a “rat race,” a world of “dog eat dog,”? Or do you talk about “service” and, as Seth Godin famously makes use of, are you gathering a “tribe”? Place yourself, your writing aims, in a world of images, of analogies. For you, for what you want out of writing, write about how the world is like itself.</em></p>
+
+<p>“The world is your playground.”</p>
+
+<p>These five words succinctly summarize my aims for writing. </p>
+
+<p>I love writing for the same reasons people enjoy series such as Breaking Bad and The Walking Dead, or movies such as Inception, or books such as Harry Potter. People who enjoy different forms of fiction just enjoy being taken out of their current world and thrust into the world of the author’s choosing. For a moment, they can forget their problems and be sucked into someone else’s reality. </p>
+
+<p>Now, I enjoy movies and TV shows as much as anyone else. However, I elect to be thrust into a world of my own choosing. A world where I attempt to see the world through someone else’s eyes, even if that someone else doesn’t even exist. By writing, I can remove myself, even if but for a moment, from the harsh realities of my day-to-day life and find myself living the harsh realities of a creation of my own imagination. </p>
+
+<p>Putting it that way, it may sound like I’m crazy, but I liken it more to a state of mind than actual believing. By changing the way I think, I change the way I write, and therefore, change the way the text communicates with the reader. </p>
+
+<p>The aims of my writing are mainly to explore the human psyche, as well as explore the reasons people do things. In addition, I would like to encourage the readers to question reality–who do we actually know? Most people in our lives wear very elaborate, elegant masks, that cover up who they really are. The successful man next door with the “perfect marriage” may be knees-deep in debt and having an affair. The man who drives an old used car and lives in a small house on the other side of town might be debt-free and have an impressive investment portfolio. There is always more to a person than he or she letse on. Just because something seems to be true doesn’t necessarily make it true. </p>
+
+<p>To be cliche, never judge a book by its cover. This goes both ways–the book with the best cover may not necessarily be the best book ever, nor may the book with the ugly cover be the absolute worst book. However, despite how cliche that may be, people are always surprised when a person reveals a side that they’ve never shown before. People are rarely binary–we are complex creatures with many emotions and countless ways to justify our actions. </p>
+
+<p>The world is my playground. Now, the world I want to play in may not be the world we live in–in that case, I’ll create my own world to play in. I write so I can have others to play in that playground with. And hopefully, we emerge from that playground as changed people. People who see the world in a different way. People who become more introspective and more appreciative of the world around them. </p>
+
+<p>So, come join me in my playground. I might even push you on the swings :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 14: The Barn]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/14/day-14-the-barn/"/>
+    <updated>2014-10-14T21:09:07-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/14/day-14-the-barn</id>
+    <content type="html"><![CDATA[<p><strong>Day 14: For your prompt today, I am literally taking a page from someone else’s book. (See description for details.)</strong></p>
+
+<p><em>The following, from John Gardner’s The Art of Fiction, page 37, is one of the most famous and enduring writing prompts out there:  Describe a barn as seen by a man whose son has just been killed in a war. Do not mention the son, or war, or death. Do not mention the man who does the seeing. …The result should be a powerful and disturbing image, a faithful description of some apparently real barn but one from which the reader gets a sense of the father’s emotion; though exactly what that emotion is he may not be able to pin down. …No amount of intellectual study can determine for the writer what details to include. If the description is to be effective, he must choose his boards, straw, pigeon manure, and ropes, the rhythms of his sentences, his angle of vision, by feeling and intuition. And one of the things he will discover, inevitably, is that the images of death and loss that come to him are not necessarily those we might expect.</em></p>
+
+<p>The sun is setting, the sky is darkening, and the door of the derelict barn finally comes off its hinges and lays flat on the dirt.</p>
+
+<p>The barn stands there, as it has for decades, but on this day, it looms over the farm like a fortress towering over its kingdom, casting a shadow that plunges even the most fertilized grass into darkness. </p>
+
+<p>On the outside of the barn’s wall, a spider is enjoying its dinner, not caring about the decrepit nature of its home.</p>
+
+<p>The spider finishes its meal and spins a web to lower itself to one of the many rotting bales of hay littering the barn. The spider crawls across the moldy grains of straw, disappearing into the pile.</p>
+
+<hr />
+
+<p>A fly flaps its wings through the crisp dusk air, stopping momentarily on a block of wood that used to be a part of a fence, before landing on an old wooden board, barely attached to the barn by a rusty iron nail. The board had once been bright red, but time has washed away all evidence of its color. </p>
+
+<p>The fly buzzes into the barn and lands on a pile of manure. The fly pauses here for an undetermined amount of time, enjoying its new environment. Several other flies join it after a while, buzzing around noisily. The fly zooms away from the manure and stumbles upon the decaying carcass of a cow that was once named Bessie. The milk that this cow had once provided was the source of much happiness. But now, the cow has succumbed to the flow of nature, yet she is still able to provide nourishment for the flies that have found her rotting flesh. </p>
+
+<p>After satiating his hunger, the fly returns to the outside of the barn, zigging left, zagging right. Suddenly, the fly is caught on something, unable to move. It attempts to fly away, but its body is stuck to the silky, yet sticky, web. The fly tries again, flapping its wings, thrashing against the web, but it is unable to escape.</p>
+
+<p>The web begins to bounce as its creator approaches the fly. The fly buzzes one final time in an attempt to escape, before it is fully enveloped in the soft threads of silk.</p>
+
+<hr />
+
+<p>The spider has returned to its nest on the barn’s wall only to find its next meal thrashing about, attempting to escape. It spins its silk around the fly until it is fully wrapped in a cocoon. Having secured its next meal, the spider lowers itself down to the ground, scurrying across the barren dirt. Though it is dark, the spider is still able to perceive a change in the light, but is unable to conceive of any final thoughts as the boot is raised above the spider and crashes down to the ground. </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 13]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/14/day-13/"/>
+    <updated>2014-10-14T16:30:29-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/14/day-13</id>
+    <content type="html"><![CDATA[<p><strong>Day 13: Choose and write at least two of the following options: (See description for details.)</strong></p>
+
+<p><em>Choose and write at least two of the following options:</em>
+<strong>-Sarcastic email to a colleague</strong>
+-Memo to people you supervise, changing a policy<br />
+-Email to your in-laws asking for financial help<br />
+<strong>-Note to your loved one…the day after a difficult and lingering conflict</strong>
+-Blog post for your reading public that, for you, is a little out of character</p>
+
+<h2 id="sarcastic-email-to-a-colleague">Sarcastic email to a colleague</h2>
+
+<p>Subject: Do’s and Don’t’s of visiting my cubicle</p>
+
+<p>Dear John, </p>
+
+<p>Next time you come to my cubicle to tell me your latest exploit of a drunk girl, please do at least one (but preferably all) of the following things:</p>
 
 <ol>
-  <li>
-    <p>Establish the right mindset about habits.</p>
-  </li>
-  <li>
-    <p>Create a pain point performing a bad habit, or not performing a good habit </p>
-  </li>
-  <li>
-    <p>Replace bad habits with good habits</p>
-  </li>
+  <li>Take a breath mint. Seriously, those peppermints are not on my desk for nothing.</li>
+  <li>Wear deodorant. I would let you use mine but I have a feeling that the amount you need is more than the amount my stick provides. </li>
+  <li>Whisper. I know you’re excited but you really don’t need to yell at the top of your lungs that the girl couldn’t even say her own name.</li>
+  <li>Check if I’m there. It’s embarrassing to have my cube-mate tell me that you wanted to see me so you could help get me laid. </li>
+  <li>Get my name right. It’s Rick, not Mick. </li>
 </ol>
 
-<h3 id="establishing-the-right-mindset">Establishing the right mindset</h3>
-
-<p>First, stop looking for new systems. Granted, some systems work better than others, but it’s like saying a chainsaw works better than an axe. The tool may be more efficient, but you still need a person with the skills to wield the tool. For habit change, that skill is “mindset.”</p>
-
-<p>The greatest productivity system in the world is useless in the hands of someone who doesn’t have the right mindset about habit change. </p>
-
-<p>Habit changes are meant to be lifelong. Don’t “go on a diet.” People who “go on a diet” are destined to eat unhealthily for the rest of their lives. Why? Because they think they can get that beach body by simply following the latest fad diet for six weeks. If your mindset about habit change is that temporary habit changes can make your life amazing, then you’re going to stop that habit as soon as you realize it’s not working. </p>
-
-<p>If you can stop watching 6 hours of TV every day for a month, why can’t you stop it for a lifetime? If you can wake up early every day for a month, why not do it all the time? Habit change is a life-long marathon, not a sprint. Which means that you need to create moderate habits rather than create extreme habits. </p>
-
-<p>Moderate habits are simple things like exercising for 15 minutes every day. Extreme habits would be running 5K every day. Don’t go for the extreme. Start moderate and build up. </p>
-
-<p>Habit change is as simple as you make it. Start with simple habits that seem crazy <em>not</em> to do, and then expand from there. As programmers say, “iterate.”</p>
-
-<h3 id="creating-pain-andor-pleasure-points">Creating pain and/or pleasure points</h3>
-
-<p>Recent psychology shows that positive reinforcement trumps negative reinforcement. Anecdotally speaking, this seems to be true. However, habits will never provide (explicitly, at least) the positive reinforcement required to maintain the habit. </p>
-
-<p>This is where your system comes into place. I said stop looking for new systems, but the ideal system will provide both positive and negative reinforcement. If your system does not have this, I suggest you look for a new one, but not before you’ve changed your mindset about habits.</p>
-
-<p>The system I personally use (currently) is (HabitRPG)[habitrpg.com/]. It gamifies habit creation, which is cool. But more importantly, as a gamer, I really really hate losing health. If you miss a “daily” you lose health. So there is a direct pain-point associated with <em>not</em> completing my daily to-dos. </p>
-
-<p>In addition, when you <em>do</em> perform your habits and to-dos, you get virtual currency, and you also have a chance to get a virtual pet. It may sound extremely silly, but it’s effective, at least for me. </p>
-
-<p>For those of you who don’t feel the pain or pleasure of virtual characters, there’s a new product coming out called (Pavlok)[http://prelaunch.pavlok.com/?ref=3bdc77fc87] which will shock you whenever you’re not doing whatever you’re supposed to do. It will also reward you for doing good habits. This is a product I’m definitely going to check out because there are a lot of bad habits that I do unconsciously that HabitRPG can’t necessarily help me with. </p>
-
-<p>If you think voluntarily shocking yourself is insane, that’s because it is. But you kind of need to be insane in order to experience rapid change. Plus, if you watch that video, you’ll see the science behind the shock, and how it eliminates your bad habits by creating that pain point. </p>
-
-<p>Once you’ve created an association with pain for not following through with your habits, you simply need to follow through with that for at least 21 days. Habits are not too different from cars. You need to keep them maintained so they continue running for you. </p>
-
-<p>If you don’t want to use any particular system, you can (temporarily) hack your body into feeling physically ill when you do a bad habit. This is something that I inadvertantly stumbled upon, so I have no way of replicating it, but this is my experience.</p>
-
-<p>During Ramadan, Muslims have to fast. Ramadan just so happened to be during the summer this year, so it was hot and the days were long. In order to conserve energy and fluids, it’s extremely inadvisable to have many sweets during eating time. So in order to fast without feeling sick, I stopped having sweets (including soda).</p>
-
-<p>By the time Ramadan was over, I was craving a soda, so I had some Dr. Pepper (or Mr. Pibb, I always confuse the two). I felt physically ill when I drank it. It may have been psychological, it may have been physiological, but I didn’t like the feeling. But I was still craving the soda. So that leads me to step two.</p>
-
-<h3 id="replacing-bad-habits-with-good">Replacing bad habits with good</h3>
-
-<p>I realized that I liked drinking soda for two reasons: sweetness and fizziness. So I compromised: I bought some fruit juice and some Sprite so I could slowly wean myself off soda. I would mix the two so I could have sparkling juice. One week later I was able to drink the fruit juice on its own without missing the fizziness. Now I’m weaning myself to water-only.</p>
-
-<p>Another example in my life was eating less sweets. I’m a sucker for sour gummies. (For the love of God please don’t get the (sugar free ones)[http://www.buzzfeed.com/michaelrusch/haribo-gummy-bear-reviews-on-amazon-are-the-most-insane-thin#4eh3m3r]). I replaced that with eating grapes, and/or 100% fruit rolls. I still have sour gummies once in a while, but not as often. </p>
-
-<p>That’s what is known as habit replacement. When you try to stop a habit, it leaves an empty space in your life. If you don’t replace that empty space with a good habit, you’re going to fall back onto the bad habit. Figure out why you have your bad habits. Is it to satiate a craving for sweets, or fizziness? Well, ask yourself if you can satiate that craving with a healthier habit. </p>
-
-<h3 id="commit-to-commit">Commit to commit</h3>
-
-<p>Here’s your homework… </p>
+<p>While you’re at it, please do <strong>not</strong> do the following things:</p>
 
 <ol>
-  <li>Change your mindset about habit change. Jump into good habits knowing that they will be there for life. Kill bad habits knowing they’ll be gone for life. Adjust your mindset to find happiness in this new lifestyle.</li>
-  <li>Identify ONE bad habit in your life that you’d like to change.</li>
-  <li>Figure out why the habit exists, what need or craving it satiates. </li>
-  <li>See if there is a healthy alternative that can serve the need. </li>
-  <li>Eliminate the habit with prejudice by getting a (Pavlok)[http://prelaunch.pavlok.com/?ref=3bdc77fc87] or using (HabitRPG)[habitrpg.com/].</li>
-  <li>Share your results on Facebook and inspire others to change their lives.</li>
+  <li>Invite me to a party. I don’t want “summa dat.”</li>
+  <li>Take my pens. My pens mysteriously disappear after you come to my cubicle. I’m not saying it’s you, but no one else ever visits my desk. </li>
+  <li>Spin my chair around. Especially when I’m sitting in it. </li>
+  <li>Drink. C’mon, we’re at work, not the pub.</li>
+  <li>Hit on my cube-mate. Seriously, she hates that.</li>
+  <li>Talk to my cube-mate. Really, she hates you. </li>
+  <li>Talk at all. Why can’t you get the picture that I don’t want to hear your stories? </li>
 </ol>
 
-<p>Good luck! </p>
+<p>Actually, come to think of it, please stop visiting me at all. I don’t like you. I don’t know why you think I like you. I don’t know why you ever thought I liked you. I think you’re a repulsive alcoholic womanizer, and I would rather not be associated with you. I asked my cube-mate out once, and she said that she doesn’t want to associate with anyone who thinks you’re cool. The problem is that I don’t think you’re cool, and it would really help if you stopped visiting me so that I don’t have to be associated with you. </p>
+
+<p>If you want an ear to talk off, go talk to Steve. He’s always sleeping in his cubicle anyway, so you may as well wake him up with your loud voice. </p>
+
+<p>Sincerely, 
+RICK (not Mick)</p>
+
+<h2 id="note-to-my-loved-one-the-day-after-a-difficult-and-lingering-conflict">Note to my loved one, the day after a difficult and lingering conflict</h2>
+
+<p>Hey honey,</p>
+
+<p>Listen, I’m really sorry about yesterday.</p>
+
+<p>I was out of line. I shouldn’t have said those things. I was angry, but that does not give me the right to do what I did and say what I said.</p>
+
+<p>I’m really lucky to have you. I really am. I know that I should communicate that more often to you, but sometimes we get bogged down in the mundane happenings of everyday life that it slips my mind to tell you. </p>
+
+<p>So I’m telling you now, honey. I love you with all my heart and I hope that going forward, we can let our undying love come first, and not our egos or petty squabbles.</p>
+
+<p>To make up for everything, look in the driveway :)</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[One Month Stripe Payments Part 1]]></title>
-    <link href="http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments/"/>
-    <updated>2014-08-17T20:26:36-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/08/17/one-month-stripe-payments</id>
-    <content type="html"><![CDATA[<p>I first started coding with One Month Rails. It was a very simple tutorial to go through, and it took me a month to go through it.</p>
+    <title type="html"><![CDATA[Day 12: Work That Matters]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/12/day-12-work-that-matters/"/>
+    <updated>2014-10-12T16:25:08-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/12/day-12-work-that-matters</id>
+    <content type="html"><![CDATA[<p><em>Day 12: Describe the lives of your audience by describing the lives of singular individuals.</em></p>
 
-<p>Now, <a href="http://mbsy.co/onemonth/10032515">One Month Stripe Payments has been released</a>. I finished it in a week. </p>
+<p><em>Describe the lives of your audience by describing the lives of singular individuals. Describe concerns, desires, suffering. What do they (not they, but he, she) do, say, think, and feel? Make them (not them, but him, her) as human as possible.</em></p>
+
+<h2 id="note">Note:</h2>
+<p>I took the last statement of making the character as human as possible a bit too far, and evolved from describing the life of an individual into a short story. However, by the time I realized I was off-prompt, I’d gone too far and decided to finish the story. The take-home point is that my audience is full of people like David, though perhaps not with his exact story :) </p>
+
+<p>His friends call him David, though his real name is Davoud. He’s nothing spectacular. Just an ordinary engineer. </p>
+
+<p>Every day he pores over diagrams, charts, and graphs in an attempt to perfect the design of the device his company makes. </p>
+
+<p>Although David loves his work, or at least, that’s what he tells himself and his wife, he feels unfulfilled. He really loves the idea of creating something that will help individual lives, rather than pushing the frontier of technology for the sake of pushing it. </p>
+
+<p>David is swamped with work and other worries, so he has no time to cultivate his passion for helping people. His skill in hardware engineering is a difficult one to bring to consumers on a direct basis, so he is lost. </p>
+
+<p>While having coffee with his best friend Shawn, David confides in him and asks what he should do. Shawn tells David that he should be grateful for having a job in the first place, let alone having one that pays as much as he makes, and that it’s a waste to throw his hardware engineering work to scratch an itch that might not even pan out. He concludes by saying that you can either do fulfilling work, or pay the rent.</p>
+
+<p>David tells Shawn a white lie and says that he agrees completely. The truth is, David only half-agrees. David certainly is lucky to have such a prestigious career, and the money that comes alongside, but he feels that someone as intelligent as him should be making a real difference in perhaps not the world, but definitely in individual people’s lives. He thinks of Mark Zuckerberg, Richard Branson, Steve Jobs, and Jeff Bezos; people who changed the world with their revolutionary ideas.</p>
+
+<p>However, his thoughts are brought back down to earth by Shawn, and his dreams are shattered as he realizes that perhaps he will never be as great as those figures. </p>
+
+<p>David takes solace in the fact that there’s no point in trying, and shelves his dream in the corner of his mind, the corner where sentimental, yet fundamentally useless, things are stored. Things to be looked at, but not to be used. </p>
+
+<p>One day, while eating breakfast at a cafe, David notices something not particularly peculiar, but definitely concerning. An old man is hobbling from patron to patron, unsuccessfully asking for some spare change. The patrons, each with a 7-dollar breakfast and a 3-dollar coffee in front of them, dressed to the nines, are suddenly broke, unable to give this man the smallest fraction of their wealth. </p>
+
+<p>Dejected, the old man begins sifting through a trash can. David instantly sees himself in the old man–both have a hunger that needs to be satiated, and when that hunger can’t be satiated after numerous attempts, is instead fulfilled by taking scraps of other people. </p>
+
+<p>David decides he needs to put a stop to this–both the old man digging through the garbage, and the method of satiating his hunger. </p>
+
+<p>Though he has no cash on-hand, David invites the old man to dine with him, buying a sandwich and a drink for him. </p>
+
+<p>The old man graciously accepts, and the two chat over breakfast burritos and coffee. </p>
+
+<p>David asks the old man why he doesn’t have any money to buy food. The old man replies that he once worked in finance, and had a huge house, with a beautiful wife, and a few kids. When the economy collapsed, he lost his job, and had trouble finding another one. He had to downsize the house and take a job at Starbucks, and it was then he was met with the news that his wife wanted to divorce him and take the kids. The man was ridden with the undue stress of divorce, losing his kids, and struggling to pay the bills, as well as paying back the debt he’d taken on while he was rich, and upon a visit to the doctor, was told that he had stomach cancer. He was able to barely pay for his medical bills, but the subsequent surgeries rendered him unfit to work, and as such, he was unable to pay the rent of his house, and was left on the streets. Since then, he has been wandering the streets, begging for scraps. </p>
+
+<p>The old man looks at David with a look of sincerity, yet urgency, and says, “Never settle for scraps in your life. Do things that make you grow, that make you happy. Doing things for the money will only attract to your life people who want money.”</p>
+
+<p>The old man thanks David for the meal, and hobbles off into the crowded streets of the city.</p>
+
+<p>David ponders the old man’s story, and realizes that their stories are not much different. The old man was capable of so much, but focused only on making money rather than creating value. And now he is not capable of much, and has to settle for scraps. David is capable of doing more, but settles on unfulfilling work–scraps, in the context of his life. Furthermore, David seems to only attract to his life people who are also unfulfilled in life, such as Shawn. </p>
+
+<p>David surmises that the ten dollars spent on the old man’s meal would be a drop in the bucket compared to the value of the old man’s advice, but only if he took action on it. David makes the decision to begin associating himself with people doing fulfilling work that still pays the bills. </p>
+
+<p>He applies for jobs at companies that has a mission that he truly believes in. He begins a new job that is similar to the job he was working previously, except now he knows that his work is going to mean something in the world. They even let him make some key decisions because of his expertise. David had never been happier in his life. </p>
+
+<p>David was once a hardware engineer, living an unfulfilled, meaningless life. Now, David is still a hardware engineer, doing the same work, but feels much more fulfilled. All it took was a change in what his work meant to him changed his entire outlook on life. </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 11: When a Plan Is Not Necessary]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/11/day-11-response-to-andrew-jiang/"/>
+    <updated>2014-10-11T22:54:36-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/11/day-11-response-to-andrew-jiang</id>
+    <content type="html"><![CDATA[<p><em>Day 11: After looking back and considering the blog post or article, add your own voice. Write your own response.</em></p>
+
+<p>I recently read <a href="https://medium.com/@andrewjiang/unintentionally-in-yc-9dd0ccbaeb44">this article</a> about a guy named Andrew who left finance with no direction, and a couple months later found himself in Y Combinator, possibly the most prestigious start-up accelerator in the US. I was really inspired by the story because as an entrepreneur, it is my dream for me to get accepted into YC or a similar accelerator. The story really solidified the fact that great things can happen if you simply <strong>start</strong>.</p>
+
+<p>When I read that Andrew had no plan when he moved to the Bay Area, it really made me wonder–is a plan really necessary to succeed in life? There’s the common saying, “failing to plan is planning to fail.” But how much of that is true? These days we hear a lot of stories of people who “accidentally” make it big. </p>
+
+<p>After reading this article, as well as other similar articles, it made me think that perhaps a definite plan is not always necessary. Of course, there are consequences to not having a plan, which is why some sort of fallback is necessary. For example, Andrew lived (presumably) off of savings (and ramen) and worked part-time so his burn rate would be reduced. Obviously, he wouldn’t have been able to live forever under those circumstances, but it bought him time to figure out what he wanted to do. </p>
+
+<p>In that time, instead of “figuring out” what he wanted to do, he went ahead and built stuff. He knew he wanted to build meaningful apps, so he went ahead and did that. And that leads to the first lesson we can derive from his story: </p>
+
+<p><strong>Find your itch and scratch it with passion.</strong></p>
+
+<p>In the digital age we live in, anything you create can be instantly viewed by someone at the other side of the globe. And you never know who that person knows. </p>
+
+<p>When Andrew started losing his mojo with solo projects, he joined a hackathon. There, his passions were rekindled and he got inspired to play in a bigger sandbox. In addition, he met some people that would be integral to the start-up he’d be forming. And that gives us the second lesson we can derive from his story:</p>
+
+<p><strong>Get around like-minded people</strong></p>
+
+<p>A common saying is, “It’s not what you know, it’s who you know.” I believe it’s kind of true, but also kind of backwards. “It’s not who you know, it’s who knows you.” By getting around like-minded people, you can rekindle your motivation but also get more eyes on your number one product: you (and your skills). It’s a great and fun way to make friends too. </p>
+
+<p>After Andrew got a few important eyes on his work, he and his business partner Paul formulated what would become Bayes Impact (their non-profit). Their little side project quickly escalated into something that consumed their entire lives, and the rest, as we know, it history. Perhaps the most underscored, but also the most important, lesson we can get, is this one:</p>
+
+<p><strong>Know when to stop trying new things and hone in</strong></p>
+
+<p>Andrew went from trying something new every two weeks to finally focusing on a single passion project. He knew somewhere, perhaps in his heart, that this was THE project. Maybe it was the vision that he and his team had, maybe it was the fact that he enjoyed it so much that he dedicated so much of himself to it, but regardless, he knew it was time to stop trying new things and start focusing his energies on Bayes Impact. </p>
+
+<p>Now his team is in YC, and there’s nothing that can stop them from changing the world.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 10: Unintentionally Hired by Google]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/11/day-10-imitation/"/>
+    <updated>2014-10-11T16:37:20-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/11/day-10-imitation</id>
+    <content type="html"><![CDATA[<p><em>Day 10: Return to the blog post or article you reviewed yesterday. (See description for details.)</em></p>
+
+<p><em>Return to the blog post or article you reviewed yesterday. Today, imitate its genre and purpose, but write about a topic or tell a story of your choosing. That is, write about what you want, but write in the language of the blog post or article you reviewed yesterday; make use of its logic and conventions and symbols; and find a way to offer a surprise!</em></p>
+
+<h2 id="important-note">Important note:</h2>
+
+<p>The following article is fictional. It was written for the sole purpose of imitating the writing style of <a href="https://medium.com/@andrewjiang/unintentionally-in-yc-9dd0ccbaeb44">this article</a>. My name is not Chelsea, I did not drop out of Yale, nor do I work for Google (yet!), nor did I ever create an app called EncouragUr (though it’s on my list!).</p>
+
+<h1 id="unintentionally-hired-by-google">Unintentionally Hired by Google</h1>
+<p>Leaving an Ivy League school only to be hired by the world’s most sought-after tech giant
+———————————-</p>
+
+<p>In May of 2013, I determined that the walls of my dorm room at Yale were limiting my creativity. I visited admissions to let them know not to re-enroll me for Fall semester, and at that point I was no longer a student. I sold off my belongings and booked a one-way flight to SFO, eager to start fresh. No job, no plan, not even a place to live (I would be what I called an “AirBnB couch surfer” for the first two months).</p>
+
+<p>As of this writing, it’s exactly one year later, and ten months since I started employment at Google. How did this happen?</p>
+
+<p>Here’s the entire unintentional story. </p>
+
+<h2 id="moving-fast-and-breaking-things">Moving Fast and Breaking Things</h2>
+
+<p>During the first two months living in the Bay Area, I slept in many different beds thanks to AirBnB, and survived off of dollar Taco Tuesdays and Top Ramen. I worked part-time at a grocery store to reduce the burn rate of my savings and get discounts on groceries. At nights would crank out prototypes, fleshing out new ideas every few weeks. </p>
+
+<p>I made some garbage apps, and I made some priceless gems. Some of them still have potential, but I simply didn’t have the drive to pursue them further, which leads me to the first lesson I learned: <strong>You need to care deeply about the problem you’re solving.</strong></p>
+
+<h2 id="lets-chat">“Let’s chat.”</h2>
+
+<p>I began to feel a bit lonely and unfulfilled, so I decided to attend my first hackathon. I met with some great people at this hackathon, but the resulting product is the direct cause of my employment at Google. </p>
+
+<p>The mission of this particular hackathon was to build something that one person can use to help another person in their lives. Our team built “EncouragUr,” a way for people to send anonymous messages/postcards to their friends who may be feeling a bit unmotivated. </p>
+
+<p>I shared the hack with my friends on Facebook and got a lot of positive feedback. One person in particular was my friend Justine, who worked at Google, left a simple comment: “Let’s chat.”</p>
+
+<p>I messaged her and we had dinner together, and she told me she’d shared the app with her hiring manager, saying that my passion for unleashing the greatness within people would be a great asset to Google. I was taken aback–I had no intentions of working for Google. I just wanted to freelance my way to paying bills and being debt-free. I thanked her and continued my merry ways of project-to-project, couch-to-couch living, anxiously awaiting that email. </p>
+
+<h2 id="hi-chelsea-we-heard-about-your-work-and-would-like-to-meet-with-you">“Hi Chelsea. We heard about your work and would like to meet with you.”</h2>
+
+<p>I told one of my hosts about my situation and he told me that he’d heard that Google’s hiring process was notoriously difficult. That made me even more anxious, so all my projects came to a dead stop as I began brushing up on my algorithm and data structure skills. </p>
+
+<p>A week after that dinner, while I was aimlessly browsing Reddit to wind down, I got the email. </p>
+
+<blockquote>
+  <p>From: Ryan (at Google)
+To: Chelsea </p>
+
+  <p>Hi Chelsea. We heard about your work and would like to meet with you.</p>
+
+  <p>Ryan
+Hiring Manager at Google</p>
+</blockquote>
+
+<p>I could hardly believe my eyes. I quickly replied and was soon on the phone with Ryan, who scheduled me for an interview on the Tuesday of the next week.</p>
+
+<p>That weekend was manic. I did my best to solve problems on TopCoder, CodeAbbey, anything that could help me with my algorithmic thinking. I polished my interviewing skills and filled out my notebook with questions I thought I should ask at the interview. By the time Monday rolled around, I was breathing coffee, but I knew Dijkstra’s algorithm better than the back of my hand. </p>
+
+<p>I decided to take Monday to relax, so I could be well-rested for my big interview on Tuesday. </p>
+
+<p>The day of the interview will always be forged in my memory. I nervously sat in the waiting room while another candidate was being interviewed. When they called me into the room, I was so nervous I tripped on the carpet while walking into the room. Classy. </p>
+
+<p>Sitting in front of me was my interviewer: David Zen. He cut to the chase and had me solve a problem on a whiteboard. He asked me about my experience. My passions, my life goals. There was nary a moment of silence as our interview convened. </p>
+
+<p>After perhaps the fastest half-hour of my life, I shook his hand, thanked him, and was on my way out. While on the BART back to SF, I called my boyfriend, my mom, my dad, my brother; anyone who I thought would care about this big interview. I was so excited and anxious and nervous that I didn’t even notice the incoming call from the 408 area code. I finally noticed it when I got off the BART in SoMa, San Francisco, and promptly called back. </p>
+
+<p><strong>It was Ryan, with an invitation to begin employment at Google the following week.</strong></p>
+
+<p>Salary and relocation would be negotiated in the following days, but I’d done it. Two months after I’d dropped out of school and flew to California with nothing but the clothes in my bag and my MacBook, I’d secured employment at Google. For those of you who want a career shift or just a new life, why wait? <strong>Start now, you never know who will notice.</strong> Or, in Cal Newport’s words: “Be so good they can’t ignore you.”</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 9: Writer's Review of Unintentionally in YC]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/09/writers-review-of-unintentionally-in-yc/"/>
+    <updated>2014-10-09T16:20:59-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/09/writers-review-of-unintentionally-in-yc</id>
+    <content type="html"><![CDATA[<p><em>Day 9: Write a review—a review for writers—of your favorite recent blog post or article. (See description for details.)</em></p>
+
+<p><em>Write a review—a review for writers—of your favorite recent blog post or article. What ideas draw you into the article? But, more than the ideas, what writing choices did the author make that made it so good? What tools of representation—words, jokes, descriptions, metaphors, hyperbole, informal voice, call to action, etc.—did the author use that you also might use someday?</em></p>
+
+<p><a href="https://medium.com/@andrewjiang/unintentionally-in-yc-9dd0ccbaeb44">The article</a></p>
+
+<p>I picked this article because I wish to start a start-up one day, and the fact that someone could “unintentionally” get into YC really piqued my interest. It’s also, overall, an inspirational story with a simple call-to-action: start! </p>
+
+<p>The first thing that stands out about the article would be the title. </p>
+
+<p>“Unintentionally in YC: Leaving finance and landing in the world’s most prestigious accelerator without meaning to”</p>
+
+<p>Anyone who’s ever dreamed of starting a start-up knows the two letters YC, and it’s always their goal to get accepted into YC. The target audience is already suckered in–unintentionally getting into YC is the pipe dream, and so the title provides intrigue. </p>
+
+<p>Andrew starts the article with his before: “I’d crash on friends’ couches for the better part of two months” and then the after: “we’re working with the best civic and nonprofit organizations in the world, including the Gates Foundation, Kipp, and the White House.”</p>
+
+<p>There is a stark contrast before his before and after, and everyone loves reading about the “rags to riches” hero story (even if the hero did not necessarily begin in rags nor end in riches). This sets the context for the story to follow, and invites the readers to join him in his journey. </p>
+
+<p>Andrew begins his story with his little pet projects. It’s a logical place to start a story about start-ups. I would venture to say that the primary project of a start-up is rarely the first project of the founders. </p>
+
+<p>When transitioning to his start into team-prototyping, there’s a full-size picture that has 5 words: “Dude, we need to talk.” Very entrancing and makes the reader wonder, “about what?” </p>
+
+<p>The next “chapter” of his story is when he gets an offer from YC. This is signified by another full-size picture with the text, ““Hi Paul, Andrew, and Eric — This is not spam””</p>
+
+<p>Given that the reader already knows that Andrew has gotten into YC, the reader automatically assumes that the quote came from someone from YC, reaching out. </p>
+
+<p>The rest of the story details the team’s interview process and getting excited to begin a new chapter of their lives. </p>
+
+<p>I really enjoyed the story primarily because it spoke to my heart, as an entrepreneur at heart. </p>
+
+<p>Though the style in which the article is written is nothing special (except of course for the breaks in text via pictures), I just enjoyed the encouraging story behind the text, as well as the simple call to action at the end: “Just start.”</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 8: Letter to Business Owner]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/08/letter-to-business-owner/"/>
+    <updated>2014-10-08T22:00:48-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/08/letter-to-business-owner</id>
+    <content type="html"><![CDATA[<p><em>Day 8: Write a thank-you letter to the owner of a business. (See description for further context.)</em></p>
+
+<p><em>Write a thank-you letter to the owner of a business who anticipated, met, and exceeded your needs. Tell your story. Describe your experience candidly, and your delight, and your surprise. After you’ve finished a draft of the letter, go back and make it beautiful and clear. Do your best to make your prose (its precision, its melody) really carry your gratitude, by expressing your story concretely and your feelings truly.</em></p>
+
+<p>[It’s been a while since I’ve had the pleasure of being pleasantly surprised by the quality of service of a business owner. As such, I am going to create a story of such an experience and tell it through this fictitious letter]</p>
+
+<p>Dear Jacques, </p>
+
+<p>Last week, my boyfriend and I had the pleasure of dining at Caffe Rolle for our anniversary, during what seemed to be a peak time–Friday night dinner. I am writing this letter to express my utmost appreciation for the service we received that night. </p>
+
+<p>When we arrived, there was already a line of people waiting to be seated. I had heard excellent things about this restaurant and needed to experience it for myself, even if I had to wait a half hour to be seated. </p>
+
+<p>My wait was alleviated by the fact that there was a TV in the waiting area, as well as a water cooler. There were also pamphlets that were designed to teach French basics. Going through those pamphlets and quizzing and being quizzed by my boyfriend was a lot of fun, and definitely a productive way to pass the time. </p>
+
+<p>The 30 minutes was over before we knew it, and we were seated at a table with one long unlit candle in the middle, though no other tables had a candle. After we were seated, however, we were greeted by none other than you yourself, the owner of the fine establishment. You came by to offer us a complimentary bottle of wine and a plate of escargot as appetizers, and to wish us a happy anniversary.</p>
+
+<p>I followed your steps as you departed our table, and you disappeared into the kitchen, only to emerge with another bottle and a plate of escargot, ready to serve another table. I looked around and saw that the restaurant was extremely busy, but the fact that you personally came by to greet us was extremely touching, and I assumed it was commonplace since you were off to serve another table. It was at that point that I knew that I was in for quite the experience. It was also at this point that I had begun to suspect that my boyfriend had perhaps planned this when he made his reservation, but I made no mention of it. </p>
+
+<p>We browsed through the menu while chewing our snails. Though the menu was all in French, the pamphlets in the waiting area helped with understanding it. I settled on the coq au vin, and my boyfriend chose the pot-au-feu. The waitress assured us that we made excellent choices and was off to deliver our order. </p>
+
+<p>While waiting, we continued learning French through the pamphlets and before we knew it, our food was served. I could tell that there was a professionally trained chef in the kitchen because the presentation of the food was more perfect than what you’d usually see on TV. The waitress offered to take a picture of us before we started on our food, and we took her up on the offer. </p>
+
+<p>As we ate our food, our waitress continually refilled our water cups and ensured that everything was fine for us. Not once were we given the bill before we were ready. I overheard a group who had received the wrong order and it sounded like they were given free dessert for their troubles. </p>
+
+<p>We were given take-home boxes and our food was professionally packed, rather than leaving us to our own devices, and then we were offered the dessert menu. You can never go wrong with creme brûlée so we ordered one for each of us. The dessert was delectable, and was definitely the right size. </p>
+
+<p>My boyfriend and I decided on a hefty 30% tip for the amazing service we were offered, and even then I still feel like we got the better end of the deal. As we got ready to leave, you approached us from the kitchen yet again, with a bouquet of red roses in your hands. By the way they were cut, I could tell that they were not the kind you get at the gas station. I graciously accepted your gift, and we pushed past the line of people at the door to leave. </p>
+
+<p>That must have been the single-most pleasant dining experience I have ever had. Even if my boyfriend were somehow involved in organizing this, we were both pleasantly surprised by the quality of service. The way you treat each customer as an individual, rather than just another customer, is likely why you are the top-rated restaurant on Yelp for a 30 mile radius. </p>
+
+<p>Keep doing what you’re doing. Thank you again. </p>
+
+<p>Regards,
+Monica Trebal</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 7: Always Experiment]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/07/experiment/"/>
+    <updated>2014-10-07T23:16:53-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/07/experiment</id>
+    <content type="html"><![CDATA[<p>The truth: “Experiment with everything.” </p>
+
+<p>Many restaurants have dozens upon dozens of types of delicious foods. Many “regulars” of these restaurants order the “usual” because they are afraid of trying something new. I challenge you to be the person who tries a new dish, just to try it–because hey, you may find yourself a new “usual!”</p>
+
+<p>Just like patrons of a restaurant, writers too have a “usual.” Of course, there is nothing wrong with having a “usual” genre–“Harry Potter” is proof that 7 books based on the same character can be pretty successful. If it ain’t broke, why fix it? But maybe it is broke, and you may not realize it. I never realized that I needed new glasses until I did get new glasses–then I realized how blind I had been, and how much clearer the world was supposed to be. </p>
 
 <!-- more -->
 
-<p>The finished product can be viwed <a href="http://calm-everglades-6719.herokuapp.com">here</a>. I edited a few things of course, I just wanted to get a feel of how things worked.</p>
+<p>If you’re already extremely happy with the genre you choose to write, or the plot elements of your stories, then there’s no reason to change it. But if perhaps you’re just starting writing, there’s no reason to try the buffet.</p>
 
-<p>Now, I’m re-coding the project to make a website for a friend. You can follow along with the <a href="https://github.com/abustamam/stuart_welch">Github repo</a></p>
+<p>After all, there are countless combinations of genres of media. There are thriller movies, thriller novels, thriller TV shows, thriller plays, etc… And even within the thriller genre, there are crime thrillers, horror thrillers, action thrillers, and some of those even overlap. And then of course there are crime thrillers with a strong female lead, or action thriller comedies that have a comic relief secondary character… </p>
 
-<p>First, to start, I learned something the hard way. Make sure that your project path does not contain any spaces. After probably hours of troubleshooting, I finally elected to change my <code>Rails projects</code> directory to <code>Rails_Projects</code> and everything worked fine. So don’t make my mistake!</p>
+<p>Therefore, it is impossible for anyone to experience every single combination of media, let alone write for each combination. Most people simply write in the genre that they like. A sucker for romantic comedies will likely stick to romance-type creations, whereas an action movie buff will likely make things that have explosions and shooting. After all, it only makes sense for the writer to enjoy the finished product. </p>
 
-<p>Second, here are a list of things you should know about the app:</p>
+<p>I never really liked “crime thrillers” before I saw Breaking Bad a few years ago. When I’d first heard of Breaking Bad, and what its premise was, I dismissed it as stupid. Not only that, but my idea of a “TV series” was something akin to those daily soap operas that are terrible but get watched anyway. </p>
 
-<ul>
-  <li>Ruby version: 2.1.0</li>
-  <li>Rails version: 4.1.1</li>
-  <li>Using sqlite3 for development</li>
-  <li>Using pg for production (in Heroku)</li>
-  <li>Using haml</li>
-</ul>
+<p>So Breaking Bad didn’t have a lot going for it in my head.</p>
 
-<p>You’re free to make the app in whichever way you’d like, of course. But this write-up will be following those constraints. Your Gemfile should look something like this:</p>
+<p>But then after all my friends were watching it and I began to feel left out, I got up to speed and realized that a) crime thrillers could be awesome, b) TV series could be awesome, and c) there’s a LOT of awesome things out there that I would love but can’t give it a chance for me to love it. </p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Gemfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-<span class="line-number">34</span>
-<span class="line-number">35</span>
-<span class="line-number">36</span>
-<span class="line-number">37</span>
-<span class="line-number">38</span>
-<span class="line-number">39</span>
-<span class="line-number">40</span>
-<span class="line-number">41</span>
-<span class="line-number">42</span>
-<span class="line-number">43</span>
-<span class="line-number">44</span>
-<span class="line-number">45</span>
-<span class="line-number">46</span>
-<span class="line-number">47</span>
-<span class="line-number">48</span>
-<span class="line-number">49</span>
-<span class="line-number">50</span>
-<span class="line-number">51</span>
-<span class="line-number">52</span>
-<span class="line-number">53</span>
-<span class="line-number">54</span>
-<span class="line-number">55</span>
-<span class="line-number">56</span>
-<span class="line-number">57</span>
-<span class="line-number">58</span>
-<span class="line-number">59</span>
-<span class="line-number">60</span>
-<span class="line-number">61</span>
-<span class="line-number">62</span>
-<span class="line-number">63</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="n">source</span> <span class="s1">&#39;https://rubygems.org&#39;</span>
-</span><span class="line"><span class="n">source</span> <span class="s1">&#39;http://gems.github.com&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="n">ruby</span> <span class="s1">&#39;2.1.0&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Bundle edge Rails instead: gem &#39;rails&#39;, github: &#39;rails/rails&#39;</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;rails&#39;</span><span class="p">,</span> <span class="s1">&#39;4.1.1&#39;</span>
-</span><span class="line"><span class="c1"># Use sqlite3 as the database for Active Record in development and test</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;sqlite3&#39;</span><span class="p">,</span> <span class="ss">group</span><span class="p">:</span> <span class="o">[</span><span class="ss">:development</span><span class="p">,</span> <span class="ss">:test</span><span class="o">]</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use postgres as the database in production</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;pg&#39;</span><span class="p">,</span> <span class="ss">group</span><span class="p">:</span> <span class="ss">:production</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Add 12 factor for Heroku</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;rails_12factor&#39;</span><span class="p">,</span> <span class="ss">group</span><span class="p">:</span> <span class="ss">:production</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use bootstrap</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;bootstrap-sass&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use SCSS for stylesheets</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;sass-rails&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 4.0.3&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use Uglifier as compressor for JavaScript assets</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;uglifier&#39;</span><span class="p">,</span> <span class="s1">&#39;&gt;= 1.3.0&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use CoffeeScript for .js.coffee assets and views</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;coffee-rails&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 4.0.0&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use figaro for securely managing credentials</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;figaro&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use jquery as the JavaScript library</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;jquery-rails&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;turbolinks&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;jbuilder&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 2.0&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># bundle exec rake doc:rails generates the API under doc/api.</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;sdoc&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 0.4.0&#39;</span><span class="p">,</span>          <span class="ss">group</span><span class="p">:</span> <span class="ss">:doc</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;spring&#39;</span><span class="p">,</span>        <span class="ss">group</span><span class="p">:</span> <span class="ss">:development</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use haml</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;haml&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Add stripe for payment processing</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;stripe&#39;</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">&#39;https://github.com/stripe/stripe-ruby&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use letter opener in dev</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;letter_opener&#39;</span><span class="p">,</span> <span class="ss">:group</span> <span class="o">=&gt;</span> <span class="ss">:development</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use Automated Admin System</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;activeadmin&#39;</span><span class="p">,</span> <span class="ss">github</span><span class="p">:</span> <span class="s1">&#39;gregbell/active_admin&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use devise</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;devise&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="c1"># Use ActiveModel has_secure_password</span>
-</span><span class="line"><span class="n">gem</span> <span class="s1">&#39;bcrypt&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.1.7&#39;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>Hey, maybe I would love romantic comedies, or action dramas, but I just don’t feel like giving those genres a chance. Maybe I’d like movies with a strong female lead, or movies that focus on a homosexual couple. If I never give it a chance, how will I never know for sure? </p>
 
-<p>Since we’re using <code>pg</code> instead of <code>sqlite3</code> as our database, let’s remove it from the production part of the database file.</p>
+<p>I’m a fan of trying something new for 30 days, just to see if you’ll like it. Through this method, I found that I liked reading, enjoyed programming, and especially loved writing. Even if you end up failing the 30 day challenge for whatever reason, at least you can say you tried it, and it wasn’t for you.</p>
 
-<p>Run <code>bundle install --without production</code> and you should be ready to run!</p>
+<p>So hey–why not branch off just for a bit and do something you’ve never done in writing before? You might find something amazing. </p>
 
-<p>Go ahead and make your new rails app:</p>
+<p>This NaNoWriMo, I plan to do something that I’d never thought to do–and that is have a female protagonist. Every story that I’d thought up of in my head always had a male protagonist, and there was always a female in there that required saving. This is a common trope in stories everywhere, both in print and on the big screen. </p>
 
-<p><code>rails new stripe_payments</code></p>
-
-<p>The first thing you’ll want to do is configure your home page. </p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app/controllers/pages_controllers.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="k">class</span> <span class="nc">PagesController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
-</span><span class="line">   <span class="k">def</span> <span class="nf">home</span>
-</span><span class="line">   <span class="k">end</span>
-</span><span class="line"><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Quick way to do this is to run <code>rails g controller pages</code> and the <code>pages_controller.rb</code> file will automatically be generated. </p>
-
-<p>Make the routes point to it:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>config/routes.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="no">Rails</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">routes</span><span class="o">.</span><span class="n">draw</span> <span class="k">do</span>
-</span><span class="line">  <span class="n">root</span> <span class="s1">&#39;pages#home&#39;</span>
-</span><span class="line"><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Now, create your home page. Remember I’ll be using HAML. The tutorial uses ERB. Use whichever suits your fancy.</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app/views/pages/home.html.haml</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line">Hello world!
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>At this point in the One Month Stripe Payments Tutorial, Chris “steals” (I mean borrows!) his own design from another one of his repositories. Of course there’s nothing wrong with it, since he’s using his own design. The next couple of days are focused on establishing the functionality of the page that it’s supposed to have. That being said, let’s just copy the finalized design and skip the legwork.</p>
-
-<p>Here are the files you’ll want to look out for:</p>
-
-<ul>
-  <li>app/views/layouts/application.html.haml</li>
-  <li>app/views/pages/home.html.haml</li>
-  <li>app/assets/ (everything inside)</li>
-  <li>config/environment/production.rb </li>
-</ul>
-
-<p>In that last file, the following changes were necessary:</p>
-
-<ul>
-  <li>Change <code>config.assets.compile</code> to <code>true</code></li>
-  <li>Uncomment <code>config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'</code></li>
-  <li>Change <code>config.assets.digest</code> to <code>true</code></li>
-</ul>
-
-<p>This was to make the assets work on Heroku.</p>
-
-<p>Again, here is the <a href="https://github.com/abustamam/stuart_welch">Github repo</a>.</p>
-
-<p>All in a day’s work right? Tomorrow we’ll finish adding Stripe functionality and we’ll be done, hopefully!</p>
-
+<p>I want to do something that I’ve never done before. And so, I am going to experiment with this concept and see if it’s something that jives with me. I wish you the best of luck in your own experiments. </p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Code School Angular JS: Part 1]]></title>
-    <link href="http://abustamam.github.io/blog/2014/08/06/angular-code-school/"/>
-    <updated>2014-08-06T20:36:54-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/08/06/angular-code-school</id>
-    <content type="html"><![CDATA[<p>I’ve been going through the <a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/">Shaping Up with AngularJS</a> 
-course and decided to share a bit about what I’ve been learning. </p>
-
-<!--more-->
-
-<p>I feel the best way to learn is to teach. So I’m doing a write-up of the course, adding in some explanations for the
-challenges, and adding some mini-assignments to keep you on your toes, and for you to check your own understanding. </p>
-
-<p>This write-up is not meant to be a replacement for the Code School course; but merely a companion. That being said, 
-it’s also written textbook-style–if you have this document with you, you can read through it and test yourself 
-pretty easily. If you have pen and paper, you can also do all of the challenges. No need for an interpreter or 
-anything. The challenges and mini-assignments are small enough for you to be able to write everything down, simply to
-test your understanding. </p>
-
-<p>This is part 1 of the series, which will go over installing Angular (and Bootstrap) and setting up our first controller.</p>
-
-<p>If you want to be able to share your project, go ahead and do Lesson 0; if you just want to run the app locally on your
-machine, skip to Lesson 1. Code School does not go over deploying git, so it might be helpful to follow along. </p>
-
-<p><a href="#tldr">TL;DR</a></p>
-
-<h2 id="lesson--1-what-is-angular">Lesson -1: What is Angular?</h2>
-
-<p>Angular is…</p>
-
-<blockquote>
-  <p>A client-side Javascript framework for adding interactivity to HTML.</p>
-</blockquote>
-
-<p>Angular uses a couple of things in order to achieve this–Directives, and Modules.</p>
-
-<blockquote>
-  <p>A Directive is a marker on a HTML tag that tells Angular to run or reference some JavaScript code.</p>
-</blockquote>
-
-<p>Basically, it’s an HTML property. It looks something similar to this:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Directive example</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;body</span> <span class="na">ng-controller =</span><span class="err"> </span><span class="s">&quot;StoreController&quot;</span><span class="nt">&gt;&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>The <code>ng-controller</code> bit is the <code>directive</code>.</p>
-
-<p>A <code>module</code> is where we write pieces of our application. Then we join them together like Lego.</p>
-
-<p>Using modules allows us to write testable, readable code. It also defines dependencies, as modules can use other
-modules! </p>
-
-<p>Now that you know what Angular is in a nutshell, continue on to set it up!</p>
-
-<h2 id="lesson-0-set-up-angular-and-bootstrap">Lesson 0: Set up Angular and Bootstrap</h2>
-
-<p>This step can be tricky, since there are a few ways to install Angular and Bootstrap. </p>
-
-<h3 id="the-easy-way-using-cdn">The easy way: using CDN</h3>
-
-<p>You can simply add the following code to your <code>head</code>:</p>
-
-<pre><code>&lt;script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt;
-</code></pre>
-
-<p>Keep in mind that the code will not work locally unless you type <code>http:</code> before all of that.</p>
-
-<h3 id="the-hard-way-using-bower">The hard way: using Bower</h3>
-
-<p>Okay, the hard way isn’t really that hard, it just requires you to install Node/npm, then <code>npm install -g bower</code>, then 
-<code>bower install bootstrap</code> and <code>bower install angular</code>. I won’t go into that since it’s not the purpose of this post,
-but feel free to reach out if you get stuck. </p>
-
-<p>Your assets will then be thrown into <code>/bower_components</code> so make sure that your <code>head</code> reflects that.</p>
-
-<h3 id="deploying-live">Deploying live</h3>
-
-<p>In your command line, just type <code>git init</code> and follow GitHub’s instructions to push your code up! </p>
-
-<p>If you want to deploy it live, then create a new branch called <code>gh-pages</code>:</p>
-
-<pre><code>$ git co -b gh-pages
-</code></pre>
-
-<p>And then commit everything, and when you go to <code>[your_username].github.io/[your_project_name]</code> it will be live.</p>
-
-<p>If you need additional info feel free to drop a line! </p>
-
-<p>Mine is currently <a href="http://abustamam.github.io/FlatLanders">here</a>.</p>
-
-<h2 id="lesson-1-setting-up-appjs-indexhtml-and-our-first-controller">Lesson 1: Setting up <code>app.js</code>, <code>index.html</code> and our first controller</h2>
-
-<p>The goal for this course is to make an app so that the Flat Landers can sell some gems! Hey, I don’t make the 
-stories here. So let’s get our storefront set up and ready for money! </p>
-
-<h3 id="your-first-module">Your first module</h3>
-
-<p>Create two new files; <code>app.js</code> and <code>index.html</code>. </p>
-
-<p>The first thing we need to do is create our first module! This is simple. Add the following to <code>app.js</code>:</p>
-
-<pre><code>var app = angular.module('gemStore',[]);
-</code></pre>
-
-<p>Okay, we’ve created our module. Now we need to <em>bind</em> it to our html.</p>
-
-<p>Begin your <code>index.html</code> like so:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-</span><span class="line"><span class="nt">&lt;html</span> <span class="na">ng-app=</span><span class="s">&#39;gemStore&#39;</span><span class="nt">&gt;</span>
-</span><span class="line">  <span class="nt">&lt;head&gt;</span>
-</span><span class="line">    <span class="c">&lt;!-- link and script tags may vary depending on how you decided to obtain bootstrap and angular --&gt;</span>
-</span><span class="line">    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href=</span><span class="s">&quot;bootstrap.min.css&quot;</span> <span class="nt">/&gt;</span>
-</span><span class="line">    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;angular.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class="line">    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;app.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class="line">  <span class="nt">&lt;/head&gt;</span>
-</span><span class="line">  <span class="nt">&lt;body&gt;</span>
-</span><span class="line">    <span class="nt">&lt;h1&gt;&lt;/h1&gt;</span>
-</span><span class="line">  <span class="nt">&lt;/body&gt;</span>
-</span><span class="line"><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Notice the new <code>ng-app</code> property in the <code>html</code> tag. This is a <code>directive</code> in Angular. Get used
-to using them; it’s how we’ll be ‘attaching’ things to HTML. Eventually we’ll be making our own custom directives,
-but for now we’ll use some built-in ones. </p>
-
-<p>You can name your <code>ng-app</code> whatever you want, as long as it matches 
-the <code>app</code> variable in in <code>app.js</code>!</p>
-
-<p>And there you have it! You are now running Angular. You don’t need to use a server in order to view how things look. 
-You can simply preview <code>index.html</code> in your browser. </p>
-
-<p>To test it out, go ahead and write some code between the <code>h1</code>s:
-&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;figcaption&gt;<span>app.js</span>&lt;/figcaption&gt;&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class="javascript"><span class="line"><span class="p">...</span>
-</span><span class="line"><span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span>
-</span><span class="line">    <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="p"></span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
-</span><span class="line"><span class="o">&lt;</span><span class="err">/body&gt;</span>
-</span><span class="line"><span class="p">...</span>
-</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
-
-<p>Now, you can run JavaScript code between double curly-braces! Try different things out! </p>
-
-<h3 id="your-first-controller">Your first controller</h3>
-
-<p>We’re making a Gem store. So, we need some Gems to sell! </p>
-
-<p>We’re going to update our <code>app.js</code> to do a couple of things. First, we’re going to wrap everything into a closure like 
-so:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class="line">    <span class="nx">code</span>
-</span><span class="line"><span class="p">})();</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>We can’t have a store without stuff to sell, so now, we’re going to add stuff to sell! Let’s create a gem. Right now, we want to keep things simple, so let’s
-just make it so our gem has a Name and a Price. Bringing the basics back to shopping! </p>
-
-<p>The gem will go within the anonymous function. </p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="kd">var</span> <span class="nx">gem</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class="line">    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">price</span><span class="o">:</span> <span class="mf">2.95</span>
-</span><span class="line"><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><a name="mini1"></a></p>
-
-<h4 id="mini-assignment-1-see-if-you-can-add-a-description-property-to-the-gem-variable">Mini-assignment 1: see if you can add a description property to the <code>gem</code> variable!</h4>
-<p><a href="#minisol1">Click for answer</a></p>
-
-<p>But how do we get data from the gem onto the page?</p>
-
-<p>That’s where controllers come in.</p>
-
-<h4 id="whats-a-controller">What’s a controller?</h4>
-
-<p>Good question. </p>
-
-<p>According to Code School, </p>
-
-<blockquote>
-  <p>Controllers are where we define our app’s behavior by defining functions and values</p>
-</blockquote>
-
-<p>Basically, it’s a way for us to <em>abstract</em> the programming logic from the page into our script.
-Thus, we can grab functions and values from <code>app.js</code> and insert them directly into our <code>index.html</code> page. </p>
-
-<p>First, we gotta make our controller. The code for a controller is simply:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Controller Creation</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;[ControllerName]&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class="line">    <span class="k">this</span><span class="p">.</span><span class="nx">property</span> <span class="o">=</span> <span class="s2">&quot;foo&quot;</span>
-</span><span class="line"><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Keep in mind that everything you write in the controller belongs to the <em>scope</em> of the controller. I sometimes forgot
-that, so watch out! </p>
-
-<p>Second, you need to <em>bind</em> the controller to your html. This takes place with a <code>directive</code>!</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Controller Binding</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;tag</span> <span class="na">ng-controller =</span><span class="err"> </span><span class="s">&quot;[ControllerName] as [Alias]&quot;</span><span class="nt">&gt;</span>
-</span><span class="line"><span class="nt">&lt;/tag&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>You need to create an alias for the controller in order to use it. It doesn’t matter what the alias name is, as long
-as you use the alias.</p>
-
-<p>Before we move on, let’s try these mini-assignments first. </p>
-
-<p><a name="mini2"></a></p>
-
-<h4 id="mini-assignment-2-how-would-you-create-a-controller-called-storecontroller">Mini-assignment 2: How would you create a controller called ‘StoreController’?</h4>
-<p><a href="#minisol2">Click for answer</a></p>
-
-<p><a name="mini3"></a></p>
-
-<h4 id="mini-assignment-3-how-would-you-bind-the-controller-to-a-body-tag-with-alias-of-store">Mini-assignment 3: How would you bind the controller to a <code>body</code> tag with alias of ‘Store’?</h4>
-<p><a href="#minisol3">Click for answer</a></p>
-
-<p>Should have been pretty easy for a smart cookie like you!</p>
-
-<p>You can bind the controller to any tag, but you won’t be able to use the controller outside the scope of the tag. So
-consider the following example:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Controller Example</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;section</span> <span class="na">id =</span><span class="s">&quot;works&quot;</span> <span class="na">ng-controller =</span><span class="err"> </span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;foo&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">        
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line"><span class="nt">&lt;/section&gt;</span>
-</span><span class="line">
-</span><span class="line"><span class="nt">&lt;section</span> <span class="na">id =</span><span class="err"> </span><span class="s">&quot;nowork&quot;</span> <span class="nt">&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;bar&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">        
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line"><span class="nt">&lt;/section&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Anything within the <code>works</code> section will parse properly. Anything within the <code>nowork</code> section will not parse. </p>
-
-<h3 id="built-in-directives">Built-in directives</h3>
-
-<p>Remember, we can think of a <code>directive</code> as an html tag property that extracts data from our JavaScript. Luckily, 
-Angular comes with some built-in directives. Eventually, we’ll be making our own directives, but you gotta start
-somewhere!</p>
-
-<p>We’re running a store, and a store has physical quantities. 
-If we run out, customers should not be able to purchase! Let’s take care of this functionality.</p>
-
-<p>First, let’s update our Gem to have a couple more properties:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="p">...</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">gem</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class="line">    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">price</span><span class="o">:</span> <span class="mf">110.50</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">canPurchase</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">soldOut</span><span class="o">:</span> <span class="kc">true</span>
-</span><span class="line"><span class="p">};</span>
-</span><span class="line"><span class="p">...</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>The key names should be self-evident.</p>
-
-<p>I’m going to introduce you to a couple of built-in directives: <code>ng-show</code> and <code>ng-hide</code>. </p>
-
-<p>Let’s go over briefly how to use these two directives. <code>ng-show</code> and <code>ng-hide</code> work similarly; with <code>ng-show</code> the tag
-will never display unless the code in the directive evaluates to true, and with <code>ng-hide</code> the tag will always display
-unless the code in the directive evaluates to true. </p>
-
-<p>That being said, try this mini-assignment to test your wits!</p>
-
-<p><a name="mini4"></a></p>
-
-<h4 id="mini-assignment-4-which-tags-will-display-which-will-be-hidden">Mini-assignment 4: Which tags will display? Which will be hidden?</h4>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>mini-assignment 4-1</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">ng-show=</span><span class="s">&quot;store.product.canPurchase&quot;</span><span class="nt">&gt;</span> Add to Cart <span class="nt">&lt;/a&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>mini-assignment 4-2</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">ng-hide=</span><span class="s">&quot;store.product.soldOut&quot;</span><span class="nt">&gt;</span> Add to Cart <span class="nt">&lt;/a&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>mini-assignment 4-3</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">ng-show=</span><span class="s">&quot;store.product.soldOut&quot;</span><span class="nt">&gt;</span> Add to Cart <span class="nt">&lt;/a&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>mini-assignment 4-4</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">ng-hide=</span><span class="s">&quot;store.product.canPurchase&quot;</span><span class="nt">&gt;</span> Add to Cart <span class="nt">&lt;/a&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Hint: keep in mind that <code>canPurchase</code> is <code>false</code>, and <code>soldOut</code> is <code>true</code>.</p>
-
-<p><a href="#minisol4">Click for answer</a></p>
-
-<p>Great work! </p>
-
-<p>Now try this challenge! </p>
-
-<p><a name="mini5"></a></p>
-
-<h4 id="mini-assignment-5-use-directives-to-achieve-the-following-goals-for-the-following-code">Mini-assignment 5: Use directives to achieve the following goals for the following code:</h4>
+    <title type="html"><![CDATA[Day 6: Stupid Ideas]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/06/stupid-ideas/"/>
+    <updated>2014-10-06T23:50:43-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/06/stupid-ideas</id>
+    <content type="html"><![CDATA[<p>“There is no such thing as a stupid idea.” What a truth this is! </p>
+
+<p>Every day, aspiring writers give up their goal to become published because they feel like their ideas are stupid. </p>
+
+<p>Here are a few “stupid” ideas that the authors decided to write about anyway. Let’s see how they turned out:</p>
 
 <ul>
-  <li>Button will not show when the product’s <code>canPurchase</code> property is <code>false</code></li>
-  <li>.product div will not show when the product’s <code>soldOut</code> property is <code>true</code></li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>mini-assignment 5</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">  <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">    
-</span><span class="line">    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">  <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line">  <span class="nt">&lt;button&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-</span><span class="line"><span class="nt">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><a href="#minisol5">Click for answer</a></p>
-
-<h3 id="do-it-again-and-again-and-again-and">Do it again and again and again and…</h3>
-
-<p>We’re running a store. A store with only one thing to be sold is kind of boring. Let’s add a few more gems, like so:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="p">...</span>
-</span><span class="line"><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;StoreController&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class="line">   <span class="k">this</span><span class="p">.</span><span class="nx">products</span> <span class="o">=</span> <span class="nx">gems</span><span class="p">;</span>
-</span><span class="line"><span class="p">});</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">var</span> <span class="nx">gems</span> <span class="o">=</span> <span class="p">[</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">2.95</span> <span class="p">},</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bloodstone&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">5.95</span> <span class="p">},</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Zircon&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">3.95</span> <span class="p">},</span>
-</span><span class="line">  <span class="p">];</span>
-</span><span class="line"><span class="p">...</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Now we have an array of <code>gems</code>: so, in order to get, let’s say, Azurite, we’ll reference it by its index number. In 
-<code>index.html</code> we’ll reference it like so:
-    store.products.gems[0]</p>
-
-<p>So in order to format that into a <code>div</code>, with name and price, we’ll do it like this:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">  <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">    
-</span><span class="line">    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">  <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line"><span class="nt">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>One down, two to go! </p>
-
-<p>Our <code>index.html</code> will end up looking something like this:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span> <span class="na">ng-controller=</span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">        
-</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">        
-</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">        
-</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line"><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Ugh… isn’t that annoying? This is like, anti-DRY. </p>
-
-<p>Luckily, Angular has a built-in directive that allows us to <em>not</em> repeat ourselves. It’s aptly called, <code>ng-repeat</code>,
-and work similarly to how Python loops work (if you’re familiar with that).</p>
-
-<p>All we do is alias each recurring ‘thing’. If <code>foo</code> were an array of objects…</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>foo</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;FooController&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class="line">   <span class="k">this</span><span class="p">.</span><span class="nx">baz</span> <span class="o">=</span> <span class="nx">foo</span><span class="p">;</span>
-</span><span class="line"><span class="p">});</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="p">[</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">prop1</span><span class="o">:</span> <span class="s2">&quot;cool&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nx">prop2</span><span class="o">:</span> <span class="s2">&quot;neat&quot;</span>
-</span><span class="line">    <span class="p">},</span> <span class="p">{</span>
-</span><span class="line">      <span class="nx">prop1</span><span class="o">:</span> <span class="s2">&quot;awesome&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nx">prop2</span><span class="o">:</span> <span class="s2">&quot;gnarly&quot;</span>
-</span><span class="line">    <span class="p">}</span>
-</span><span class="line"><span class="p">];</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>The following expression will iterate through each value in the <code>foo</code> array:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>bar in FooController</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;a</span> <span class="na">ng-repeat =</span><span class="err"> </span><span class="s">&quot;bar in FooController.baz&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">    <span class="nt">&lt;h1&gt;</span>bar.prop1<span class="nt">&lt;/h1&gt;</span>
-</span><span class="line"><span class="nt">&lt;/a&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>This will create an <code>&lt;a&gt;</code> tag for each element in <code>FooController.baz</code> (which is the <code>foo</code> array of objects we created).</p>
-
-<p>Makes things a lot simpler, huh? </p>
-
-<p>Let’s take this to our store. Try the Mini-Assignment.</p>
-
-<p><a name="mini6"></a></p>
-
-<h4 id="mini-assignment-6-use-ng-repeat-to-make-the-following-html-code-dry">Mini-assignment 6: Use ng-repeat to make the following html code DRY:</h4>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="p">...</span>
-</span><span class="line"><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;StoreController&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class="line">   <span class="k">this</span><span class="p">.</span><span class="nx">products</span> <span class="o">=</span> <span class="nx">gems</span><span class="p">;</span>
-</span><span class="line"><span class="p">});</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">var</span> <span class="nx">gems</span> <span class="o">=</span> <span class="p">[</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">2.95</span> <span class="p">},</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bloodstone&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">5.95</span> <span class="p">},</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Zircon&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">3.95</span> <span class="p">},</span>
-</span><span class="line">  <span class="p">];</span>
-</span><span class="line"><span class="p">...</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span> <span class="na">ng-controller=</span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">        
-</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">        
-</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">        
-</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line"><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><a href="#minisol6">Click for answer</a></p>
-
-<p>Got the assignment? Here’s a recap of what we’ve learned so far…</p>
-
-<p><a name="tldr"></a></p>
-
-<h3 id="tldr">TL;DR</h3>
-
-<ul>
-  <li>A directive is an marker on an HTML tag that tells Angular to run or reference some JavaScript code.</li>
-  <li>A controller is where we define our app’s behavior, and is bound to the HTML by using <code>ng-controller</code>
-    <ul>
-      <li>The expression matched to <code>ng-controller</code> should match the format: <code>"[ControllerName] as [Alias]"</code> and you will
-use the alias to reference the controller throughout.</li>
-    </ul>
+  <li>
+    <p>A story about a hot vampire, a hot werewolf, and a girl who doesn’t know which hot guy to go with (Twilight, best-selling book of 2008)</p>
   </li>
-  <li>Some built-in directives are <code>ng-hide</code>, <code>ng-show</code>, and <code>ng-repeat</code>. </li>
+  <li>
+    <p>A fan fiction extension of the above story, except with less vampires and werewolves and more whips and chains and pain (50 Shades of Gray, sold over 100 million copies)</p>
+  </li>
+  <li>
+    <p>When this 10 year old boy discovers he is a wizard, he manages to save the school (and sometimes the world) from the darkest evil ever known to the world, conveniently just before the end of the school year! (Harry Potter, upwards of 400 million copies sold)</p>
+  </li>
+  <li>
+    <p>Armed with a bow and arrow and two hot guys, this young girl leads the rebellion against the nation that nuked the hell out of the last people who tried to rebel (Hunger Games, 65 million copies sold)</p>
+  </li>
+  <li>
+    <p>A dude is hired to change a CEO’s mind by hacking into his dreams, but upon failing, the same CEO hires the same dude to change a different CEO’s son’s mind by hacking into his dreams’ dreams (Inception, $800 million gross revenue)</p>
+  </li>
+  <li>
+    <p>A half-paralyzed guy on an alien planet manages to accomplish insane feats of finesse and agility in 3 months, simply by controlling an alien body. Oh and 3D! (Avatar, first film to gross over $2 billion)</p>
+  </li>
+  <li>
+    <p>A boat full of hot people sinks (Titanic, $1.85 billion, first movie to surpass $1 billion revenue)</p>
+  </li>
 </ul>
 
-<p>Okay, neat! Your final code should look something like this. Make sure your code matches before moving onto part 2!</p>
+<p>As you can see, anything can be twisted to seem like a stupid idea. Since we are our own worst critics, of course we are going to see our ideas as stupid. Moreover, we’re going to compare our ideas with the great ideas we see on Hollywood and on the New York Times best selling books list. </p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>app.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class="line">  <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;gemStore&#39;</span><span class="p">,</span> <span class="p">[]);</span>
-</span><span class="line">
-</span><span class="line">  <span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;StoreController&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class="line">   <span class="k">this</span><span class="p">.</span><span class="nx">products</span> <span class="o">=</span> <span class="nx">gems</span><span class="p">;</span>
-</span><span class="line">  <span class="p">});</span>
-</span><span class="line">
-</span><span class="line">  <span class="kd">var</span> <span class="nx">gems</span> <span class="o">=</span> <span class="p">[</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">2.95</span> <span class="p">},</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bloodstone&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">5.95</span> <span class="p">},</span>
-</span><span class="line">    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Zircon&#39;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mf">3.95</span> <span class="p">},</span>
-</span><span class="line">  <span class="p">];</span>
-</span><span class="line"><span class="p">})();</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>The fact is, everything begins as a stupid idea.  You can flesh that little idea out into something truly meaningful. </p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-</span><span class="line"><span class="nt">&lt;html</span> <span class="na">ng-app=</span><span class="s">&quot;gemStore&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">  <span class="nt">&lt;head&gt;</span>
-</span><span class="line">    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href=</span><span class="s">&quot;bootstrap.min.css&quot;</span> <span class="nt">/&gt;</span>
-</span><span class="line">    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;angular.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class="line">    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;app.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class="line">  <span class="nt">&lt;/head&gt;</span>
-</span><span class="line">  <span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span> <span class="na">ng-controller=</span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">    <span class="nt">&lt;div</span> <span class="na">ng-repeat =</span><span class="err"> </span><span class="s">&quot;product in store.products&quot;</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">      <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">        
-</span><span class="line">        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">      <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line">    <span class="nt">&lt;/div&gt;</span>
-</span><span class="line">  <span class="nt">&lt;/body&gt;</span>
-</span><span class="line"><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>The ideas you think of are your ideas. Granted, there are some bad ideas–curling your hair while showering is certainly not a good idea. However, if you can give meaning to an idea, there’s no possible way it could be stupid. For myself, redemption is an important theme. Therefore, anything that involves redemption, no matter how ridiculous it may seem at first, can be meaningful to me. A story could be about two cats feuding, then one redeeming himself by performing a heroic act–perhaps with the right twist, that idea could become something amazing. </p>
 
-<p>Note: the <code>head</code> in <code>index.html</code> may vary depending on how you set up bootstrap and Angular. </p>
+<p>Some people may think that “stupid ideas” get in the way of their writing and therefore they stop.</p>
 
-<h2 id="assignment-solutions">Assignment Solutions</h2>
-
-<p><a name="minisol1"></a></p>
-
-<h3 id="assignment-1">Assignment 1</h3>
-
-<p>Properties in an object literal is just key: val. Don’t forget to put a comma!</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Mini-Assignment 1 Solution</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="kd">var</span> <span class="nx">gem</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class="line">    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Azurite&#39;</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">price</span><span class="o">:</span> <span class="mf">2.95</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">description</span><span class="o">:</span> <span class="s2">&quot;This is the best gem!&quot;</span>
-</span><span class="line"><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p><a href="#mini1">Back to assignment</a></p>
-
-<p><a name="minisol2"></a></p>
-
-<h3 id="assignment-2">Assignment 2</h3>
-
-<p>Following the controller definition specs, all we do is use <code>app.controller</code>, passing in ‘StoreController’ and an
-anonymous function with the controller properties.</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Mini-Assignment 2 Solution</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;StoreController&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-</span><span class="line">    <span class="k">this</span><span class="p">.</span><span class="nx">product</span> <span class="o">=</span> <span class="nx">gem</span><span class="p">;</span>
-</span><span class="line"><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p><a href="#mini2">Back to assignment</a></p>
-
-<p><a name="minisol3"></a></p>
-
-<h3 id="assignment-3">Assignment 3</h3>
-
-<p>All we do is add an html property to the <code>body</code> tag, and use the <code>Controller as Alias</code> format to bind it. </p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Mini-Assignment 3 Solution</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;body</span> <span class="na">ng-controller =</span><span class="err"> </span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
-</span><span class="line"><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p><a href="#mini3">Back to assignment</a></p>
-
-<p><a name="minisol4"></a></p>
-
-<h3 id="assignment-4">Assignment 4</h3>
-
-<p>Only examples <code>3</code> and <code>4</code> will display. Remember that <code>ng-show</code> tags will only show if the statement 
-evaluates to <code>true</code>. <code>ng-hide</code> tags will only hide if the statement evaluates to <code>true</code>. </p>
-
-<p><a href="#mini4">Back to assignment</a></p>
-
-<p><a name="minisol5"></a></p>
-
-<h3 id="assignment-5">Assignment 5</h3>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Mini-Assignment 5 Solution</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;div</span> <span class="na">ng-hide=</span><span class="s">&quot;store.product.soldOut&quot;</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">  <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">    
-</span><span class="line">    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">  <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line">  <span class="nt">&lt;button</span> <span class="na">ng-show=</span><span class="s">&quot;store.product.canPurchase&quot;</span><span class="nt">&gt;</span>Add to Cart<span class="nt">&lt;/button&gt;</span>
-</span><span class="line"><span class="nt">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><a href="#mini5">Back to assignment</a></p>
-
-<p><a name="minisol6"></a></p>
-
-<h3 id="assignment-6">Assignment 6</h3>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>index.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span> <span class="na">ng-controller=</span><span class="s">&quot;StoreController as store&quot;</span><span class="nt">&gt;</span>
-</span><span class="line"><span class="nt">&lt;div</span> <span class="na">ng-repeat =</span><span class="err"> </span><span class="s">&quot;product in store.products&quot;</span> <span class="na">class=</span><span class="s">&quot;product row&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">  <span class="nt">&lt;h3&gt;</span>
-</span><span class="line">    
-</span><span class="line">    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;pull-right&quot;</span><span class="nt">&gt;</span>$<span class="nt">&lt;/em&gt;</span>
-</span><span class="line">  <span class="nt">&lt;/h3&gt;</span>
-</span><span class="line"><span class="nt">&lt;/div&gt;</span>
-</span><span class="line"><span class="nt">&lt;/body&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><a href="#mini6">Back to assignment</a></p>
-
+<p>I contend that if you are one of those people, it is you who is in the way of your writing. Get out of your own way and allow the ideas to flow. I hope you never get in the way between a “bad idea” and your writing. You owe it to yourself to acknowledge those ideas. </p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Implementing Theme With Octopress and Jekyll Asset Pipeline]]></title>
-    <link href="http://abustamam.github.io/blog/2014/07/31/implementing-theme-with-octopress-and-jekyll-asset-pipeline/"/>
-    <updated>2014-07-31T11:32:53-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/07/31/implementing-theme-with-octopress-and-jekyll-asset-pipeline</id>
-    <content type="html"><![CDATA[<p>The purpose of this post is simple. </p>
+    <title type="html"><![CDATA[Day 5: I Am What I Write]]></title>
+    <link href="http://abustamam.github.io/blog/2014/10/05/i-am-what-i-write/"/>
+    <updated>2014-10-05T23:59:26-07:00</updated>
+    <id>http://abustamam.github.io/blog/2014/10/05/i-am-what-i-write</id>
+    <content type="html"><![CDATA[<p>“You are what you write.”</p>
 
-<p>Octopress does not have much documentation on installing themes. I know it is not the developer way to install a theme,
-but it is the developer way to create themes. </p>
+<p>There’s an interesting story behind these five words. I once aspired to become a famous Internet blogger, and thus I blogged every day for 30 days to set a habit. I followed the rule, “quantity vs quality.” </p>
 
-<p>Here is what I’ve learned while trying to import a Start Bootstrap theme to Octopress. </p>
+<p>Sometimes, quantity trumps quality, especially when it comes to Internet marketing. A blog posted only in one place has only one chance to be viewed. However, syndicating multiple blog posts to multiple websites increases the chances of your name getting out there. For many Internet marketers, writing blogs is simply a means to the end–which is to make sales. Quality wasn’t necessarily important as long as it wasn’t <em>terrible</em>. </p>
 
-<!-- more -->
+<p>That being said, it was extremely difficult for me to blog every day. I never knew what to write about. I wasn’t <em>that</em> interested in my niche. So I sacrificed quality for quantity. </p>
 
-<p>First, get to know the <code>rake install[optional theme name]</code> command. It’s actually the first task in the Rakefile:</p>
+<p>After two weeks of grueling pain through writing uninspired pieces, I reread a few of my blog posts (many of which were written with very little sleep) and thought to myself, “If I didn’t know Rasheed, and I read this blog post, would I think he’s a cool guy?”</p>
 
-<pre><code>desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
-task :install, :theme do |t, args|
-  if File.directory?(source_dir) || File.directory?("sass")
-    abort("rake aborted!") if ask("A theme is already installed, proceeding will overwrite existing files. Are you sure?", ['y', 'n']) == 'n'
-  end
-  # copy theme into working Jekyll directories
-  theme = args.theme || 'classic'
-  puts "## Copying "+theme+" theme into ./#{source_dir} and ./sass"
-  mkdir_p source_dir
-  cp_r "#{themes_dir}/#{theme}/source/.", source_dir
-  mkdir_p "sass"
-  cp_r "#{themes_dir}/#{theme}/sass/.", "sass"
-  mkdir_p "#{source_dir}/#{posts_dir}"
-  mkdir_p public_dir
-end
-</code></pre>
+<p>The answer was “no.” My blog posts were written with an ulterior motive–to sell. Many were written for the sole purpose of having something to attach my signature to, which of course always included an affiliate link.</p>
 
-<p>What it does is scour the ./.themes directory and copies all the files from the <code>/source</code> and the <code>/sass</code> directories
-into the root. </p>
+<p>Now, there’s absolutely nothing wrong with writing to sell. Products must be sold, and writers are required in order to create sales copy. Sales pages are extremely profitable, even if they are terrible. But there’s a difference between writing to sell and writing to share ideas. When you’re writing to sell, you often put aside the eloquence you would otherwise have if you were writing merely to express ideas. After all, eloquence doesn’t necessarily solve people’s problems–potential customers want to know what the product can do for them. Eloquence rarely has a place in a sales letter, and that’s fine. Right tool for the right job. But if you’re writing to express ideas, then the quality of your writing needs to reflect the ideas you wish to convey. If you don’t treat it seriously, it might show that the ideas you want to convey might not be too important to you. </p>
 
-<p>Thus, a complete theme must contain <code>/source</code> and <code>/sass</code> directories. </p>
+<p>It came to the ultimate question–knowing that I only have a finite amount of time to work on writing, did I want to work on writing uninspired sales-y blog posts that I never enjoyed writing, or did I want to work on writing thought-provoking essays that I can proudly show to an employer or a friend? </p>
 
-<p>From there, if you run <code>rake generate</code> it will process the sourcefiles and build the site.</p>
+<p>The fact of the matter is, I was representing myself with my words. These half-assed blog posts were nothing that I would email to someone I’d just met and say, “look what I just wrote!” And that’s when I realized–I am what I write.</p>
+
+<p>Since then, I’ve held on to that creed. I’m a writer–I need to take pride in my craft. A piano player will never play a song mediocrely at a recital. As writers, everything we publish publicly is our recital. The world is free to view our work. And if that is the case, then we must show that we take our craft seriously. </p>
+
+<p>Of course, nothing can ever be perfect, but we write to express ideas to share with the world. Ideas are meant to be imperfect. The perfect idea always begins with an imperfect idea that is fleshed out. Once upon a time, it seemed insane to even think that Wal-Mart could ever by contested in retail. Which is why Amazon did not start as an online retail store–it started as a simple online bookstore. That’s not extremely revolutionary, but it was a start. That idea eventually evolved into what is now present-day Amazon.com–retail giant that is putting Wal-Mart on its toes. </p>
+
+<p>So that is where my first important truth comes from. I am what I write–I want to be known as a good writer rather than a good salesperson. Everything I write is a tiny snippet of the inner workings of my brain. If I can’t be proud of showing that tiny snippet of myself, I may as well not show it at all. </p>
 ]]></content>
   </entry>
   
