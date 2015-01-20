@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nanodegree | Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/blog/categories/nanodegree/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2014-12-17T14:34:19-08:00</updated>
+  <updated>2015-01-20T12:20:55-08:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -14,6 +14,104 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Optimizing a Portfolio]]></title>
+    <link href="http://abustamam.github.io/blog/2015/01/20/optimizing-a-portfolio/"/>
+    <updated>2015-01-20T11:50:41-08:00</updated>
+    <id>http://abustamam.github.io/blog/2015/01/20/optimizing-a-portfolio</id>
+    <content type="html"><![CDATA[<h1 id="heres-the-latest">Here’s the latest</h1>
+
+<p>The latest project was to optimize a portfolio. Once I get the project graded, I will update the portfolio to be my own. However, here are some take-home points I got.</p>
+
+<h2 id="the-course">The course</h2>
+
+<p><a href="https://www.udacity.com/course/viewer#!/c-ud884-nd">The course</a> itself wasn’t bad. However, it definitely wasn’t interesting. </p>
+
+<p>The course focused on the Critical Rendering Path (CRP) and how to optimize it. However, I felt it didn’t go into specifics, like how to optimize above-the-fold CSS. I had to look at resources elsewhere to learn what that was. </p>
+
+<p>Aside from all that, I did learn a lot from the course, but I feel I learned more from the <a href="https://developers.google.com/web/fundamentals/">Google web fundamentals</a> guide (incidentally, written by one of the lecturers in the course!).</p>
+
+<h2 id="the-project">The project</h2>
+
+<p>The project was to optimize <a href="github.com/udacity/frontend-nanodegree-mobile-portfolio">this portfolio</a> in two primary ways.</p>
+
+<p>The first goal was to optimize the website such that it got a score of 90+ on <a href="https://developers.google.com/speed/pagespeed/insights/?url=abustamam.github.io%2Fmobile-portfolio">Page Speed Insights</a>. This was done by analyzing the CRP and performing optimizations such as inlining critical CSS and async-ing non-critical scripts. </p>
+
+<p>The second goal was to optimize the <a href="http://abustamam.github.io/mobile-portfolio/pizza.html">pizza page</a> such that it ran at 60 FPS. This was done by performing several JavaScript optimizations.</p>
+
+<p>The main issue I ran into with the project was the task automaters (more on this <a href="#gulp">below</a>).</p>
+
+<p>The project itself was pretty simple. In fact, though I thought the project would be incredibly boring (make one change, measure, make another change, measure) it certainly wasn’t that. </p>
+
+<p>Granted, I did need to measure the results of each change I made, but it wasn’t terrible. In fact, my task-runner did most of the work for me. I just made sure that all my tasks were written correctly. </p>
+
+<p>The second part of the project was optimizing the JavaScript.</p>
+
+<p>The tough part about this was that I didn’t know too much about requestAnimationFrame. So I learned! And that’s what life is all about. So I learned about the rAF, and used it to optimize my JavaScript.</p>
+
+<p>Also, I moved variable declarations outside of functions/for loops, if the variables were constant throughout. For example, there will always be x number of pizzas, so why not push that into a variable and iterate over that array? Fewer calculations = better performance.</p>
+
+<h2 id="using-gulpjs">Using Gulp.js</h2>
+
+<p>I must admit, I started using Grunt first. Then I learned about Gulp and decided to try it out. </p>
+
+<p>Both of them looked incredibly complicated, but as I played around with them I learned a lot about them, and also about node.js. Though they seemed complicated, they really weren’t. </p>
+
+<p>Since I ended up using Gulp, I won’t talk about Grunt. </p>
+
+<p>With Gulp, all you do is pipe streams of data around. You start with a source, and then you perform a ‘task’ on it, and you can do whatever you want with the result of that task (even perform another task on it).</p>
+
+<p>When you write your own tasks, you can add task dependencies:</p>
+
+<p>```
+gulp.task(‘one’, function(){
+  // do something
+});</p>
+
+<p>gulp.task(‘two’, [‘one’], function(){
+  // do another thing
+});</p>
+
+<p>gulp.task(‘three’, [‘one’], function(){
+  // do something else
+});</p>
+
+<p>gulp.task(‘default’, [‘two’, ‘three’]);
+```</p>
+
+<p>The above code has a default task <code>default</code>, which depends on ‘two’ and ‘three’. Since both of them depend on ‘one’, ‘one’ must finish before ‘two’ or ‘three’ begin. However, even though both of them depend on ‘one’, ‘one’ is only run once. Neat huh? </p>
+
+<p>I used this to ‘clean’ before minification. Each minification task depended on <code>clean</code>, which was run before any minification task. So my bulk-minification task <code>minify</code> ran clean before running any single minification task. Very handy! </p>
+
+<p>Now, back to the issues I ran into.</p>
+
+<p><a name="gulp"></a>
+### Imagemin images can’t be huge</p>
+
+<p>The first main issue was with <code>imagemin</code> which is a great tool, but there was a weird problem.</p>
+
+<p>It was failing with a strange error. </p>
+
+<p>So I did some trial and error by removing certain files, and I found out that it didn’t fail when I took out the huge ‘pizzaria’ image file. </p>
+
+<p>I surmised this was because the pizzaria image file was so big, it killed imagemin. So I deleted it, and this worked fine. </p>
+
+<p>So that brings me to a lesson learned–sometimes you have to do trial-and-error to figure out what’s going wrong. </p>
+
+<h3 id="dont-forget-to-change-sources">Don’t forget to change sources!</h3>
+
+<p>To simplify my app, I moved all html files to the base (build), and all assets into their respective folders (i.e. img, css, js). I was running into so many errors when I was trying to optimize my pizza page.</p>
+
+<p>It turns out that it was calling the wrong css file! </p>
+
+<p>So if you’re going to restructure your app’s directory, make sure that you double check each page’s resources! </p>
+
+<h2 id="moral-of-the-story">Moral of the story</h2>
+
+<p>I learned a lot in this project, namely for task automation. Gulp is definitely a godsend when it comes to optimization, so I was happy to learn it. It took a while, but I finally got it down, and it was awesome! </p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[(Re)making the Frogger Game]]></title>
     <link href="http://abustamam.github.io/blog/2014/12/17/re-making-the-frogger-game/"/>
     <updated>2014-12-17T13:40:50-08:00</updated>
@@ -21,6 +119,8 @@
     <content type="html"><![CDATA[<h1 id="six-weeks-later">Six weeks later</h1>
 
 <p>I’m back, and I’ve finally finished my game project, using HTML5 Canvas and JS. You can view the finished project <a href="abustamam.github.io/frontend-nanodegree-arcade-game">here</a>. </p>
+
+<!-- more -->
 
 <p>The courses used were <a href="https://www.udacity.com/course/viewer#!/c-ud292-nd">HTML5 Canvas</a> and <a href="https://www.udacity.com/course/viewer#!/c-ud015-nd">Object-oriented Javascript</a>.</p>
 

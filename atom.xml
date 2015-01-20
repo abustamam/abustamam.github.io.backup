@@ -4,7 +4,7 @@
   <title><![CDATA[Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2014-12-17T14:34:19-08:00</updated>
+  <updated>2015-01-20T12:20:55-08:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -14,6 +14,115 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Optimizing a Portfolio]]></title>
+    <link href="http://abustamam.github.io/blog/2015/01/20/optimizing-a-portfolio/"/>
+    <updated>2015-01-20T11:50:41-08:00</updated>
+    <id>http://abustamam.github.io/blog/2015/01/20/optimizing-a-portfolio</id>
+    <content type="html"><![CDATA[<h1 id="heres-the-latest">Here’s the latest</h1>
+
+<p>The latest project was to optimize a portfolio. Once I get the project graded, I will update the portfolio to be my own. However, here are some take-home points I got.</p>
+
+<h2 id="the-course">The course</h2>
+
+<p><a href="https://www.udacity.com/course/viewer#!/c-ud884-nd">The course</a> itself wasn’t bad. However, it definitely wasn’t interesting. </p>
+
+<p>The course focused on the Critical Rendering Path (CRP) and how to optimize it. However, I felt it didn’t go into specifics, like how to optimize above-the-fold CSS. I had to look at resources elsewhere to learn what that was. </p>
+
+<p>Aside from all that, I did learn a lot from the course, but I feel I learned more from the <a href="https://developers.google.com/web/fundamentals/">Google web fundamentals</a> guide (incidentally, written by one of the lecturers in the course!).</p>
+
+<h2 id="the-project">The project</h2>
+
+<p>The project was to optimize <a href="github.com/udacity/frontend-nanodegree-mobile-portfolio">this portfolio</a> in two primary ways.</p>
+
+<p>The first goal was to optimize the website such that it got a score of 90+ on <a href="https://developers.google.com/speed/pagespeed/insights/?url=abustamam.github.io%2Fmobile-portfolio">Page Speed Insights</a>. This was done by analyzing the CRP and performing optimizations such as inlining critical CSS and async-ing non-critical scripts. </p>
+
+<p>The second goal was to optimize the <a href="http://abustamam.github.io/mobile-portfolio/pizza.html">pizza page</a> such that it ran at 60 FPS. This was done by performing several JavaScript optimizations.</p>
+
+<p>The main issue I ran into with the project was the task automaters (more on this <a href="#gulp">below</a>).</p>
+
+<p>The project itself was pretty simple. In fact, though I thought the project would be incredibly boring (make one change, measure, make another change, measure) it certainly wasn’t that. </p>
+
+<p>Granted, I did need to measure the results of each change I made, but it wasn’t terrible. In fact, my task-runner did most of the work for me. I just made sure that all my tasks were written correctly. </p>
+
+<p>The second part of the project was optimizing the JavaScript.</p>
+
+<p>The tough part about this was that I didn’t know too much about requestAnimationFrame. So I learned! And that’s what life is all about. So I learned about the rAF, and used it to optimize my JavaScript.</p>
+
+<p>Also, I moved variable declarations outside of functions/for loops, if the variables were constant throughout. For example, there will always be x number of pizzas, so why not push that into a variable and iterate over that array? Fewer calculations = better performance.</p>
+
+<h2 id="using-gulpjs">Using Gulp.js</h2>
+
+<p>I must admit, I started using Grunt first. Then I learned about Gulp and decided to try it out. </p>
+
+<p>Both of them looked incredibly complicated, but as I played around with them I learned a lot about them, and also about node.js. Though they seemed complicated, they really weren’t. </p>
+
+<p>Since I ended up using Gulp, I won’t talk about Grunt. </p>
+
+<p>With Gulp, all you do is pipe streams of data around. You start with a source, and then you perform a ‘task’ on it, and you can do whatever you want with the result of that task (even perform another task on it).</p>
+
+<p>When you write your own tasks, you can add task dependencies:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">gulp.task('one', function(){
+</span><span class="line">  // do something
+</span><span class="line">});
+</span><span class="line">
+</span><span class="line">gulp.task('two', ['one'], function(){
+</span><span class="line">  // do another thing
+</span><span class="line">});
+</span><span class="line">
+</span><span class="line">gulp.task('three', ['one'], function(){
+</span><span class="line">  // do something else
+</span><span class="line">});
+</span><span class="line">
+</span><span class="line">gulp.task('default', ['two', 'three']);</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>The above code has a default task <code>default</code>, which depends on ‘two’ and ‘three’. Since both of them depend on ‘one’, ‘one’ must finish before ‘two’ or ‘three’ begin. However, even though both of them depend on ‘one’, ‘one’ is only run once. Neat huh? </p>
+
+<p>I used this to ‘clean’ before minification. Each minification task depended on <code>clean</code>, which was run before any minification task. So my bulk-minification task <code>minify</code> ran clean before running any single minification task. Very handy! </p>
+
+<p>Now, back to the issues I ran into.</p>
+
+<p><a name="gulp"></a>
+### Imagemin images can’t be huge</p>
+
+<p>The first main issue was with <code>imagemin</code> which is a great tool, but there was a weird problem.</p>
+
+<p>It was failing with a strange error. </p>
+
+<p>So I did some trial and error by removing certain files, and I found out that it didn’t fail when I took out the huge ‘pizzaria’ image file. </p>
+
+<p>I surmised this was because the pizzaria image file was so big, it killed imagemin. So I deleted it, and this worked fine. </p>
+
+<p>So that brings me to a lesson learned–sometimes you have to do trial-and-error to figure out what’s going wrong. </p>
+
+<h3 id="dont-forget-to-change-sources">Don’t forget to change sources!</h3>
+
+<p>To simplify my app, I moved all html files to the base (build), and all assets into their respective folders (i.e. img, css, js). I was running into so many errors when I was trying to optimize my pizza page.</p>
+
+<p>It turns out that it was calling the wrong css file! </p>
+
+<p>So if you’re going to restructure your app’s directory, make sure that you double check each page’s resources! </p>
+
+<h2 id="moral-of-the-story">Moral of the story</h2>
+
+<p>I learned a lot in this project, namely for task automation. Gulp is definitely a godsend when it comes to optimization, so I was happy to learn it. It took a while, but I finally got it down, and it was awesome! </p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[(Re)making the Frogger Game]]></title>
     <link href="http://abustamam.github.io/blog/2014/12/17/re-making-the-frogger-game/"/>
     <updated>2014-12-17T13:40:50-08:00</updated>
@@ -21,6 +130,8 @@
     <content type="html"><![CDATA[<h1 id="six-weeks-later">Six weeks later</h1>
 
 <p>I’m back, and I’ve finally finished my game project, using HTML5 Canvas and JS. You can view the finished project <a href="abustamam.github.io/frontend-nanodegree-arcade-game">here</a>. </p>
+
+<!-- more -->
 
 <p>The courses used were <a href="https://www.udacity.com/course/viewer#!/c-ud292-nd">HTML5 Canvas</a> and <a href="https://www.udacity.com/course/viewer#!/c-ud015-nd">Object-oriented Javascript</a>.</p>
 
@@ -88,6 +199,8 @@
     <content type="html"><![CDATA[<h2 id="udacity-nanodegree-overview">Udacity Nanodegree overview</h2>
 
 <p>I’ve been plowing through <a href="https://www.udacity.com/course/nd001">Udacity’s Front-End Nanodegree program</a>. It’s a pilot program, designed to learn front-end web development from the ground up.</p>
+
+<!-- more -->
 
 <p>I started the day I was allowed to, which was about two weeks ago. </p>
 
@@ -234,6 +347,7 @@
 
 <p><em>Go back to your first week of writing and to your Goethe’s Walking Stick. Page through the ideas there: who you are, what you want our of your writing, whom you hope to speak to, the ideas you’ve written down in your Goethe’s Walking Stick, etc. Find some concepts and ideas you’re interested in writing about. Then… - Work those ideas through your own Topoi (Topics), asking questions today about Causes &amp; Effects.  - Write down as many questions as you can think of that belong to Causes &amp; Effects.  - Choose one question to address today, one you think is truly, terribly, wonderfully interesting, interesting enough to captivate an audience you hope to speak to.  - Finally, address that question.</em></p>
 
+<!-- more -->
 ]]></content>
   </entry>
   
@@ -324,6 +438,8 @@
 
 <p><em>The following, from John Gardner’s The Art of Fiction, page 37, is one of the most famous and enduring writing prompts out there:  Describe a barn as seen by a man whose son has just been killed in a war. Do not mention the son, or war, or death. Do not mention the man who does the seeing. …The result should be a powerful and disturbing image, a faithful description of some apparently real barn but one from which the reader gets a sense of the father’s emotion; though exactly what that emotion is he may not be able to pin down. …No amount of intellectual study can determine for the writer what details to include. If the description is to be effective, he must choose his boards, straw, pigeon manure, and ropes, the rhythms of his sentences, his angle of vision, by feeling and intuition. And one of the things he will discover, inevitably, is that the images of death and loss that come to him are not necessarily those we might expect.</em></p>
 
+<!-- more -->
+
 <p>The sun is setting, the sky is darkening, and the door of the derelict barn finally comes off its hinges and lays flat on the dirt.</p>
 
 <p>The barn stands there, as it has for decades, but on this day, it looms over the farm like a fortress towering over its kingdom, casting a shadow that plunges even the most fertilized grass into darkness. </p>
@@ -361,6 +477,8 @@
 -Email to your in-laws asking for financial help<br />
 <strong>-Note to your loved one…the day after a difficult and lingering conflict</strong>
 -Blog post for your reading public that, for you, is a little out of character</p>
+
+<!-- more -->
 
 <h2 id="sarcastic-email-to-a-colleague">Sarcastic email to a colleague</h2>
 
@@ -422,6 +540,8 @@ RICK (not Mick)</p>
 
 <p><em>Describe the lives of your audience by describing the lives of singular individuals. Describe concerns, desires, suffering. What do they (not they, but he, she) do, say, think, and feel? Make them (not them, but him, her) as human as possible.</em></p>
 
+<!-- more -->
+
 <h2 id="note">Note:</h2>
 <p>I took the last statement of making the character as human as possible a bit too far, and evolved from describing the life of an individual into a short story. However, by the time I realized I was off-prompt, I’d gone too far and decided to finish the story. The take-home point is that my audience is full of people like David, though perhaps not with his exact story :) </p>
 
@@ -474,6 +594,8 @@ RICK (not Mick)</p>
     <id>http://abustamam.github.io/blog/2014/10/11/day-11-response-to-andrew-jiang</id>
     <content type="html"><![CDATA[<p><em>Day 11: After looking back and considering the blog post or article, add your own voice. Write your own response.</em></p>
 
+<!-- more -->
+
 <p>I recently read <a href="https://medium.com/@andrewjiang/unintentionally-in-yc-9dd0ccbaeb44">this article</a> about a guy named Andrew who left finance with no direction, and a couple months later found himself in Y Combinator, possibly the most prestigious start-up accelerator in the US. I was really inspired by the story because as an entrepreneur, it is my dream for me to get accepted into YC or a similar accelerator. The story really solidified the fact that great things can happen if you simply <strong>start</strong>.</p>
 
 <p>When I read that Andrew had no plan when he moved to the Bay Area, it really made me wonder–is a plan really necessary to succeed in life? There’s the common saying, “failing to plan is planning to fail.” But how much of that is true? These days we hear a lot of stories of people who “accidentally” make it big. </p>
@@ -510,6 +632,8 @@ RICK (not Mick)</p>
     <content type="html"><![CDATA[<p><em>Day 10: Return to the blog post or article you reviewed yesterday. (See description for details.)</em></p>
 
 <p><em>Return to the blog post or article you reviewed yesterday. Today, imitate its genre and purpose, but write about a topic or tell a story of your choosing. That is, write about what you want, but write in the language of the blog post or article you reviewed yesterday; make use of its logic and conventions and symbols; and find a way to offer a surprise!</em></p>
+
+<!-- more -->
 
 <h2 id="important-note">Important note:</h2>
 
@@ -584,6 +708,8 @@ Hiring Manager at Google</p>
 
 <p><em>Write a review—a review for writers—of your favorite recent blog post or article. What ideas draw you into the article? But, more than the ideas, what writing choices did the author make that made it so good? What tools of representation—words, jokes, descriptions, metaphors, hyperbole, informal voice, call to action, etc.—did the author use that you also might use someday?</em></p>
 
+<!-- more -->
+
 <p><a href="https://medium.com/@andrewjiang/unintentionally-in-yc-9dd0ccbaeb44">The article</a></p>
 
 <p>I picked this article because I wish to start a start-up one day, and the fact that someone could “unintentionally” get into YC really piqued my interest. It’s also, overall, an inspirational story with a simple call-to-action: start! </p>
@@ -622,6 +748,8 @@ Hiring Manager at Google</p>
     <content type="html"><![CDATA[<p><em>Day 8: Write a thank-you letter to the owner of a business. (See description for further context.)</em></p>
 
 <p><em>Write a thank-you letter to the owner of a business who anticipated, met, and exceeded your needs. Tell your story. Describe your experience candidly, and your delight, and your surprise. After you’ve finished a draft of the letter, go back and make it beautiful and clear. Do your best to make your prose (its precision, its melody) really carry your gratitude, by expressing your story concretely and your feelings truly.</em></p>
+
+<!-- more -->
 
 <p>[It’s been a while since I’ve had the pleasure of being pleasantly surprised by the quality of service of a business owner. As such, I am going to create a story of such an experience and tell it through this fictitious letter]</p>
 
@@ -737,37 +865,6 @@ Monica Trebal</p>
 <p>Some people may think that “stupid ideas” get in the way of their writing and therefore they stop.</p>
 
 <p>I contend that if you are one of those people, it is you who is in the way of your writing. Get out of your own way and allow the ideas to flow. I hope you never get in the way between a “bad idea” and your writing. You owe it to yourself to acknowledge those ideas. </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 5: I Am What I Write]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/05/i-am-what-i-write/"/>
-    <updated>2014-10-05T23:59:26-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/05/i-am-what-i-write</id>
-    <content type="html"><![CDATA[<p>“You are what you write.”</p>
-
-<p>There’s an interesting story behind these five words. I once aspired to become a famous Internet blogger, and thus I blogged every day for 30 days to set a habit. I followed the rule, “quantity vs quality.” </p>
-
-<p>Sometimes, quantity trumps quality, especially when it comes to Internet marketing. A blog posted only in one place has only one chance to be viewed. However, syndicating multiple blog posts to multiple websites increases the chances of your name getting out there. For many Internet marketers, writing blogs is simply a means to the end–which is to make sales. Quality wasn’t necessarily important as long as it wasn’t <em>terrible</em>. </p>
-
-<p>That being said, it was extremely difficult for me to blog every day. I never knew what to write about. I wasn’t <em>that</em> interested in my niche. So I sacrificed quality for quantity. </p>
-
-<p>After two weeks of grueling pain through writing uninspired pieces, I reread a few of my blog posts (many of which were written with very little sleep) and thought to myself, “If I didn’t know Rasheed, and I read this blog post, would I think he’s a cool guy?”</p>
-
-<p>The answer was “no.” My blog posts were written with an ulterior motive–to sell. Many were written for the sole purpose of having something to attach my signature to, which of course always included an affiliate link.</p>
-
-<p>Now, there’s absolutely nothing wrong with writing to sell. Products must be sold, and writers are required in order to create sales copy. Sales pages are extremely profitable, even if they are terrible. But there’s a difference between writing to sell and writing to share ideas. When you’re writing to sell, you often put aside the eloquence you would otherwise have if you were writing merely to express ideas. After all, eloquence doesn’t necessarily solve people’s problems–potential customers want to know what the product can do for them. Eloquence rarely has a place in a sales letter, and that’s fine. Right tool for the right job. But if you’re writing to express ideas, then the quality of your writing needs to reflect the ideas you wish to convey. If you don’t treat it seriously, it might show that the ideas you want to convey might not be too important to you. </p>
-
-<p>It came to the ultimate question–knowing that I only have a finite amount of time to work on writing, did I want to work on writing uninspired sales-y blog posts that I never enjoyed writing, or did I want to work on writing thought-provoking essays that I can proudly show to an employer or a friend? </p>
-
-<p>The fact of the matter is, I was representing myself with my words. These half-assed blog posts were nothing that I would email to someone I’d just met and say, “look what I just wrote!” And that’s when I realized–I am what I write.</p>
-
-<p>Since then, I’ve held on to that creed. I’m a writer–I need to take pride in my craft. A piano player will never play a song mediocrely at a recital. As writers, everything we publish publicly is our recital. The world is free to view our work. And if that is the case, then we must show that we take our craft seriously. </p>
-
-<p>Of course, nothing can ever be perfect, but we write to express ideas to share with the world. Ideas are meant to be imperfect. The perfect idea always begins with an imperfect idea that is fleshed out. Once upon a time, it seemed insane to even think that Wal-Mart could ever by contested in retail. Which is why Amazon did not start as an online retail store–it started as a simple online bookstore. That’s not extremely revolutionary, but it was a start. That idea eventually evolved into what is now present-day Amazon.com–retail giant that is putting Wal-Mart on its toes. </p>
-
-<p>So that is where my first important truth comes from. I am what I write–I want to be known as a good writer rather than a good salesperson. Everything I write is a tiny snippet of the inner workings of my brain. If I can’t be proud of showing that tiny snippet of myself, I may as well not show it at all. </p>
 ]]></content>
   </entry>
   
