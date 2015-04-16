@@ -4,7 +4,7 @@
   <title><![CDATA[Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2015-01-20T12:20:55-08:00</updated>
+  <updated>2015-04-16T09:32:49-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -14,6 +14,191 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Solving the Singaporean Math Problem]]></title>
+    <link href="http://abustamam.github.io/blog/2015/04/16/solving-the-singaporean-math-problem/"/>
+    <updated>2015-04-16T09:04:38-07:00</updated>
+    <id>http://abustamam.github.io/blog/2015/04/16/solving-the-singaporean-math-problem</id>
+    <content type="html"><![CDATA[<h1 id="the-singaporean-math-problem-that-shook-the-internet">The Singaporean Math Problem that Shook the Internet</h1>
+
+<p>Trending today seems to be problem number 24 of a Singaporean Math Olympiad test. Let’s not get bogged down why suddenly the Internet is clamouring over solving a seemingly impossible math problem, but since everyone wants to figure out the answer, let’s go through how to get it.</p>
+
+<p>Disclaimer: I have not consulted any outside sources to verify my answer, but I’m fairly certain my logic is sound.</p>
+
+<!-- more -->
+
+<h2 id="the-problem">The problem</h2>
+
+<p>The problem is straightforward. Albert and Bernard just met a girl named Cheryl. They want to know her birthday. Unfortunately, Cheryl is either a troll or is just a troubled soul (tr-oul?) and decides to make them earn that knowledge.</p>
+
+<p>She gives them a list of possibilities of when her birthday will be:</p>
+
+<ul>
+  <li>May 15</li>
+  <li>May 16</li>
+  <li>May 19</li>
+  <li>June 17</li>
+  <li>June 18</li>
+  <li>July 14</li>
+  <li>July 16</li>
+  <li>August 14</li>
+  <li>August 15</li>
+  <li>August 17</li>
+</ul>
+
+<p>Then, since that clearly isn’t enough, she tells Albert the month of her birthday, and she tells Bernard the day of her birthday. </p>
+
+<p>At this point, any normal human being would have just told the other dude what Cheryl told them, but not Albert and Bernard! </p>
+
+<p>They conversed briefly:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Albert: I don't know when Cheryl's birthday is, but I know that Bernard does not know too [sic].
+</span><span class="line">Bernard: At first I don't [sic] know when Cheryl's birthday is, but I know now.
+</span><span class="line">Albert: Then I also know when Cheryl's birthday is.</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Okay, is that confusing enough for you? </p>
+
+<p>Let’s break the problem down. </p>
+
+<h2 id="the-solution">The solution</h2>
+
+<p>The key is not to solve the problem yourself, but to look at it from the lenses of Albert and Bernard. </p>
+
+<p>Let’s look at the conversation between Albert and Bernard. Albert is given X month, Bernard is given Y day.</p>
+
+<p>Since Albert only knows the month, any month with more than one date listed is an uncertainty. This part was obvious. What isn’t obvious is the implication of Albert knowing that Bernard does not know when Cheryl’s birthday is. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Albert: I don't know when Cheryl's birthday is, but I know that Bernard does not know too [sic].</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>How could Albert know for sure that Bernard doesn’t know, despite not knowing what Bernard knows?</p>
+
+<p>The answer is that ALL the listed dates within Albert’s month MUST be duplicates. </p>
+
+<p>Why? Well, let’s say Bernard had the 18th. Right at the onset, Bernard would know the month, since there is only one month with the 18th (June). Same with the 19th. So we know that Bernard got neither the 18th nor the 19th. </p>
+
+<p>Now, Albert KNOWS that Bernard does not know when her birthday is. By extension, this means that Albert knows that Bernard got a number that was a duplicate. </p>
+
+<p>How can Albert know for sure that Bernard’s number was a duplicate? Because all of the numbers in Albert’s month were duplicates. </p>
+
+<p>This means we can safely rule out May and June, as both of those months have a singleton date (19 and 18 respectively).</p>
+
+<p>So by the first statement, we’ve ruled out May and June, and are left with the following…</p>
+
+<ul>
+  <li>July 14</li>
+  <li>July 16</li>
+  <li>August 14</li>
+  <li>August 15</li>
+  <li>August 17</li>
+</ul>
+
+<p>Okay, let’s analyze Bernard’s statement.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Bernard: At first I don't [sic] know when Cheryl's birthday is, but I know now.</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Let’s say, for argument’s sake, that Bernard was given 14. Would he be able to discern the month? The answer is no, since July and August both have 14. This means that Bernard’s number must be 15, 16, or 17. </p>
+
+<p>Now, if he got 15 or 17, then he knows the month must be August. If he got 16, he knows the month must be July.</p>
+
+<p>So, simply by Albert saying that he knows Bernard doesn’t know Cheryl’s birthday, Bernard’s number makes it obvious to Bernard what the birthday is. We still don’t know, however. <em>And neither does Albert</em>, which is a key point I’ll come to in a second.</p>
+
+<p>So we’ve ruled out July 14 and August 14. Let’s keep going.</p>
+
+<ul>
+  <li>July 16</li>
+  <li>August 15</li>
+  <li>August 17</li>
+</ul>
+
+<p>Finally, the last statement, and the answer you’ve been waiting for. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Albert: Then I also know when Cheryl's birthday is.</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Remember, Albert knows the month, but not the day. If Albert now knows Cheryl’s birthday, we can safely rule out August because he still wouldn’t have enough information (since there’s 15 and 17). </p>
+
+<p>Therefore, the final answer is…</p>
+
+<h1 id="july-16">July 16</h1>
+
+<p>Hope you had fun. Feel free to reach out at rasheed.bustamam@gmail.com if you have any questions or need any clarifications. </p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript Design Patterns Reflections]]></title>
+    <link href="http://abustamam.github.io/blog/2015/02/08/javascript-design-patterns-reflections/"/>
+    <updated>2015-02-08T16:14:46-08:00</updated>
+    <id>http://abustamam.github.io/blog/2015/02/08/javascript-design-patterns-reflections</id>
+    <content type="html"><![CDATA[<h1 id="rundown">Rundown</h1>
+
+<p>This course focuses on Javascript design patterns. It takes us through several simple projects for the sake of learning good design patterns. I will post my brief reflections of each project here. </p>
+
+<!-- more -->
+
+<h1 id="cat-clicker">Cat Clicker</h1>
+
+<p><a href="http://abustamam.github.io/Cat-Clicker">Cat Clicker</a> was my first project. </p>
+
+<h2 id="version-01">version 0.1</h2>
+
+<p>Has one single cat. It was very easy to set up, just getting the structure of the HTML page I need to get used to. </p>
+
+<p>I feel pretty good about my code, even though it’s not “beautiful.”</p>
+
+<p>I clicked my cat probably 10 times to test functionality. </p>
+
+<h2 id="version-02">version 0.2</h2>
+
+<p>Since the HTML skeleton is already available for me, I merely dumped both cats into a <code>#cats div</code> and added a class for each cat. </p>
+
+<p>I still feel good about my code, though it’s still not beautiful. </p>
+
+<p>Clicked probably another 10 times to test functionality. </p>
+
+<h2 id="version-03">version 0.3</h2>
+
+<p>Finally, I added 5 cats, and each cat has its own click-counter. </p>
+
+<p>It took WAY too long for me to figure out how to do it, but using classes seemed to be the way to go. Now, as long as I have the pics, I am able to add as many cats as I want!</p>
+
+<h2 id="version-04">version 0.4</h2>
+
+<p>Using MVO, I was able to abstract my code to separate concerns. However, in simplifying my Model, I introduced a bug (which I will fix)…</p>
+
+<ul>
+  <li>
+    <p>When opening app for the first time and clicking on kitten 0 a few times, switching to one kitten then back to kitten 0 resets kitten 0 back to 0 clicks, first time only. Cause is likely currentCat.</p>
+  </li>
+  <li>
+    <p>When clicking reset button, and switching to another cat that has clicks (without refreshing), cat will still display its old number of clicks. A refresh will fix this. Cause is likely the fact that switching cats uses a copy of currentCat, and the copy’s clicks are not reset. Since the scope of the cat copy is limited to the IIFE, I will try to determine a workaround. </p>
+  </li>
+</ul>
+
+<h2 id="version-04b">version 0.4b</h2>
+
+<p>Bugfix: all kitten data are synced with local storage (saves on each click)
+Bugfix: Reset button works properly</p>
+
+<h2 id="version-05">version 0.5</h2>
+
+<p>Add admin panel, which allows “cheating” (aka changing number of clicks)</p>
+
+<h1 id="school-attendance-app">School-Attendance App</h1>
+
+<p>Original Udacity repo is <a href="https://github.com/udacity/ud989-school-attendance">here</a>. My repo is <a href="https://github.com/abustamam/school-attendance">here</a>.</p>
+
+<p>The goal of this app is to refactor existing code from spaghetti code into maintainable code using MVO, which was done pretty easily. The model was the list of students and the days they missed. The view was how the app looks. And the octopus was what bound everything together. </p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Optimizing a Portfolio]]></title>
     <link href="http://abustamam.github.io/blog/2015/01/20/optimizing-a-portfolio/"/>
     <updated>2015-01-20T11:50:41-08:00</updated>
@@ -21,6 +206,8 @@
     <content type="html"><![CDATA[<h1 id="heres-the-latest">Here’s the latest</h1>
 
 <p>The latest project was to optimize a portfolio. Once I get the project graded, I will update the portfolio to be my own. However, here are some take-home points I got.</p>
+
+<!-- more -->
 
 <h2 id="the-course">The course</h2>
 
@@ -781,90 +968,6 @@ Hiring Manager at Google</p>
 
 <p>Regards,
 Monica Trebal</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 7: Always Experiment]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/07/experiment/"/>
-    <updated>2014-10-07T23:16:53-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/07/experiment</id>
-    <content type="html"><![CDATA[<p>The truth: “Experiment with everything.” </p>
-
-<p>Many restaurants have dozens upon dozens of types of delicious foods. Many “regulars” of these restaurants order the “usual” because they are afraid of trying something new. I challenge you to be the person who tries a new dish, just to try it–because hey, you may find yourself a new “usual!”</p>
-
-<p>Just like patrons of a restaurant, writers too have a “usual.” Of course, there is nothing wrong with having a “usual” genre–“Harry Potter” is proof that 7 books based on the same character can be pretty successful. If it ain’t broke, why fix it? But maybe it is broke, and you may not realize it. I never realized that I needed new glasses until I did get new glasses–then I realized how blind I had been, and how much clearer the world was supposed to be. </p>
-
-<!-- more -->
-
-<p>If you’re already extremely happy with the genre you choose to write, or the plot elements of your stories, then there’s no reason to change it. But if perhaps you’re just starting writing, there’s no reason to try the buffet.</p>
-
-<p>After all, there are countless combinations of genres of media. There are thriller movies, thriller novels, thriller TV shows, thriller plays, etc… And even within the thriller genre, there are crime thrillers, horror thrillers, action thrillers, and some of those even overlap. And then of course there are crime thrillers with a strong female lead, or action thriller comedies that have a comic relief secondary character… </p>
-
-<p>Therefore, it is impossible for anyone to experience every single combination of media, let alone write for each combination. Most people simply write in the genre that they like. A sucker for romantic comedies will likely stick to romance-type creations, whereas an action movie buff will likely make things that have explosions and shooting. After all, it only makes sense for the writer to enjoy the finished product. </p>
-
-<p>I never really liked “crime thrillers” before I saw Breaking Bad a few years ago. When I’d first heard of Breaking Bad, and what its premise was, I dismissed it as stupid. Not only that, but my idea of a “TV series” was something akin to those daily soap operas that are terrible but get watched anyway. </p>
-
-<p>So Breaking Bad didn’t have a lot going for it in my head.</p>
-
-<p>But then after all my friends were watching it and I began to feel left out, I got up to speed and realized that a) crime thrillers could be awesome, b) TV series could be awesome, and c) there’s a LOT of awesome things out there that I would love but can’t give it a chance for me to love it. </p>
-
-<p>Hey, maybe I would love romantic comedies, or action dramas, but I just don’t feel like giving those genres a chance. Maybe I’d like movies with a strong female lead, or movies that focus on a homosexual couple. If I never give it a chance, how will I never know for sure? </p>
-
-<p>I’m a fan of trying something new for 30 days, just to see if you’ll like it. Through this method, I found that I liked reading, enjoyed programming, and especially loved writing. Even if you end up failing the 30 day challenge for whatever reason, at least you can say you tried it, and it wasn’t for you.</p>
-
-<p>So hey–why not branch off just for a bit and do something you’ve never done in writing before? You might find something amazing. </p>
-
-<p>This NaNoWriMo, I plan to do something that I’d never thought to do–and that is have a female protagonist. Every story that I’d thought up of in my head always had a male protagonist, and there was always a female in there that required saving. This is a common trope in stories everywhere, both in print and on the big screen. </p>
-
-<p>I want to do something that I’ve never done before. And so, I am going to experiment with this concept and see if it’s something that jives with me. I wish you the best of luck in your own experiments. </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 6: Stupid Ideas]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/06/stupid-ideas/"/>
-    <updated>2014-10-06T23:50:43-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/06/stupid-ideas</id>
-    <content type="html"><![CDATA[<p>“There is no such thing as a stupid idea.” What a truth this is! </p>
-
-<p>Every day, aspiring writers give up their goal to become published because they feel like their ideas are stupid. </p>
-
-<p>Here are a few “stupid” ideas that the authors decided to write about anyway. Let’s see how they turned out:</p>
-
-<ul>
-  <li>
-    <p>A story about a hot vampire, a hot werewolf, and a girl who doesn’t know which hot guy to go with (Twilight, best-selling book of 2008)</p>
-  </li>
-  <li>
-    <p>A fan fiction extension of the above story, except with less vampires and werewolves and more whips and chains and pain (50 Shades of Gray, sold over 100 million copies)</p>
-  </li>
-  <li>
-    <p>When this 10 year old boy discovers he is a wizard, he manages to save the school (and sometimes the world) from the darkest evil ever known to the world, conveniently just before the end of the school year! (Harry Potter, upwards of 400 million copies sold)</p>
-  </li>
-  <li>
-    <p>Armed with a bow and arrow and two hot guys, this young girl leads the rebellion against the nation that nuked the hell out of the last people who tried to rebel (Hunger Games, 65 million copies sold)</p>
-  </li>
-  <li>
-    <p>A dude is hired to change a CEO’s mind by hacking into his dreams, but upon failing, the same CEO hires the same dude to change a different CEO’s son’s mind by hacking into his dreams’ dreams (Inception, $800 million gross revenue)</p>
-  </li>
-  <li>
-    <p>A half-paralyzed guy on an alien planet manages to accomplish insane feats of finesse and agility in 3 months, simply by controlling an alien body. Oh and 3D! (Avatar, first film to gross over $2 billion)</p>
-  </li>
-  <li>
-    <p>A boat full of hot people sinks (Titanic, $1.85 billion, first movie to surpass $1 billion revenue)</p>
-  </li>
-</ul>
-
-<p>As you can see, anything can be twisted to seem like a stupid idea. Since we are our own worst critics, of course we are going to see our ideas as stupid. Moreover, we’re going to compare our ideas with the great ideas we see on Hollywood and on the New York Times best selling books list. </p>
-
-<p>The fact is, everything begins as a stupid idea.  You can flesh that little idea out into something truly meaningful. </p>
-
-<p>The ideas you think of are your ideas. Granted, there are some bad ideas–curling your hair while showering is certainly not a good idea. However, if you can give meaning to an idea, there’s no possible way it could be stupid. For myself, redemption is an important theme. Therefore, anything that involves redemption, no matter how ridiculous it may seem at first, can be meaningful to me. A story could be about two cats feuding, then one redeeming himself by performing a heroic act–perhaps with the right twist, that idea could become something amazing. </p>
-
-<p>Some people may think that “stupid ideas” get in the way of their writing and therefore they stop.</p>
-
-<p>I contend that if you are one of those people, it is you who is in the way of your writing. Get out of your own way and allow the ideas to flow. I hope you never get in the way between a “bad idea” and your writing. You owe it to yourself to acknowledge those ideas. </p>
 ]]></content>
   </entry>
   

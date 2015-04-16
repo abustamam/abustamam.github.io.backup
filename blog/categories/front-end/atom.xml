@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Front-end, | Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/blog/categories/front-end/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2015-01-20T12:20:55-08:00</updated>
+  <updated>2015-04-16T09:32:54-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -14,6 +14,74 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Javascript Design Patterns Reflections]]></title>
+    <link href="http://abustamam.github.io/blog/2015/02/08/javascript-design-patterns-reflections/"/>
+    <updated>2015-02-08T16:14:46-08:00</updated>
+    <id>http://abustamam.github.io/blog/2015/02/08/javascript-design-patterns-reflections</id>
+    <content type="html"><![CDATA[<h1 id="rundown">Rundown</h1>
+
+<p>This course focuses on Javascript design patterns. It takes us through several simple projects for the sake of learning good design patterns. I will post my brief reflections of each project here. </p>
+
+<!-- more -->
+
+<h1 id="cat-clicker">Cat Clicker</h1>
+
+<p><a href="http://abustamam.github.io/Cat-Clicker">Cat Clicker</a> was my first project. </p>
+
+<h2 id="version-01">version 0.1</h2>
+
+<p>Has one single cat. It was very easy to set up, just getting the structure of the HTML page I need to get used to. </p>
+
+<p>I feel pretty good about my code, even though it’s not “beautiful.”</p>
+
+<p>I clicked my cat probably 10 times to test functionality. </p>
+
+<h2 id="version-02">version 0.2</h2>
+
+<p>Since the HTML skeleton is already available for me, I merely dumped both cats into a <code>#cats div</code> and added a class for each cat. </p>
+
+<p>I still feel good about my code, though it’s still not beautiful. </p>
+
+<p>Clicked probably another 10 times to test functionality. </p>
+
+<h2 id="version-03">version 0.3</h2>
+
+<p>Finally, I added 5 cats, and each cat has its own click-counter. </p>
+
+<p>It took WAY too long for me to figure out how to do it, but using classes seemed to be the way to go. Now, as long as I have the pics, I am able to add as many cats as I want!</p>
+
+<h2 id="version-04">version 0.4</h2>
+
+<p>Using MVO, I was able to abstract my code to separate concerns. However, in simplifying my Model, I introduced a bug (which I will fix)…</p>
+
+<ul>
+  <li>
+    <p>When opening app for the first time and clicking on kitten 0 a few times, switching to one kitten then back to kitten 0 resets kitten 0 back to 0 clicks, first time only. Cause is likely currentCat.</p>
+  </li>
+  <li>
+    <p>When clicking reset button, and switching to another cat that has clicks (without refreshing), cat will still display its old number of clicks. A refresh will fix this. Cause is likely the fact that switching cats uses a copy of currentCat, and the copy’s clicks are not reset. Since the scope of the cat copy is limited to the IIFE, I will try to determine a workaround. </p>
+  </li>
+</ul>
+
+<h2 id="version-04b">version 0.4b</h2>
+
+<p>Bugfix: all kitten data are synced with local storage (saves on each click)
+Bugfix: Reset button works properly</p>
+
+<h2 id="version-05">version 0.5</h2>
+
+<p>Add admin panel, which allows “cheating” (aka changing number of clicks)</p>
+
+<h1 id="school-attendance-app">School-Attendance App</h1>
+
+<p>Original Udacity repo is <a href="https://github.com/udacity/ud989-school-attendance">here</a>. My repo is <a href="https://github.com/abustamam/school-attendance">here</a>.</p>
+
+<p>The goal of this app is to refactor existing code from spaghetti code into maintainable code using MVO, which was done pretty easily. The model was the list of students and the days they missed. The view was how the app looks. And the octopus was what bound everything together. </p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Optimizing a Portfolio]]></title>
     <link href="http://abustamam.github.io/blog/2015/01/20/optimizing-a-portfolio/"/>
     <updated>2015-01-20T11:50:41-08:00</updated>
@@ -21,6 +89,8 @@
     <content type="html"><![CDATA[<h1 id="heres-the-latest">Here’s the latest</h1>
 
 <p>The latest project was to optimize a portfolio. Once I get the project graded, I will update the portfolio to be my own. However, here are some take-home points I got.</p>
+
+<!-- more -->
 
 <h2 id="the-course">The course</h2>
 

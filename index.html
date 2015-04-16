@@ -9,7 +9,7 @@
   <meta name="author" content="Rasheed Bustamam">
 
   
-  <meta name="description" content="Here’s the latest The latest project was to optimize a portfolio. Once I get the project graded, I will update the portfolio to be my own. However, &hellip;">
+  <meta name="description" content="The Singaporean Math Problem that Shook the Internet Trending today seems to be problem number 24 of a Singaporean Math Olympiad test. Let’s not get &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +71,94 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2015/04/16/solving-the-singaporean-math-problem/">Solving the Singaporean Math Problem</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-04-16T09:04:38-07:00" pubdate data-updated="true">Apr 16<sup>th</sup>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1 id="the-singaporean-math-problem-that-shook-the-internet">The Singaporean Math Problem that Shook the Internet</h1>
+
+<p>Trending today seems to be problem number 24 of a Singaporean Math Olympiad test. Let’s not get bogged down why suddenly the Internet is clamouring over solving a seemingly impossible math problem, but since everyone wants to figure out the answer, let’s go through how to get it.</p>
+
+<p>Disclaimer: I have not consulted any outside sources to verify my answer, but I’m fairly certain my logic is sound.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2015/04/16/solving-the-singaporean-math-problem/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/02/08/javascript-design-patterns-reflections/">Javascript Design Patterns Reflections</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-08T16:14:46-08:00" pubdate data-updated="true">Feb 8<sup>th</sup>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1 id="rundown">Rundown</h1>
+
+<p>This course focuses on Javascript design patterns. It takes us through several simple projects for the sake of learning good design patterns. I will post my brief reflections of each project here. </p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2015/02/08/javascript-design-patterns-reflections/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2015/01/20/optimizing-a-portfolio/">Optimizing a Portfolio</a></h1>
     
     
@@ -98,105 +186,12 @@
 
 <p>The latest project was to optimize a portfolio. Once I get the project graded, I will update the portfolio to be my own. However, here are some take-home points I got.</p>
 
-<h2 id="the-course">The course</h2>
-
-<p><a href="https://www.udacity.com/course/viewer#!/c-ud884-nd">The course</a> itself wasn’t bad. However, it definitely wasn’t interesting. </p>
-
-<p>The course focused on the Critical Rendering Path (CRP) and how to optimize it. However, I felt it didn’t go into specifics, like how to optimize above-the-fold CSS. I had to look at resources elsewhere to learn what that was. </p>
-
-<p>Aside from all that, I did learn a lot from the course, but I feel I learned more from the <a href="https://developers.google.com/web/fundamentals/">Google web fundamentals</a> guide (incidentally, written by one of the lecturers in the course!).</p>
-
-<h2 id="the-project">The project</h2>
-
-<p>The project was to optimize <a href="github.com/udacity/frontend-nanodegree-mobile-portfolio">this portfolio</a> in two primary ways.</p>
-
-<p>The first goal was to optimize the website such that it got a score of 90+ on <a href="https://developers.google.com/speed/pagespeed/insights/?url=abustamam.github.io%2Fmobile-portfolio">Page Speed Insights</a>. This was done by analyzing the CRP and performing optimizations such as inlining critical CSS and async-ing non-critical scripts. </p>
-
-<p>The second goal was to optimize the <a href="http://abustamam.github.io/mobile-portfolio/pizza.html">pizza page</a> such that it ran at 60 FPS. This was done by performing several JavaScript optimizations.</p>
-
-<p>The main issue I ran into with the project was the task automaters (more on this <a href="#gulp">below</a>).</p>
-
-<p>The project itself was pretty simple. In fact, though I thought the project would be incredibly boring (make one change, measure, make another change, measure) it certainly wasn’t that. </p>
-
-<p>Granted, I did need to measure the results of each change I made, but it wasn’t terrible. In fact, my task-runner did most of the work for me. I just made sure that all my tasks were written correctly. </p>
-
-<p>The second part of the project was optimizing the JavaScript.</p>
-
-<p>The tough part about this was that I didn’t know too much about requestAnimationFrame. So I learned! And that’s what life is all about. So I learned about the rAF, and used it to optimize my JavaScript.</p>
-
-<p>Also, I moved variable declarations outside of functions/for loops, if the variables were constant throughout. For example, there will always be x number of pizzas, so why not push that into a variable and iterate over that array? Fewer calculations = better performance.</p>
-
-<h2 id="using-gulpjs">Using Gulp.js</h2>
-
-<p>I must admit, I started using Grunt first. Then I learned about Gulp and decided to try it out. </p>
-
-<p>Both of them looked incredibly complicated, but as I played around with them I learned a lot about them, and also about node.js. Though they seemed complicated, they really weren’t. </p>
-
-<p>Since I ended up using Gulp, I won’t talk about Grunt. </p>
-
-<p>With Gulp, all you do is pipe streams of data around. You start with a source, and then you perform a ‘task’ on it, and you can do whatever you want with the result of that task (even perform another task on it).</p>
-
-<p>When you write your own tasks, you can add task dependencies:</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">gulp.task('one', function(){
-</span><span class="line">  // do something
-</span><span class="line">});
-</span><span class="line">
-</span><span class="line">gulp.task('two', ['one'], function(){
-</span><span class="line">  // do another thing
-</span><span class="line">});
-</span><span class="line">
-</span><span class="line">gulp.task('three', ['one'], function(){
-</span><span class="line">  // do something else
-</span><span class="line">});
-</span><span class="line">
-</span><span class="line">gulp.task('default', ['two', 'three']);</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>The above code has a default task <code>default</code>, which depends on ‘two’ and ‘three’. Since both of them depend on ‘one’, ‘one’ must finish before ‘two’ or ‘three’ begin. However, even though both of them depend on ‘one’, ‘one’ is only run once. Neat huh? </p>
-
-<p>I used this to ‘clean’ before minification. Each minification task depended on <code>clean</code>, which was run before any minification task. So my bulk-minification task <code>minify</code> ran clean before running any single minification task. Very handy! </p>
-
-<p>Now, back to the issues I ran into.</p>
-
-<p><a name="gulp"></a>
-### Imagemin images can’t be huge</p>
-
-<p>The first main issue was with <code>imagemin</code> which is a great tool, but there was a weird problem.</p>
-
-<p>It was failing with a strange error. </p>
-
-<p>So I did some trial and error by removing certain files, and I found out that it didn’t fail when I took out the huge ‘pizzaria’ image file. </p>
-
-<p>I surmised this was because the pizzaria image file was so big, it killed imagemin. So I deleted it, and this worked fine. </p>
-
-<p>So that brings me to a lesson learned–sometimes you have to do trial-and-error to figure out what’s going wrong. </p>
-
-<h3 id="dont-forget-to-change-sources">Don’t forget to change sources!</h3>
-
-<p>To simplify my app, I moved all html files to the base (build), and all assets into their respective folders (i.e. img, css, js). I was running into so many errors when I was trying to optimize my pizza page.</p>
-
-<p>It turns out that it was calling the wrong css file! </p>
-
-<p>So if you’re going to restructure your app’s directory, make sure that you double check each page’s resources! </p>
-
-<h2 id="moral-of-the-story">Moral of the story</h2>
-
-<p>I learned a lot in this project, namely for task automation. Gulp is definitely a godsend when it comes to optimization, so I was happy to learn it. It took a while, but I finally got it down, and it was awesome! </p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2015/01/20/optimizing-a-portfolio/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -481,125 +476,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/17/day-17-goethes-walking-stick/">Day 17: Goethe&#8217;s Walking Stick</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-17T22:59:48-07:00" pubdate data-updated="true">Oct 17<sup>th</sup>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><strong>Day 17: Go back to your first week of writing and to your Goethe’s Walking Stick. (See description.)</strong></p>
-
-<p><em>Go back to your first week of writing and to your Goethe’s Walking Stick. Page through the ideas there: who you are, what you want our of your writing, whom you hope to speak to, the ideas you’ve written down in your Goethe’s Walking Stick, etc. Find some concepts and ideas you’re interested in writing about. Then… - Work those ideas through your own Topoi (Topics), asking questions today about Causes &amp; Effects.  - Write down as many questions as you can think of that belong to Causes &amp; Effects.  - Choose one question to address today, one you think is truly, terribly, wonderfully interesting, interesting enough to captivate an audience you hope to speak to.  - Finally, address that question.</em></p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/10/17/day-17-goethes-walking-stick/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/16/story/">Day 16: Story</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-16T22:57:41-07:00" pubdate data-updated="true">Oct 16<sup>th</sup>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><strong>Day 16: Write about anything. Tell the story of a day, or of years…(See description for details.)</strong></p>
-
-<p><em>Write about anything. Tell the story of a day, or of years, or of a failed diet, or of an awesome road trip, or of someone else entirely. Maybe go somewhere you like to go (a coffee shop, a park, the beach, the lot behind 7-11) to describe it. Just use the right verbs while you write: remain mindful of how often you use “to be” verbs (am, is, are, was, were, be, being, been), and instead choose the right metaphor-verbs in every poem-of-a-sentence.</em></p>
-
-<h2 id="important-note">Important note</h2>
-
-<p><em>The following piece is fictional. Please don’t send me condolence letters. Thanks :)</em> </p>
-
-<p>“Sticks and stones may break my bones but words will never hurt me.” Such is the mantra of kids who get bullied and need a way to combat the bullies. But the broken bones I had were much easier to bear than the words I heard on the evening of my 21st birthday.</p>
-
-<p>He was driving me to what I had figured to be my surprise birthday party, having a good laugh. Then when we crossed Main Street, the world turned upside down. </p>
-
-<p>I remember that moment clearly. One moment we’re laughing; the next moment, we’re spinning. Everything happened as if time had slowed down. The airbags popped out and Gerry’s head bounced off the bag before hitting the window, and my own head hit the bag and lurched sideways. The entire world spun around me as the other car pushed ours. </p>
-
-<p>My neck hurt, but I felt fine. I looked at the shattered window, and then at Gerry, whose head was resting against the window. After struggling with my airbag, I managed to shake his shoulder and shout his name. He did not respond. I shook his shoudler again, shouting more loudly. He did not respond. I fumbled with my seatbelt then burst out of the door, stumbling onto the pavement. I looked at one bystander and yelled at him to call 911. He retrieved his phone and dialed immediately. </p>
-
-<p>I limped to the car that hit us. Through the broken window I could see the driver, who did not seem to be awake. I tried to open the door from the outside but it was locked. I reached into the car and shook the man’s shoulder to see if he would wake up. Shouting accomplished nothing. </p>
-
-<p>Another bystander approached me, asking me if I was okay. I told her I felt fine but that my boyfriend was in the car, locked in because the other car had hit his door. She put her arm around me and tried to comfort me. I coudn’t pay attention to what she was saying because I was in such a daze. I couldn’t believe this was happening. </p>
-
-<p>When the ambulance finally arrived, I was in hysterics. I told them that my boyfriend was trapped in the car, unconscious. The medics told me to calm down and that they needed to check me for wounds. It took two men to hoist me onto the stretcher and restrain me. I demanded that they tend to my boyfriend first, but they insisted on taking care of me. </p>
-
-<p>They wheeled me into the ambulance and I can’t remember what happened after they put the respirator on me. </p>
-
-<hr />
-
-<p>After an hour in the hospital, I was told that as a result of the crash, I had broken two ribs and required 9 stitches on my face from the shards of glass slashing me. I didn’t care about any of that. I asked the doctors and nurses what happened to Gerry. They all hesitated and said they didn’t know, but that they would get someone who did know to tell me. </p>
-
-<p>Finally, one doctor sat at the foot of my bed, looked at me, and sighed. Then he uttered three words that made my broken bones seem painless. </p>
-
-<p>“Gerry is dead.”</p>
-
-<p>Sadness overcame me and my eyes welled up with tears. I told myself it wasn’t possible. That Gerry was in the next room, recovering just like I was. I told myself that we would emerge from the hospital together, broken, but together. I told myself that I would be able to come home and see his smiling face, and feel his warm embrace. </p>
-
-<p>But the void in my heart told me that none of that was true. He was not recovering. We would not emerge from the hospital together. And he would never again be able to wrap me in his arms. I knew the truth. Gerry was dead. </p>
-
-<p>I thought it was my fault. If I hadn’t chosen to have my surprise birthday party on that day, none of this would have happened. If I had chosen to drive, perhaps I could have seen the car coming towards us and stop. If I had decided to have a small, intimate celebration with Gerry, then we wouldn’t have to be on the road at all. </p>
-
-<p>Despite all the self-blame, I knew that there’s nothing I could do then to bring him back. Yet I wished I was able to say goodbye properly. I wished I could have savored that last hug for just five more seconds. I wished I didn’t say those mean things to him the previous week. So many regrets, but nothing I could do to come to terms with them. </p>
-
-<p>I always think about what life could be if the crash had never happened. I think about the kids we could have had. The house we could have lived in. The life we would be living together. But then those three words echo in my head, “Gerry is dead.” My broken bones healed eventually, but nothing will ever be able to mend the wound those three words caused.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -615,6 +491,14 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/04/16/solving-the-singaporean-math-problem/">Solving the Singaporean Math Problem</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/08/javascript-design-patterns-reflections/">Javascript Design Patterns Reflections</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/01/20/optimizing-a-portfolio/">Optimizing a Portfolio</a>
       </li>
     
@@ -624,14 +508,6 @@
     
       <li class="post">
         <a href="/blog/2014/10/31/reflection-on-nanodegree-pt-1/">Reflection on Nanodegree Pt 1</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/10/22/day-22-topoi-challenge/">Day 22: Topoi Challenge</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/10/21/day-21-geothes-walking-stick-pt-5/">Day 21: Geothe&#8217;s Walking Stick Pt 5</a>
       </li>
     
   </ul>
