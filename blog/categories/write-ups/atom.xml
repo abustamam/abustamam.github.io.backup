@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Write-ups | Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/blog/categories/write-ups/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2015-04-16T09:32:54-07:00</updated>
+  <updated>2015-04-16T09:36:21-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -152,7 +152,7 @@ You can simply preview <code>index.html</code> in your browser. </p>
 <code>javascript app.js
     ...
     &lt;body&gt;
-        &lt;h1&gt;{{"Hello, Angular!"}}&lt;/h1&gt;
+        &lt;h1&gt;Hello, Angular!&lt;/h1&gt;
     &lt;/body&gt;
     ...
 </code></p>
@@ -247,13 +247,13 @@ consider the following example:</p>
 <p>``` html Controller Example
 &lt;section id ="works" ng-controller = "StoreController as store"&gt;
     &lt;div class="foo"&gt;
-        {{store.product}}
+        
     &lt;/div&gt;
 &lt;/section&gt;</p>
 
 <section id="nowork">
     <div class="bar">
-        {{store.product}}
+        
     </div>
 </section>
 <p>```</p>
@@ -329,8 +329,8 @@ unless the code in the directive evaluates to true. </p>
 <p>``` html mini-assignment 5
 &lt;div class="product row"&gt;</p>
 <h3>
-    {{store.product.name}}
-    <em class="pull-right">${{store.product.price}}</em>
+    
+    <em class="pull-right">$</em>
   </h3>
 <p>&lt;button&gt;Add to Cart&lt;/button&gt;
 &lt;/div&gt;
@@ -365,8 +365,8 @@ app.controller(‘StoreController’, function(){
 <p>``` html
 &lt;div class="product row"&gt;</p>
 <h3>
-    {{store.products[0].name}}
-    <em class="pull-right">${{store.products[0].price}}</em>
+    
+    <em class="pull-right">$</em>
   </h3>
 <p>&lt;/div&gt;
 ```</p>
@@ -379,20 +379,20 @@ app.controller(‘StoreController’, function(){
 &lt;body class="container" ng-controller="StoreController as store"&gt;
     &lt;div class="product row"&gt;
       &lt;h3&gt;
-        {{store.products[0].name}}
-        &lt;em class="pull-right"&gt;${{store.products[0].price}}&lt;/em&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
       &lt;/h3&gt;
     &lt;/div&gt;
     &lt;div class="product row"&gt;
       &lt;h3&gt;
-        {{store.products[1].name}}
-        &lt;em class="pull-right"&gt;${{store.products[1].price}}&lt;/em&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
       &lt;/h3&gt;
     &lt;/div&gt;
     &lt;div class="product row"&gt;
       &lt;h3&gt;
-        {{store.products[2].name}}
-        &lt;em class="pull-right"&gt;${{store.products[2].price}}&lt;/em&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
       &lt;/h3&gt;
     &lt;/div&gt;
 &lt;/body&gt;
@@ -456,20 +456,20 @@ app.controller(‘StoreController’, function(){
 &lt;body class="container" ng-controller="StoreController as store"&gt;
     &lt;div class="product row"&gt;
       &lt;h3&gt;
-        {{store.products[0].name}}
-        &lt;em class="pull-right"&gt;${{store.products[0].price}}&lt;/em&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
       &lt;/h3&gt;
     &lt;/div&gt;
     &lt;div class="product row"&gt;
       &lt;h3&gt;
-        {{store.products[1].name}}
-        &lt;em class="pull-right"&gt;${{store.products[1].price}}&lt;/em&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
       &lt;/h3&gt;
     &lt;/div&gt;
     &lt;div class="product row"&gt;
       &lt;h3&gt;
-        {{store.products[2].name}}
-        &lt;em class="pull-right"&gt;${{store.products[2].price}}&lt;/em&gt;
+        
+        &lt;em class="pull-right"&gt;$&lt;/em&gt;
       &lt;/h3&gt;
     &lt;/div&gt;
 &lt;/body&gt;
@@ -524,8 +524,8 @@ use the alias to reference the controller throughout.</li>
 <body class="container" ng-controller="StoreController as store">
     <div ng-repeat="product in store.products" class="product row">
       <h3>
-        {{product.name}}
-        <em class="pull-right">${{product.price}}</em>
+        
+        <em class="pull-right">$</em>
       </h3>
     </div>
   </body>
@@ -593,8 +593,8 @@ evaluates to <code>true</code>. <code>ng-hide</code> tags will only hide if the 
 <p>``` html Mini-Assignment 5 Solution
 &lt;div ng-hide="store.product.soldOut" class="product row"&gt;</p>
 <h3>
-    {{store.product.name}}
-    <em class="pull-right">${{store.product.price}}</em>
+    
+    <em class="pull-right">$</em>
   </h3>
 <p>&lt;button ng-show="store.product.canPurchase"&gt;Add to Cart&lt;/button&gt;
 &lt;/div&gt;
@@ -610,8 +610,8 @@ evaluates to <code>true</code>. <code>ng-hide</code> tags will only hide if the 
 &lt;body class="container" ng-controller="StoreController as store"&gt;
 &lt;div ng-repeat = "product in store.products" class="product row"&gt;</p>
 <h3>
-    {{product.name}}
-    <em class="pull-right">${{product.price}}</em>
+    
+    <em class="pull-right">$</em>
   </h3>
 <p>&lt;/div&gt;
 &lt;/body&gt;
