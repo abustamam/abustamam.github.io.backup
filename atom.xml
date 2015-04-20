@@ -4,7 +4,7 @@
   <title><![CDATA[Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2015-04-16T09:36:21-07:00</updated>
+  <updated>2015-04-20T09:40:02-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Frontend Nanodegree Reflections]]></title>
+    <link href="http://abustamam.github.io/blog/2015/04/16/frontend-nanodegree-reflections/"/>
+    <updated>2015-04-16T09:47:47-07:00</updated>
+    <id>http://abustamam.github.io/blog/2015/04/16/frontend-nanodegree-reflections</id>
+    <content type="html"><![CDATA[<p>Hello! I finally graduated from my Frontend Nanodegree program on Udacity. Here is a recap of my previous posts:</p>
+
+<p><a href="http://abustamam.github.io/blog/2014/10/31/reflection-on-nanodegree-pt-1/">First reflection</a>
+<a href="http://abustamam.github.io/2014/12/17/re-making-the-frogger-game/">Second reflection (Bugger)</a>
+<a href="http://abustamam.github.io/2015/01/20/optimizing-a-portfolio/">Third reflection (Optimization project)</a>
+<a href="http://abustamam.github.io/2015/02/08/javascript-design-patterns-reflections/">Fourth reflection (Cat Clicker)</a></p>
+
+<p>This is my final reflection. </p>
+
+<h2 id="the-final-project">The final project</h2>
+
+<p>My final project was a <a href="http://abustamam.github.io/Neighborhood-Map">Neighborhood Map</a> which is an interactive map that shows Groupons near your area.</p>
+
+<p>It was interesting and fun to make, and of course very challenging. I’d love to hear feedback, however! </p>
+
+<p>Here’s what I learned while working through my final project.</p>
+
+<h3 id="knockout-js-is-not-very-extensible">Knockout JS is not very extensible</h3>
+
+<p>I like Knockout, but it isn’t very powerful. There’s no clear “model” in the MV* architecture, so you’re kinda left up a creek without a paddle. </p>
+
+<p>However, I did like the fact that bindings worked “automatically!” But I think Angular.js also has a similar feature, and is also a bit more robust. </p>
+
+<p>Also, the docs suck. Like, really suck. I had no idea there was something called <code>arrayForEach</code> because it’s nowhere to be found. I had to find it online, and it wasn’t even on the KnockoutJs website. (pro-tip: adding a search functionality to your docs is invaluable).</p>
+
+<p>All-in-all, I would have enjoyed making the project more if it were with, say Angular, but the project spec required Knockout. </p>
+
+<p>I would have liked to have used Django, but this is the “Front-End” Nanodegree, not Full-Stack. </p>
+
+<h3 id="google-maps-api-is-crunk">Google Maps API is crunk</h3>
+
+<p>Interestingly enough, I (again) got most of my GMAPs info from none other than Stack Overflow. When I wanted to ensure my map was dynamically resizing, it wasn’t on GMAPs, it was Stack Overflow. </p>
+
+<p>I feel like they should have had more examples of using their API, because the list of commands and options that they made available weren’t very helpful. It’s nice to know they “existed”, but it would have also have been nice to know how they worked. </p>
+
+<h3 id="what-to-do-when-the-docs-suck">What to do when the docs suck</h3>
+
+<p>Two things. You can experiement (nothing’s stopping you from making a new project and testing it out in a sandbox environment) or you can just ask Stack Overflow. </p>
+
+<p>I would recommend testing things yourself first, so that way when you do run into a problem on you can isolate the issue and concisely share what you’ve tried on Stack Overflow without the whole she-bang of your entire project. </p>
+
+<h3 id="dont-procrastinate">Don’t procrastinate</h3>
+
+<p>I have development hours for myself, and I would always find ways to “do” stuff during my development hours that weren’t really productive. That is to say that although I would be working on my project, I’d be doing something menial rather than solving an actual problem. In this way, I would still be working, but not really advancing my problem.</p>
+
+<p>For example, I spent a long time on my sidebar because I didn’t want to add markers. I was putting off the adding of markers because it felt like a big task, so I did smaller tasks like edit the CSS for my sidebar. </p>
+
+<p>The goal of making an app is to JFS (stands for Just F&amp;$%ing Ship) so not everything needs to be completely optimized. Get a MVP (minimum viable product) going and you can tweak as you go after that. Otherwise, you’re wasting time and putting off the inevitable. </p>
+
+<h2 id="overall-review-of-the-nanodegree">Overall review of the Nanodegree</h2>
+
+<p>Overall, I enjoyed my experience with the Nanodegree, and I would definitely consider doing the Full Stack ND, and perhaps even Data Science. For right now, I’m going to focus on a couple of other courses that I’ve purchased but put off, so check back soon for those! </p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Solving the Singaporean Math Problem]]></title>
@@ -187,12 +248,15 @@ Bugfix: Reset button works properly</p>
 
 <p>Add admin panel, which allows “cheating” (aka changing number of clicks)</p>
 
+<h2 id="version-1">version 1</h2>
+
+<p>Uses knockout.js, looks cool</p>
+
 <h1 id="school-attendance-app">School-Attendance App</h1>
 
 <p>Original Udacity repo is <a href="https://github.com/udacity/ud989-school-attendance">here</a>. My repo is <a href="https://github.com/abustamam/school-attendance">here</a>.</p>
 
 <p>The goal of this app is to refactor existing code from spaghetti code into maintainable code using MVO, which was done pretty easily. The model was the list of students and the days they missed. The view was how the app looks. And the octopus was what bound everything together. </p>
-
 ]]></content>
   </entry>
   
@@ -203,7 +267,7 @@ Bugfix: Reset button works properly</p>
     <id>http://abustamam.github.io/blog/2015/01/20/optimizing-a-portfolio</id>
     <content type="html"><![CDATA[<h1 id="heres-the-latest">Here’s the latest</h1>
 
-<p>The latest project was to optimize a portfolio. Once I get the project graded, I will update the portfolio to be my own. However, here are some take-home points I got.</p>
+<p>The latest project was to optimize a portfolio. Once I get the project graded, I will update the <a href="http://abustamam.github.io/mobile-portfolio">portfolio</a> to be my own. However, here are some take-home points I got.</p>
 
 <!-- more -->
 
@@ -221,7 +285,7 @@ Bugfix: Reset button works properly</p>
 
 <p>The first goal was to optimize the website such that it got a score of 90+ on <a href="https://developers.google.com/speed/pagespeed/insights/?url=abustamam.github.io%2Fmobile-portfolio">Page Speed Insights</a>. This was done by analyzing the CRP and performing optimizations such as inlining critical CSS and async-ing non-critical scripts. </p>
 
-<p>The second goal was to optimize the <a href="http://abustamam.github.io/mobile-portfolio/pizza.html">pizza page</a> such that it ran at 60 FPS. This was done by performing several JavaScript optimizations.</p>
+<p>The second goal was to optimize the <a href="mobile-portfolio/pizza.html">pizza page</a> such that it ran at 60 FPS. This was done by performing several JavaScript optimizations.</p>
 
 <p>The main issue I ran into with the project was the task automaters (more on this <a href="#gulp">below</a>).</p>
 
@@ -314,7 +378,7 @@ Bugfix: Reset button works properly</p>
     <id>http://abustamam.github.io/blog/2014/12/17/re-making-the-frogger-game</id>
     <content type="html"><![CDATA[<h1 id="six-weeks-later">Six weeks later</h1>
 
-<p>I’m back, and I’ve finally finished my game project, using HTML5 Canvas and JS. You can view the finished project <a href="abustamam.github.io/frontend-nanodegree-arcade-game">here</a>. </p>
+<p>I’m back, and I’ve finally finished my game project, using HTML5 Canvas and JS. You can view the finished project <a href="http://abustamam.github.io/bugger">here</a>. </p>
 
 <!-- more -->
 
@@ -389,7 +453,7 @@ Bugfix: Reset button works properly</p>
 
 <p>I started the day I was allowed to, which was about two weeks ago. </p>
 
-<p>So far, I’ve completed the <a href="http://abustamam.github.io/Udacity-Portfolio">Mockup to Website</a>, and <a href="http://abustamam.github.io/frontend-nanodegree-resume">Interactive Resume</a>. </p>
+<p>So far, I’ve completed the <a href="http://abustamam.github.io/rbport">Mockup to Website</a>, and <a href="http://abustamam.github.io/resume">Interactive Resume</a>. </p>
 
 <p>The courses are decent; I enjoy the byte-sized lectures interspersed with quizzes. The courses don’t go too deep, but that’s what the projects are for.</p>
 
@@ -922,50 +986,6 @@ Hiring Manager at Google</p>
 <p>I really enjoyed the story primarily because it spoke to my heart, as an entrepreneur at heart. </p>
 
 <p>Though the style in which the article is written is nothing special (except of course for the breaks in text via pictures), I just enjoyed the encouraging story behind the text, as well as the simple call to action at the end: “Just start.”</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 8: Letter to Business Owner]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/08/letter-to-business-owner/"/>
-    <updated>2014-10-08T22:00:48-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/08/letter-to-business-owner</id>
-    <content type="html"><![CDATA[<p><em>Day 8: Write a thank-you letter to the owner of a business. (See description for further context.)</em></p>
-
-<p><em>Write a thank-you letter to the owner of a business who anticipated, met, and exceeded your needs. Tell your story. Describe your experience candidly, and your delight, and your surprise. After you’ve finished a draft of the letter, go back and make it beautiful and clear. Do your best to make your prose (its precision, its melody) really carry your gratitude, by expressing your story concretely and your feelings truly.</em></p>
-
-<!-- more -->
-
-<p>[It’s been a while since I’ve had the pleasure of being pleasantly surprised by the quality of service of a business owner. As such, I am going to create a story of such an experience and tell it through this fictitious letter]</p>
-
-<p>Dear Jacques, </p>
-
-<p>Last week, my boyfriend and I had the pleasure of dining at Caffe Rolle for our anniversary, during what seemed to be a peak time–Friday night dinner. I am writing this letter to express my utmost appreciation for the service we received that night. </p>
-
-<p>When we arrived, there was already a line of people waiting to be seated. I had heard excellent things about this restaurant and needed to experience it for myself, even if I had to wait a half hour to be seated. </p>
-
-<p>My wait was alleviated by the fact that there was a TV in the waiting area, as well as a water cooler. There were also pamphlets that were designed to teach French basics. Going through those pamphlets and quizzing and being quizzed by my boyfriend was a lot of fun, and definitely a productive way to pass the time. </p>
-
-<p>The 30 minutes was over before we knew it, and we were seated at a table with one long unlit candle in the middle, though no other tables had a candle. After we were seated, however, we were greeted by none other than you yourself, the owner of the fine establishment. You came by to offer us a complimentary bottle of wine and a plate of escargot as appetizers, and to wish us a happy anniversary.</p>
-
-<p>I followed your steps as you departed our table, and you disappeared into the kitchen, only to emerge with another bottle and a plate of escargot, ready to serve another table. I looked around and saw that the restaurant was extremely busy, but the fact that you personally came by to greet us was extremely touching, and I assumed it was commonplace since you were off to serve another table. It was at that point that I knew that I was in for quite the experience. It was also at this point that I had begun to suspect that my boyfriend had perhaps planned this when he made his reservation, but I made no mention of it. </p>
-
-<p>We browsed through the menu while chewing our snails. Though the menu was all in French, the pamphlets in the waiting area helped with understanding it. I settled on the coq au vin, and my boyfriend chose the pot-au-feu. The waitress assured us that we made excellent choices and was off to deliver our order. </p>
-
-<p>While waiting, we continued learning French through the pamphlets and before we knew it, our food was served. I could tell that there was a professionally trained chef in the kitchen because the presentation of the food was more perfect than what you’d usually see on TV. The waitress offered to take a picture of us before we started on our food, and we took her up on the offer. </p>
-
-<p>As we ate our food, our waitress continually refilled our water cups and ensured that everything was fine for us. Not once were we given the bill before we were ready. I overheard a group who had received the wrong order and it sounded like they were given free dessert for their troubles. </p>
-
-<p>We were given take-home boxes and our food was professionally packed, rather than leaving us to our own devices, and then we were offered the dessert menu. You can never go wrong with creme brûlée so we ordered one for each of us. The dessert was delectable, and was definitely the right size. </p>
-
-<p>My boyfriend and I decided on a hefty 30% tip for the amazing service we were offered, and even then I still feel like we got the better end of the deal. As we got ready to leave, you approached us from the kitchen yet again, with a bouquet of red roses in your hands. By the way they were cut, I could tell that they were not the kind you get at the gas station. I graciously accepted your gift, and we pushed past the line of people at the door to leave. </p>
-
-<p>That must have been the single-most pleasant dining experience I have ever had. Even if my boyfriend were somehow involved in organizing this, we were both pleasantly surprised by the quality of service. The way you treat each customer as an individual, rather than just another customer, is likely why you are the top-rated restaurant on Yelp for a 30 mile radius. </p>
-
-<p>Keep doing what you’re doing. Thank you again. </p>
-
-<p>Regards,
-Monica Trebal</p>
 ]]></content>
   </entry>
   

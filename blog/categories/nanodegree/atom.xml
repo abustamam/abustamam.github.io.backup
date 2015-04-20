@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nanodegree | Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/blog/categories/nanodegree/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2015-04-16T09:36:21-07:00</updated>
+  <updated>2015-04-20T09:40:02-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -26,7 +26,7 @@
 
 <h1 id="cat-clicker">Cat Clicker</h1>
 
-<p><a href="http://abustamam.github.io/Cat-Clicker">Cat Clicker</a> was my first project. </p>
+<p><a href="/Cat-Clicker">Cat Clicker</a> was my first project. </p>
 
 <h2 id="version-01">version 0.1</h2>
 
@@ -72,12 +72,15 @@ Bugfix: Reset button works properly</p>
 
 <p>Add admin panel, which allows “cheating” (aka changing number of clicks)</p>
 
+<h2 id="version-1">version 1</h2>
+
+<p>Uses knockout.js, looks cool</p>
+
 <h1 id="school-attendance-app">School-Attendance App</h1>
 
 <p>Original Udacity repo is <a href="https://github.com/udacity/ud989-school-attendance">here</a>. My repo is <a href="https://github.com/abustamam/school-attendance">here</a>.</p>
 
 <p>The goal of this app is to refactor existing code from spaghetti code into maintainable code using MVO, which was done pretty easily. The model was the list of students and the days they missed. The view was how the app looks. And the octopus was what bound everything together. </p>
-
 ]]></content>
   </entry>
   
@@ -88,7 +91,7 @@ Bugfix: Reset button works properly</p>
     <id>http://abustamam.github.io/blog/2015/01/20/optimizing-a-portfolio</id>
     <content type="html"><![CDATA[<h1 id="heres-the-latest">Here’s the latest</h1>
 
-<p>The latest project was to optimize a portfolio. Once I get the project graded, I will update the portfolio to be my own. However, here are some take-home points I got.</p>
+<p>The latest project was to optimize a portfolio. Once I get the project graded, I will update the <a href="/mobile-portfolio">portfolio</a> to be my own. However, here are some take-home points I got.</p>
 
 <!-- more -->
 
@@ -106,7 +109,7 @@ Bugfix: Reset button works properly</p>
 
 <p>The first goal was to optimize the website such that it got a score of 90+ on <a href="https://developers.google.com/speed/pagespeed/insights/?url=abustamam.github.io%2Fmobile-portfolio">Page Speed Insights</a>. This was done by analyzing the CRP and performing optimizations such as inlining critical CSS and async-ing non-critical scripts. </p>
 
-<p>The second goal was to optimize the <a href="http://abustamam.github.io/mobile-portfolio/pizza.html">pizza page</a> such that it ran at 60 FPS. This was done by performing several JavaScript optimizations.</p>
+<p>The second goal was to optimize the <a href="mobile-portfolio/pizza.html">pizza page</a> such that it ran at 60 FPS. This was done by performing several JavaScript optimizations.</p>
 
 <p>The main issue I ran into with the project was the task automaters (more on this <a href="#gulp">below</a>).</p>
 
@@ -188,7 +191,7 @@ gulp.task(‘one’, function(){
     <id>http://abustamam.github.io/blog/2014/12/17/re-making-the-frogger-game</id>
     <content type="html"><![CDATA[<h1 id="six-weeks-later">Six weeks later</h1>
 
-<p>I’m back, and I’ve finally finished my game project, using HTML5 Canvas and JS. You can view the finished project <a href="abustamam.github.io/frontend-nanodegree-arcade-game">here</a>. </p>
+<p>I’m back, and I’ve finally finished my game project, using HTML5 Canvas and JS. You can view the finished project <a href="/bugger">here</a>. </p>
 
 <!-- more -->
 
