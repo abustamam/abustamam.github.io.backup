@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Opencv | Rasheed Bustamam Blogfolio]]></title>
+  <link href="http://abustamam.github.io/blog/categories/opencv/atom.xml" rel="self"/>
+  <link href="http://abustamam.github.io/"/>
+  <updated>2015-05-05T12:42:20-07:00</updated>
+  <id>http://abustamam.github.io/</id>
+  <author>
+    <name><![CDATA[Rasheed Bustamam]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Compiling OpenCV on a Mac]]></title>
+    <link href="http://abustamam.github.io/blog/2015/05/03/compiling-opencv-on-a-mac/"/>
+    <updated>2015-05-03T12:25:15-07:00</updated>
+    <id>http://abustamam.github.io/blog/2015/05/03/compiling-opencv-on-a-mac</id>
+    <content type="html"><![CDATA[<p>I’ve been helping my dad out with some OpenCV stuff.</p>
+
+<p>I ran into so many problems trying to compile OpenCV that I’m writing a tutorial on how I compiled it on my Mac. </p>
+
+<!-- more -->
+
+<p>You can install OpenCV quite simply with Homebrew, using the simple command:</p>
+
+<p><code>brew install opencv</code></p>
+
+<p>However, most OpenCV tutorials rely on you building it yourself as the directories would then be specific to Homebrew. Plus, you don’t get to make customizations to your compilation. </p>
+
+<p>So let’s build it ourselves! I used <a href="http://mac-opencv-projects.blogspot.com/2014/01/installing-opencv-on-mac-os-x-1091.html">this</a> tutorial, but it wasn’t sufficient, so I’m adding what worked for me.</p>
+
+<p>Keep in mind that your mileage may vary. This is my environment: </p>
+
+<p>Mac OS X Yosemite 10.10.2
+Xcode 6.3.1 (6D1002)
+OpenCV 2.4.8.0
+Homebrew 0.9.5
+cmake 3.1.0</p>
+
+<p>So, first you’ll want to download the <a href="http://opencv.org/downloads.html">latest version of OpenCV</a>. I used the latest stable, which as of this writing, is 2.4.8.0. Unzip this anywhere (I put it onto my Desktop).</p>
+
+<p><strong>Note: I’ve heard bad things happening to people who unzip OpenCV into a directory with a space in it. So, don’t do that, just in case.</strong></p>
+
+<p>Now, for some reason the 2.4.8.0 version of OpenCV throws an error when you try to build it using Clang. So you’ll want to change one of the files to the code here: <a href="https://github.com/Itseez/opencv/commit/35f96d6da76099d80180439c857a4abe5cb17966">Fixing the LatestPoints problem</a></p>
+
+<p>Go to the following file and replace it with the code in the above link:</p>
+
+<p><code>[opencvdirectory]/modules/legacy/src/calibfilter.cpp</code></p>
+
+<p>That will save you some headache (it did for me).</p>
+
+<p>Secondly, you’ll need CMake. </p>
+
+<p><code>brew install cmake</code> will work (that’s what I used) but if you don’t use Homebrew then just download it from the <a href="http://www.cmake.org/download/">website</a>.</p>
+
+<p>CD into your OpenCV directory, make a <code>build</code> directory, and cd into that too.</p>
+
+<p><code>
+$ cd ~/Desktop/opencv
+$ mkdir build
+$ cd build
+</code></p>
+
+<p>Then build and install OpenCV:</p>
+
+<p><code>
+$ cmake -G "Unix Makefiles" ..  
+$ make -j8  
+$ sudo make install 
+</code></p>
+
+<p>This will install to /usr/local. Keep this in mind for future reference.</p>
+]]></content>
+  </entry>
+  
+</feed>

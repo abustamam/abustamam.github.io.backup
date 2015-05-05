@@ -4,7 +4,7 @@
   <title><![CDATA[Rasheed Bustamam Blogfolio]]></title>
   <link href="http://abustamam.github.io/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2015-04-20T09:40:02-07:00</updated>
+  <updated>2015-05-05T12:42:20-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Compiling OpenCV on a Mac]]></title>
+    <link href="http://abustamam.github.io/blog/2015/05/03/compiling-opencv-on-a-mac/"/>
+    <updated>2015-05-03T12:25:15-07:00</updated>
+    <id>http://abustamam.github.io/blog/2015/05/03/compiling-opencv-on-a-mac</id>
+    <content type="html"><![CDATA[<p>I’ve been helping my dad out with some OpenCV stuff.</p>
+
+<p>I ran into so many problems trying to compile OpenCV that I’m writing a tutorial on how I compiled it on my Mac. </p>
+
+<!-- more -->
+
+<p>You can install OpenCV quite simply with Homebrew, using the simple command:</p>
+
+<p><code>brew install opencv</code></p>
+
+<p>However, most OpenCV tutorials rely on you building it yourself as the directories would then be specific to Homebrew. Plus, you don’t get to make customizations to your compilation. </p>
+
+<p>So let’s build it ourselves! I used <a href="http://mac-opencv-projects.blogspot.com/2014/01/installing-opencv-on-mac-os-x-1091.html">this</a> tutorial, but it wasn’t sufficient, so I’m adding what worked for me.</p>
+
+<p>Keep in mind that your mileage may vary. This is my environment: </p>
+
+<p>Mac OS X Yosemite 10.10.2
+Xcode 6.3.1 (6D1002)
+OpenCV 2.4.8.0
+Homebrew 0.9.5
+cmake 3.1.0</p>
+
+<p>So, first you’ll want to download the <a href="http://opencv.org/downloads.html">latest version of OpenCV</a>. I used the latest stable, which as of this writing, is 2.4.8.0. Unzip this anywhere (I put it onto my Desktop).</p>
+
+<p><strong>Note: I’ve heard bad things happening to people who unzip OpenCV into a directory with a space in it. So, don’t do that, just in case.</strong></p>
+
+<p>Now, for some reason the 2.4.8.0 version of OpenCV throws an error when you try to build it using Clang. So you’ll want to change one of the files to the code here: <a href="https://github.com/Itseez/opencv/commit/35f96d6da76099d80180439c857a4abe5cb17966">Fixing the LatestPoints problem</a></p>
+
+<p>Go to the following file and replace it with the code in the above link:</p>
+
+<p><code>[opencvdirectory]/modules/legacy/src/calibfilter.cpp</code></p>
+
+<p>That will save you some headache (it did for me).</p>
+
+<p>Secondly, you’ll need CMake. </p>
+
+<p><code>brew install cmake</code> will work (that’s what I used) but if you don’t use Homebrew then just download it from the <a href="http://www.cmake.org/download/">website</a>.</p>
+
+<p>CD into your OpenCV directory, make a <code>build</code> directory, and cd into that too.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ cd ~/Desktop/opencv
+</span><span class="line">$ mkdir build
+</span><span class="line">$ cd build</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Then build and install OpenCV:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ cmake -G "Unix Makefiles" ..  
+</span><span class="line">$ make -j8  
+</span><span class="line">$ sudo make install </span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>This will install to /usr/local. Keep this in mind for future reference.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Frontend Nanodegree Reflections]]></title>
@@ -70,7 +135,6 @@
 <h2 id="overall-review-of-the-nanodegree">Overall review of the Nanodegree</h2>
 
 <p>Overall, I enjoyed my experience with the Nanodegree, and I would definitely consider doing the Full Stack ND, and perhaps even Data Science. For right now, I’m going to focus on a couple of other courses that I’ve purchased but put off, so check back soon for those! </p>
-
 ]]></content>
   </entry>
   
@@ -945,47 +1009,6 @@ Hiring Manager at Google</p>
 <p><strong>It was Ryan, with an invitation to begin employment at Google the following week.</strong></p>
 
 <p>Salary and relocation would be negotiated in the following days, but I’d done it. Two months after I’d dropped out of school and flew to California with nothing but the clothes in my bag and my MacBook, I’d secured employment at Google. For those of you who want a career shift or just a new life, why wait? <strong>Start now, you never know who will notice.</strong> Or, in Cal Newport’s words: “Be so good they can’t ignore you.”</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 9: Writer's Review of Unintentionally in YC]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/09/writers-review-of-unintentionally-in-yc/"/>
-    <updated>2014-10-09T16:20:59-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/09/writers-review-of-unintentionally-in-yc</id>
-    <content type="html"><![CDATA[<p><em>Day 9: Write a review—a review for writers—of your favorite recent blog post or article. (See description for details.)</em></p>
-
-<p><em>Write a review—a review for writers—of your favorite recent blog post or article. What ideas draw you into the article? But, more than the ideas, what writing choices did the author make that made it so good? What tools of representation—words, jokes, descriptions, metaphors, hyperbole, informal voice, call to action, etc.—did the author use that you also might use someday?</em></p>
-
-<!-- more -->
-
-<p><a href="https://medium.com/@andrewjiang/unintentionally-in-yc-9dd0ccbaeb44">The article</a></p>
-
-<p>I picked this article because I wish to start a start-up one day, and the fact that someone could “unintentionally” get into YC really piqued my interest. It’s also, overall, an inspirational story with a simple call-to-action: start! </p>
-
-<p>The first thing that stands out about the article would be the title. </p>
-
-<p>“Unintentionally in YC: Leaving finance and landing in the world’s most prestigious accelerator without meaning to”</p>
-
-<p>Anyone who’s ever dreamed of starting a start-up knows the two letters YC, and it’s always their goal to get accepted into YC. The target audience is already suckered in–unintentionally getting into YC is the pipe dream, and so the title provides intrigue. </p>
-
-<p>Andrew starts the article with his before: “I’d crash on friends’ couches for the better part of two months” and then the after: “we’re working with the best civic and nonprofit organizations in the world, including the Gates Foundation, Kipp, and the White House.”</p>
-
-<p>There is a stark contrast before his before and after, and everyone loves reading about the “rags to riches” hero story (even if the hero did not necessarily begin in rags nor end in riches). This sets the context for the story to follow, and invites the readers to join him in his journey. </p>
-
-<p>Andrew begins his story with his little pet projects. It’s a logical place to start a story about start-ups. I would venture to say that the primary project of a start-up is rarely the first project of the founders. </p>
-
-<p>When transitioning to his start into team-prototyping, there’s a full-size picture that has 5 words: “Dude, we need to talk.” Very entrancing and makes the reader wonder, “about what?” </p>
-
-<p>The next “chapter” of his story is when he gets an offer from YC. This is signified by another full-size picture with the text, ““Hi Paul, Andrew, and Eric — This is not spam””</p>
-
-<p>Given that the reader already knows that Andrew has gotten into YC, the reader automatically assumes that the quote came from someone from YC, reaching out. </p>
-
-<p>The rest of the story details the team’s interview process and getting excited to begin a new chapter of their lives. </p>
-
-<p>I really enjoyed the story primarily because it spoke to my heart, as an entrepreneur at heart. </p>
-
-<p>Though the style in which the article is written is nothing special (except of course for the breaks in text via pictures), I just enjoyed the encouraging story behind the text, as well as the simple call to action at the end: “Just start.”</p>
 ]]></content>
   </entry>
   

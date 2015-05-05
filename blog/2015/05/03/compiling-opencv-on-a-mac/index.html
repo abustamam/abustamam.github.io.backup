@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Compiling OpenCV on a Mac - Rasheed Bustamam Blogfolio</title>
+  <meta name="author" content="Rasheed Bustamam">
+
+  
+  <meta name="description" content="I’ve been helping my dad out with some OpenCV stuff. I ran into so many problems trying to compile OpenCV that I’m writing a tutorial on how I &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://abustamam.github.io/blog/2015/05/03/compiling-opencv-on-a-mac">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Rasheed Bustamam Blogfolio" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Rasheed Bustamam Blogfolio</a></h1>
+  
+    <h2>Failing Forward</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:abustamam.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Compiling OpenCV on a Mac</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-03T12:25:15-07:00" pubdate data-updated="true">May 3<sup>rd</sup>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I’ve been helping my dad out with some OpenCV stuff.</p>
+
+<p>I ran into so many problems trying to compile OpenCV that I’m writing a tutorial on how I compiled it on my Mac. </p>
+
+<!-- more -->
+
+<p>You can install OpenCV quite simply with Homebrew, using the simple command:</p>
+
+<p><code>brew install opencv</code></p>
+
+<p>However, most OpenCV tutorials rely on you building it yourself as the directories would then be specific to Homebrew. Plus, you don’t get to make customizations to your compilation. </p>
+
+<p>So let’s build it ourselves! I used <a href="http://mac-opencv-projects.blogspot.com/2014/01/installing-opencv-on-mac-os-x-1091.html">this</a> tutorial, but it wasn’t sufficient, so I’m adding what worked for me.</p>
+
+<p>Keep in mind that your mileage may vary. This is my environment: </p>
+
+<p>Mac OS X Yosemite 10.10.2
+Xcode 6.3.1 (6D1002)
+OpenCV 2.4.8.0
+Homebrew 0.9.5
+cmake 3.1.0</p>
+
+<p>So, first you’ll want to download the <a href="http://opencv.org/downloads.html">latest version of OpenCV</a>. I used the latest stable, which as of this writing, is 2.4.8.0. Unzip this anywhere (I put it onto my Desktop).</p>
+
+<p><strong>Note: I’ve heard bad things happening to people who unzip OpenCV into a directory with a space in it. So, don’t do that, just in case.</strong></p>
+
+<p>Now, for some reason the 2.4.8.0 version of OpenCV throws an error when you try to build it using Clang. So you’ll want to change one of the files to the code here: <a href="https://github.com/Itseez/opencv/commit/35f96d6da76099d80180439c857a4abe5cb17966">Fixing the LatestPoints problem</a></p>
+
+<p>Go to the following file and replace it with the code in the above link:</p>
+
+<p><code>[opencvdirectory]/modules/legacy/src/calibfilter.cpp</code></p>
+
+<p>That will save you some headache (it did for me).</p>
+
+<p>Secondly, you’ll need CMake. </p>
+
+<p><code>brew install cmake</code> will work (that’s what I used) but if you don’t use Homebrew then just download it from the <a href="http://www.cmake.org/download/">website</a>.</p>
+
+<p>CD into your OpenCV directory, make a <code>build</code> directory, and cd into that too.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ cd ~/Desktop/opencv
+</span><span class="line">$ mkdir build
+</span><span class="line">$ cd build</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Then build and install OpenCV:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ cmake -G "Unix Makefiles" ..  
+</span><span class="line">$ make -j8  
+</span><span class="line">$ sudo make install </span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>This will install to /usr/local. Keep this in mind for future reference.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Rasheed Bustamam</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-03T12:25:15-07:00" pubdate data-updated="true">May 3<sup>rd</sup>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/opencv/'>opencv</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://abustamam.github.io/blog/2015/05/03/compiling-opencv-on-a-mac/" data-via="" data-counturl="http://abustamam.github.io/blog/2015/05/03/compiling-opencv-on-a-mac/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/04/16/frontend-nanodegree-reflections/" title="Previous Post: Frontend Nanodegree Reflections">&laquo; Frontend Nanodegree Reflections</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/05/03/compiling-opencv-on-a-mac/">Compiling OpenCV on a Mac</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/16/frontend-nanodegree-reflections/">Frontend Nanodegree Reflections</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/16/solving-the-singaporean-math-problem/">Solving the Singaporean Math Problem</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/08/javascript-design-patterns-reflections/">Javascript Design Patterns Reflections</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/01/20/optimizing-a-portfolio/">Optimizing a Portfolio</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Rasheed Bustamam -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
