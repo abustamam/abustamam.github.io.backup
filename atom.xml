@@ -4,7 +4,7 @@
   <title><![CDATA[Write Bright]]></title>
   <link href="http://abustamam.github.io/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2015-05-08T12:24:40-07:00</updated>
+  <updated>2015-06-18T05:39:05-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ramadan Kareem]]></title>
+    <link href="http://abustamam.github.io/blog/2015/06/18/ramadan-kareem/"/>
+    <updated>2015-06-18T05:03:51-07:00</updated>
+    <id>http://abustamam.github.io/blog/2015/06/18/ramadan-kareem</id>
+    <content type="html"><![CDATA[<p><em>Assalamualaikum wa Rahmatullahi wa Barakatuh</em>,</p>
+
+<p>Peace and blessings be upon you.</p>
+
+<p>I greet you with the greeting of Islam because I am writing about one of the most important months in the Muslim calendar. That month is Ramadan.</p>
+
+<!-- more -->
+
+<p>For those of you who are unaware, Ramadan is a time of “cleansing” in a Muslim’s life, both spiritually and physically. During the month of Ramadan, Muslims fast from sunrise (<em>fajr</em>) to sunset (<em>maghrib</em>) (nb, these terms are not translations). This means no food, no water, no sex.</p>
+
+<p>Many people get so caught up in the minutia of Ramadan such as the moon-sighting and the exact time of sunrise and sunset that they forget the whole point of Ramadan, which is self-restraint.</p>
+
+<p>It says in the Qur’an, </p>
+
+<pre><code>O ye who believe! Fasting is prescribed to you as it was prescribed to those before you, that ye may (learn) self-restraint.
+
+    —Surah Bakarah 2:183
+</code></pre>
+
+<p>There is some ambiguity in the last term, “self-restraint.” Some translate it to be “god-awareness,” but for all intents and purposes, let’s go with self-restraint. </p>
+
+<p>It’s an interesting concept, because there is nothing inherently wrong with eating or drinking. However, during the days of Ramadan, it is forbidden for the Muslim to eat or drink (there are some exceptions). </p>
+
+<p>Ramadan is all about foregoing the normal pleasures of the day in order to attain a higher sense of awareness, both in terms of self and in terms of God. Every pang of hunger is a reminder of God, resulting in greater piety. Or, it could simply be a reminder of self-discipline. Let’s face it, if you can get up at 3:30am to eat breakfast, not eat or drink until 8:30pm, and then stay up and pray from 10 to midnight, there’s not much you <em>can’t</em> do, if you have the motivation to do it. </p>
+
+<p>And in this regard, I believe everyone can benefit from fasting, even if they are not religious. </p>
+
+<p>So my challenge to you is to take one day this month (sometime between 18 June and 17 July, 2015) and fast. If you know a Muslim, tell them, “Hey, I’m fasting with you today.” </p>
+
+<p>See how much your focus changes when you don’t have to worry about the basic pleasures of food. </p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Speaker Within]]></title>
@@ -1007,43 +1045,6 @@ RICK (not Mick)</p>
 <p>He applies for jobs at companies that has a mission that he truly believes in. He begins a new job that is similar to the job he was working previously, except now he knows that his work is going to mean something in the world. They even let him make some key decisions because of his expertise. David had never been happier in his life. </p>
 
 <p>David was once a hardware engineer, living an unfulfilled, meaningless life. Now, David is still a hardware engineer, doing the same work, but feels much more fulfilled. All it took was a change in what his work meant to him changed his entire outlook on life. </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 11: When a Plan Is Not Necessary]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/11/day-11-response-to-andrew-jiang/"/>
-    <updated>2014-10-11T22:54:36-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/11/day-11-response-to-andrew-jiang</id>
-    <content type="html"><![CDATA[<p><em>Day 11: After looking back and considering the blog post or article, add your own voice. Write your own response.</em></p>
-
-<!-- more -->
-
-<p>I recently read <a href="https://medium.com/@andrewjiang/unintentionally-in-yc-9dd0ccbaeb44">this article</a> about a guy named Andrew who left finance with no direction, and a couple months later found himself in Y Combinator, possibly the most prestigious start-up accelerator in the US. I was really inspired by the story because as an entrepreneur, it is my dream for me to get accepted into YC or a similar accelerator. The story really solidified the fact that great things can happen if you simply <strong>start</strong>.</p>
-
-<p>When I read that Andrew had no plan when he moved to the Bay Area, it really made me wonder–is a plan really necessary to succeed in life? There’s the common saying, “failing to plan is planning to fail.” But how much of that is true? These days we hear a lot of stories of people who “accidentally” make it big. </p>
-
-<p>After reading this article, as well as other similar articles, it made me think that perhaps a definite plan is not always necessary. Of course, there are consequences to not having a plan, which is why some sort of fallback is necessary. For example, Andrew lived (presumably) off of savings (and ramen) and worked part-time so his burn rate would be reduced. Obviously, he wouldn’t have been able to live forever under those circumstances, but it bought him time to figure out what he wanted to do. </p>
-
-<p>In that time, instead of “figuring out” what he wanted to do, he went ahead and built stuff. He knew he wanted to build meaningful apps, so he went ahead and did that. And that leads to the first lesson we can derive from his story: </p>
-
-<p><strong>Find your itch and scratch it with passion.</strong></p>
-
-<p>In the digital age we live in, anything you create can be instantly viewed by someone at the other side of the globe. And you never know who that person knows. </p>
-
-<p>When Andrew started losing his mojo with solo projects, he joined a hackathon. There, his passions were rekindled and he got inspired to play in a bigger sandbox. In addition, he met some people that would be integral to the start-up he’d be forming. And that gives us the second lesson we can derive from his story:</p>
-
-<p><strong>Get around like-minded people</strong></p>
-
-<p>A common saying is, “It’s not what you know, it’s who you know.” I believe it’s kind of true, but also kind of backwards. “It’s not who you know, it’s who knows you.” By getting around like-minded people, you can rekindle your motivation but also get more eyes on your number one product: you (and your skills). It’s a great and fun way to make friends too. </p>
-
-<p>After Andrew got a few important eyes on his work, he and his business partner Paul formulated what would become Bayes Impact (their non-profit). Their little side project quickly escalated into something that consumed their entire lives, and the rest, as we know, it history. Perhaps the most underscored, but also the most important, lesson we can get, is this one:</p>
-
-<p><strong>Know when to stop trying new things and hone in</strong></p>
-
-<p>Andrew went from trying something new every two weeks to finally focusing on a single passion project. He knew somewhere, perhaps in his heart, that this was THE project. Maybe it was the vision that he and his team had, maybe it was the fact that he enjoyed it so much that he dedicated so much of himself to it, but regardless, he knew it was time to stop trying new things and start focusing his energies on Bayes Impact. </p>
-
-<p>Now his team is in YC, and there’s nothing that can stop them from changing the world.</p>
 ]]></content>
   </entry>
   
