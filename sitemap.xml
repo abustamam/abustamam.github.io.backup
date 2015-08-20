@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://abustamam.github.io/blog/2015/08/19/kickstarting-your-first-mean-web-app-with-yeoman/</loc>
+    <lastmod>2015-08-19T21:42:32-07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://abustamam.github.io/blog/2015/08/17/limitless/</loc>
     <lastmod>2015-08-17T11:02:20-07:00</lastmod>
     <priority>0.8</priority>
@@ -227,21 +233,21 @@
   
   <url>
     <loc>http://abustamam.github.io/blog/archives/</loc>
-    <lastmod>2015-08-17T11:18:59-07:00</lastmod>
+    <lastmod>2015-08-19T22:04:57-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://abustamam.github.io/blog/</loc>
-    <lastmod>2015-08-17T11:18:59-07:00</lastmod>
+    <lastmod>2015-08-19T22:04:57-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://abustamam.github.io/</loc>
-    <lastmod>2015-08-17T11:18:59-07:00</lastmod>
+    <lastmod>2015-08-19T22:04:57-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

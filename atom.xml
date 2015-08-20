@@ -4,7 +4,7 @@
   <title><![CDATA[Write Bright]]></title>
   <link href="http://abustamam.github.io/atom.xml" rel="self"/>
   <link href="http://abustamam.github.io/"/>
-  <updated>2015-08-17T11:18:59-07:00</updated>
+  <updated>2015-08-19T22:04:57-07:00</updated>
   <id>http://abustamam.github.io/</id>
   <author>
     <name><![CDATA[Rasheed Bustamam]]></name>
@@ -12,6 +12,125 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Kickstarting Your First MEAN Web App With Yeoman]]></title>
+    <link href="http://abustamam.github.io/blog/2015/08/19/kickstarting-your-first-mean-web-app-with-yeoman/"/>
+    <updated>2015-08-19T21:42:32-07:00</updated>
+    <id>http://abustamam.github.io/blog/2015/08/19/kickstarting-your-first-mean-web-app-with-yeoman</id>
+    <content type="html"><![CDATA[<p>I’ve been going through <a href="http://www.freecodecamp.com">Free Code Camp</a> and after finishing the front-end “ziplines” (which require a writeup of their own, eventually) I’m finally getting set for the fullstack “basejumps.”</p>
+
+<p>However, on their <a href="http://www.freecodecamp.com/challenges/waypoint-get-set-for-basejumps">“Get Set” module</a>, I ran into some problems with Cloud9 (primarily the memory issue), so I decided to figure out how to do some of these things on my local machine.</p>
+
+<!-- more -->
+
+<p>This is primarily a document for me to refer to when I create more fullstack apps, but may as well share it.</p>
+
+<p>Note that I am using OS X. I provide no guarantees in this document, as I’m writing it as it worked for me. Feel free to leave a comment though.</p>
+
+<h2 id="step-0-get-your-environment-set-up">Step 0: get your environment set up</h2>
+
+<p>You should have the following installed: <a href="https://www.npmjs.com/">npm</a>, <a href="http://brew.sh">Homebrew</a>, and probably <a href="http://www.bower.io">bower</a>. Follow the links to install them.</p>
+
+<p>Next, you should install <a href="https://github.com/creationix/nvm">nvm</a> by running the following script in your terminal:</p>
+
+<p>using curl:
+<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.0/install.sh | bash</code></p>
+
+<p>or Wget:
+<code>wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.26.0/install.sh | bash</code></p>
+
+<p>The stablest node is <code>node v0.12.7</code> as of this writing.</p>
+
+<p>I’m going to assume that you are in your project directory now. My project directory is <code>/sample</code> so keep that in mind going forward.</p>
+
+<h2 id="step-1-get-yeoman-started-up">Step 1: Get Yeoman started up</h2>
+
+<p>Copy this into your terminal:</p>
+
+<p><code>echo "export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules" &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc &amp;&amp; npm install -g yo grunt grunt-cli generator-angular-fullstack &amp;&amp; yo angular-fullstack</code></p>
+
+<p>This will install grunt, grunt-cli, and yeoman’s Fullstack Angular generator.</p>
+
+<p>If the installs go well, Yeoman will start up and it will ask you questions. Answer as follows (feel free to answer however you want, but this is how I did):
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">What would you like to write scripts with? JavaScript
+</span><span class="line">
+</span><span class="line">What would you like to write markup with? HTML
+</span><span class="line">
+</span><span class="line">What would you like to write stylesheets with? CSS
+</span><span class="line">
+</span><span class="line">What Angular router would you like to use? ngRoute
+</span><span class="line">
+</span><span class="line">Would you like to include Bootstrap? Yes
+</span><span class="line">
+</span><span class="line">Would you like to include UI Bootstrap? Yes
+</span><span class="line">
+</span><span class="line">Would you like to use MongoDB with Mongoose for data modeling? Yes
+</span><span class="line">
+</span><span class="line">Would you scaffold out an authentication boilerplate? Yes
+</span><span class="line">
+</span><span class="line">Would you like to include additional oAuth strategies? Twitter
+</span><span class="line">
+</span><span class="line">Would you like to use socket.io? No
+</span><span class="line">
+</span><span class="line">May bower anonymously report usage statistics to improve the tool over time? (Y/n) Y</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+
+<p>If the last step fails (the <code>bower install</code> and <code>npm install</code>) then run it manually:</p>
+
+<p><code>bower install &amp;&amp; npm install</code></p>
+
+<h2 id="step-2-install-mongodb">Step 2: Install MongoDB</h2>
+
+<p>This part was complicated. But here we go.</p>
+
+<p>First, install MongoDB (I used Homebrw):</p>
+
+<p><code>brew install mongodb</code></p>
+
+<p>IF all goes well, type the following into your terminal:</p>
+
+<p><code>mkdir data &amp;&amp; echo 'mongod --dbpath=data --nojournal --rest "$@"' &gt; mongod &amp;&amp; chmod a+x mongod</code></p>
+
+<p>Note that the Free Code Camp tutorial has this extra line: <code>--bind_ip=$IP</code>, which didn’t work on my machine. I will find out soon enough if omitting it causes any problems.</p>
+
+<p>Now, to start your database, just run…</p>
+
+<p><code>./mongod</code></p>
+
+<p>Easy as pie.</p>
+
+<h2 id="step-3-start-your-server">Step 3: Start your server</h2>
+
+<p>This one is easy:</p>
+
+<p><code>grunt serve</code></p>
+
+<p>A new window should automatically open up with Yeoman saying “Allo Allo!”</p>
+
+<p>That’s as far as I am now, I will continue updating this document as I build my first fullstack project.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Limitless]]></title>
@@ -97,7 +216,7 @@ He said, “Because you might as well be dead. Seriously, if you always put limi
 
 <p>Or is it that when we’re anonymous, we are our true selves, and we simply wear a mask whenever our identity is tied to our actions?</p>
 
-<p>This is something to think about. Whether or not you agree with Walter Palmer’s actions (I certainly don’t), I hope you are able to set aside your emotions and see that the absolute outrage against Walter Palmer is a bit uncalled for. </p>
+<p>This is something to think about. Whether or not you agree with Walter Palmer’s actions (I certainly don’t), I hope you are able to set aside your emotions and see that the absolute outrage against Walter Palmer is a bit uncalled for.</p>
 ]]></content>
   </entry>
   
@@ -975,41 +1094,6 @@ Bugfix: Reset button works properly</p>
 <p>The world is my playground. Now, the world I want to play in may not be the world we live in–in that case, I’ll create my own world to play in. I write so I can have others to play in that playground with. And hopefully, we emerge from that playground as changed people. People who see the world in a different way. People who become more introspective and more appreciative of the world around them. </p>
 
 <p>So, come join me in my playground. I might even push you on the swings :)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 14: The Barn]]></title>
-    <link href="http://abustamam.github.io/blog/2014/10/14/day-14-the-barn/"/>
-    <updated>2014-10-14T21:09:07-07:00</updated>
-    <id>http://abustamam.github.io/blog/2014/10/14/day-14-the-barn</id>
-    <content type="html"><![CDATA[<p><strong>Day 14: For your prompt today, I am literally taking a page from someone else’s book. (See description for details.)</strong></p>
-
-<p><em>The following, from John Gardner’s The Art of Fiction, page 37, is one of the most famous and enduring writing prompts out there:  Describe a barn as seen by a man whose son has just been killed in a war. Do not mention the son, or war, or death. Do not mention the man who does the seeing. …The result should be a powerful and disturbing image, a faithful description of some apparently real barn but one from which the reader gets a sense of the father’s emotion; though exactly what that emotion is he may not be able to pin down. …No amount of intellectual study can determine for the writer what details to include. If the description is to be effective, he must choose his boards, straw, pigeon manure, and ropes, the rhythms of his sentences, his angle of vision, by feeling and intuition. And one of the things he will discover, inevitably, is that the images of death and loss that come to him are not necessarily those we might expect.</em></p>
-
-<!-- more -->
-
-<p>The sun is setting, the sky is darkening, and the door of the derelict barn finally comes off its hinges and lays flat on the dirt.</p>
-
-<p>The barn stands there, as it has for decades, but on this day, it looms over the farm like a fortress towering over its kingdom, casting a shadow that plunges even the most fertilized grass into darkness. </p>
-
-<p>On the outside of the barn’s wall, a spider is enjoying its dinner, not caring about the decrepit nature of its home.</p>
-
-<p>The spider finishes its meal and spins a web to lower itself to one of the many rotting bales of hay littering the barn. The spider crawls across the moldy grains of straw, disappearing into the pile.</p>
-
-<hr />
-
-<p>A fly flaps its wings through the crisp dusk air, stopping momentarily on a block of wood that used to be a part of a fence, before landing on an old wooden board, barely attached to the barn by a rusty iron nail. The board had once been bright red, but time has washed away all evidence of its color. </p>
-
-<p>The fly buzzes into the barn and lands on a pile of manure. The fly pauses here for an undetermined amount of time, enjoying its new environment. Several other flies join it after a while, buzzing around noisily. The fly zooms away from the manure and stumbles upon the decaying carcass of a cow that was once named Bessie. The milk that this cow had once provided was the source of much happiness. But now, the cow has succumbed to the flow of nature, yet she is still able to provide nourishment for the flies that have found her rotting flesh. </p>
-
-<p>After satiating his hunger, the fly returns to the outside of the barn, zigging left, zagging right. Suddenly, the fly is caught on something, unable to move. It attempts to fly away, but its body is stuck to the silky, yet sticky, web. The fly tries again, flapping its wings, thrashing against the web, but it is unable to escape.</p>
-
-<p>The web begins to bounce as its creator approaches the fly. The fly buzzes one final time in an attempt to escape, before it is fully enveloped in the soft threads of silk.</p>
-
-<hr />
-
-<p>The spider has returned to its nest on the barn’s wall only to find its next meal thrashing about, attempting to escape. It spins its silk around the fly until it is fully wrapped in a cocoon. Having secured its next meal, the spider lowers itself down to the ground, scurrying across the barren dirt. Though it is dark, the spider is still able to perceive a change in the light, but is unable to conceive of any final thoughts as the boot is raised above the spider and crashes down to the ground. </p>
 ]]></content>
   </entry>
   

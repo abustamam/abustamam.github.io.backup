@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Kickstarting Your First MEAN Web App With Yeoman - Write Bright</title>
+  <meta name="author" content="Rasheed Bustamam">
+
+  
+  <meta name="description" content="I’ve been going through Free Code Camp and after finishing the front-end “ziplines” (which require a writeup of their own, eventually) I’m finally &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://abustamam.github.io/blog/2015/08/19/kickstarting-your-first-mean-web-app-with-yeoman">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Write Bright" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Write Bright</a></h1>
+  
+    <h2>Failing Forward</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:abustamam.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/rb-port">Portfolio</a></li>
+  <li><a href="/resume">Resume</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Kickstarting Your First MEAN Web App With Yeoman</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-08-19T21:42:32-07:00" pubdate data-updated="true">Aug 19<sup>th</sup>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I’ve been going through <a href="http://www.freecodecamp.com">Free Code Camp</a> and after finishing the front-end “ziplines” (which require a writeup of their own, eventually) I’m finally getting set for the fullstack “basejumps.”</p>
+
+<p>However, on their <a href="http://www.freecodecamp.com/challenges/waypoint-get-set-for-basejumps">“Get Set” module</a>, I ran into some problems with Cloud9 (primarily the memory issue), so I decided to figure out how to do some of these things on my local machine.</p>
+
+<!-- more -->
+
+<p>This is primarily a document for me to refer to when I create more fullstack apps, but may as well share it.</p>
+
+<p>Note that I am using OS X. I provide no guarantees in this document, as I’m writing it as it worked for me. Feel free to leave a comment though.</p>
+
+<h2 id="step-0-get-your-environment-set-up">Step 0: get your environment set up</h2>
+
+<p>You should have the following installed: <a href="https://www.npmjs.com/">npm</a>, <a href="http://brew.sh">Homebrew</a>, and probably <a href="http://www.bower.io">bower</a>. Follow the links to install them.</p>
+
+<p>Next, you should install <a href="https://github.com/creationix/nvm">nvm</a> by running the following script in your terminal:</p>
+
+<p>using curl:
+<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.0/install.sh | bash</code></p>
+
+<p>or Wget:
+<code>wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.26.0/install.sh | bash</code></p>
+
+<p>The stablest node is <code>node v0.12.7</code> as of this writing.</p>
+
+<p>I’m going to assume that you are in your project directory now. My project directory is <code>/sample</code> so keep that in mind going forward.</p>
+
+<h2 id="step-1-get-yeoman-started-up">Step 1: Get Yeoman started up</h2>
+
+<p>Copy this into your terminal:</p>
+
+<p><code>echo "export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules" &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc &amp;&amp; npm install -g yo grunt grunt-cli generator-angular-fullstack &amp;&amp; yo angular-fullstack</code></p>
+
+<p>This will install grunt, grunt-cli, and yeoman’s Fullstack Angular generator.</p>
+
+<p>If the installs go well, Yeoman will start up and it will ask you questions. Answer as follows (feel free to answer however you want, but this is how I did):
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">What would you like to write scripts with? JavaScript
+</span><span class="line">
+</span><span class="line">What would you like to write markup with? HTML
+</span><span class="line">
+</span><span class="line">What would you like to write stylesheets with? CSS
+</span><span class="line">
+</span><span class="line">What Angular router would you like to use? ngRoute
+</span><span class="line">
+</span><span class="line">Would you like to include Bootstrap? Yes
+</span><span class="line">
+</span><span class="line">Would you like to include UI Bootstrap? Yes
+</span><span class="line">
+</span><span class="line">Would you like to use MongoDB with Mongoose for data modeling? Yes
+</span><span class="line">
+</span><span class="line">Would you scaffold out an authentication boilerplate? Yes
+</span><span class="line">
+</span><span class="line">Would you like to include additional oAuth strategies? Twitter
+</span><span class="line">
+</span><span class="line">Would you like to use socket.io? No
+</span><span class="line">
+</span><span class="line">May bower anonymously report usage statistics to improve the tool over time? (Y/n) Y</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+
+<p>If the last step fails (the <code>bower install</code> and <code>npm install</code>) then run it manually:</p>
+
+<p><code>bower install &amp;&amp; npm install</code></p>
+
+<h2 id="step-2-install-mongodb">Step 2: Install MongoDB</h2>
+
+<p>This part was complicated. But here we go.</p>
+
+<p>First, install MongoDB (I used Homebrw):</p>
+
+<p><code>brew install mongodb</code></p>
+
+<p>IF all goes well, type the following into your terminal:</p>
+
+<p><code>mkdir data &amp;&amp; echo 'mongod --dbpath=data --nojournal --rest "$@"' &gt; mongod &amp;&amp; chmod a+x mongod</code></p>
+
+<p>Note that the Free Code Camp tutorial has this extra line: <code>--bind_ip=$IP</code>, which didn’t work on my machine. I will find out soon enough if omitting it causes any problems.</p>
+
+<p>Now, to start your database, just run…</p>
+
+<p><code>./mongod</code></p>
+
+<p>Easy as pie.</p>
+
+<h2 id="step-3-start-your-server">Step 3: Start your server</h2>
+
+<p>This one is easy:</p>
+
+<p><code>grunt serve</code></p>
+
+<p>A new window should automatically open up with Yeoman saying “Allo Allo!”</p>
+
+<p>That’s as far as I am now, I will continue updating this document as I build my first fullstack project.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Rasheed Bustamam</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-08-19T21:42:32-07:00" pubdate data-updated="true">Aug 19<sup>th</sup>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/angular/'>angular,</a>, <a class='category' href='/blog/categories/express/'>express,</a>, <a class='category' href='/blog/categories/fullstack/'>fullstack,</a>, <a class='category' href='/blog/categories/mongodb/'>mongodb,</a>, <a class='category' href='/blog/categories/node/'>node,</a>, <a class='category' href='/blog/categories/yeoman/'>yeoman</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://abustamam.github.io/blog/2015/08/19/kickstarting-your-first-mean-web-app-with-yeoman/" data-via="" data-counturl="http://abustamam.github.io/blog/2015/08/19/kickstarting-your-first-mean-web-app-with-yeoman/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/08/17/limitless/" title="Previous Post: Limitless">&laquo; Limitless</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/08/19/kickstarting-your-first-mean-web-app-with-yeoman/">Kickstarting Your First MEAN Web App With Yeoman</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/17/limitless/">Limitless</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/13/black-widow-killer/">Black Widow Killer</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/abustamam">@abustamam</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'abustamam',
+            count: 2,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Rasheed Bustamam -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

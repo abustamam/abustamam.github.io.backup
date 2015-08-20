@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Node, | Write Bright]]></title>
+  <link href="http://abustamam.github.io/blog/categories/node/atom.xml" rel="self"/>
+  <link href="http://abustamam.github.io/"/>
+  <updated>2015-08-19T22:04:57-07:00</updated>
+  <id>http://abustamam.github.io/</id>
+  <author>
+    <name><![CDATA[Rasheed Bustamam]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Kickstarting Your First MEAN Web App With Yeoman]]></title>
+    <link href="http://abustamam.github.io/blog/2015/08/19/kickstarting-your-first-mean-web-app-with-yeoman/"/>
+    <updated>2015-08-19T21:42:32-07:00</updated>
+    <id>http://abustamam.github.io/blog/2015/08/19/kickstarting-your-first-mean-web-app-with-yeoman</id>
+    <content type="html"><![CDATA[<p>I’ve been going through <a href="http://www.freecodecamp.com">Free Code Camp</a> and after finishing the front-end “ziplines” (which require a writeup of their own, eventually) I’m finally getting set for the fullstack “basejumps.”</p>
+
+<p>However, on their <a href="http://www.freecodecamp.com/challenges/waypoint-get-set-for-basejumps">“Get Set” module</a>, I ran into some problems with Cloud9 (primarily the memory issue), so I decided to figure out how to do some of these things on my local machine.</p>
+
+<!-- more -->
+
+<p>This is primarily a document for me to refer to when I create more fullstack apps, but may as well share it.</p>
+
+<p>Note that I am using OS X. I provide no guarantees in this document, as I’m writing it as it worked for me. Feel free to leave a comment though.</p>
+
+<h2 id="step-0-get-your-environment-set-up">Step 0: get your environment set up</h2>
+
+<p>You should have the following installed: <a href="https://www.npmjs.com/">npm</a>, <a href="http://brew.sh">Homebrew</a>, and probably <a href="http://www.bower.io">bower</a>. Follow the links to install them.</p>
+
+<p>Next, you should install <a href="https://github.com/creationix/nvm">nvm</a> by running the following script in your terminal:</p>
+
+<p>using curl:
+<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.0/install.sh | bash</code></p>
+
+<p>or Wget:
+<code>wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.26.0/install.sh | bash</code></p>
+
+<p>The stablest node is <code>node v0.12.7</code> as of this writing.</p>
+
+<p>I’m going to assume that you are in your project directory now. My project directory is <code>/sample</code> so keep that in mind going forward.</p>
+
+<h2 id="step-1-get-yeoman-started-up">Step 1: Get Yeoman started up</h2>
+
+<p>Copy this into your terminal:</p>
+
+<p><code>echo "export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules" &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc &amp;&amp; npm install -g yo grunt grunt-cli generator-angular-fullstack &amp;&amp; yo angular-fullstack</code></p>
+
+<p>This will install grunt, grunt-cli, and yeoman’s Fullstack Angular generator.</p>
+
+<p>If the installs go well, Yeoman will start up and it will ask you questions. Answer as follows (feel free to answer however you want, but this is how I did):
+```
+What would you like to write scripts with? JavaScript</p>
+
+<p>What would you like to write markup with? HTML</p>
+
+<p>What would you like to write stylesheets with? CSS</p>
+
+<p>What Angular router would you like to use? ngRoute</p>
+
+<p>Would you like to include Bootstrap? Yes</p>
+
+<p>Would you like to include UI Bootstrap? Yes</p>
+
+<p>Would you like to use MongoDB with Mongoose for data modeling? Yes</p>
+
+<p>Would you scaffold out an authentication boilerplate? Yes</p>
+
+<p>Would you like to include additional oAuth strategies? Twitter</p>
+
+<p>Would you like to use socket.io? No</p>
+
+<p>May bower anonymously report usage statistics to improve the tool over time? (Y/n) Y
+```</p>
+
+<p>If the last step fails (the <code>bower install</code> and <code>npm install</code>) then run it manually:</p>
+
+<p><code>bower install &amp;&amp; npm install</code></p>
+
+<h2 id="step-2-install-mongodb">Step 2: Install MongoDB</h2>
+
+<p>This part was complicated. But here we go.</p>
+
+<p>First, install MongoDB (I used Homebrw):</p>
+
+<p><code>brew install mongodb</code></p>
+
+<p>IF all goes well, type the following into your terminal:</p>
+
+<p><code>mkdir data &amp;&amp; echo 'mongod --dbpath=data --nojournal --rest "$@"' &gt; mongod &amp;&amp; chmod a+x mongod</code></p>
+
+<p>Note that the Free Code Camp tutorial has this extra line: <code>--bind_ip=$IP</code>, which didn’t work on my machine. I will find out soon enough if omitting it causes any problems.</p>
+
+<p>Now, to start your database, just run…</p>
+
+<p><code>./mongod</code></p>
+
+<p>Easy as pie.</p>
+
+<h2 id="step-3-start-your-server">Step 3: Start your server</h2>
+
+<p>This one is easy:</p>
+
+<p><code>grunt serve</code></p>
+
+<p>A new window should automatically open up with Yeoman saying “Allo Allo!”</p>
+
+<p>That’s as far as I am now, I will continue updating this document as I build my first fullstack project.</p>
+]]></content>
+  </entry>
+  
+</feed>
